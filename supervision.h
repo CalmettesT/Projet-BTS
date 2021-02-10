@@ -21,6 +21,10 @@ private slots:
 
     void on_BoutonPompes_clicked();
 
+    void on_ArreterTapis_clicked();
+
+    void on_BoutonCapteur_clicked();
+
 private:
     Ui::Supervision *ui;
 };

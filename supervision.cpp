@@ -24,7 +24,6 @@ Supervision::Supervision(QWidget *parent) :
     ui->labelPompe1->hide();
     ui->labelPompe2->hide();
     ui->labelPompe3->hide();
-    ui->videP->hide();
     ui->EditVanne1->hide();
     ui->EditVanne2->hide();
     ui->EditVanne3->hide();
@@ -49,6 +48,25 @@ Supervision::Supervision(QWidget *parent) :
     ui->labelVanne7->hide();
     ui->labelvanne->hide();
     ui->videV->hide();
+    ui->label->hide();
+    ui->label_2->hide();
+    ui->label_3->hide();
+    ui->label_4->hide();
+    ui->label_5->hide();
+    ui->label_6->hide();
+    ui->label_7->hide();
+    ui->label_8->hide();
+    ui->label_9->hide();
+    ui->label_10->hide();
+    ui->label_11->hide();
+    ui->label_12->hide();
+    ui->labelCapteur1->hide();
+    ui->labelCapteur2->hide();
+    ui->labelCapteur3->hide();
+    ui->labelCapteur4->hide();
+    ui->labelCapteur5->hide();
+    ui->labelCapteur6->hide();
+    ui->labelInfoCapteur->hide();
 }
 
 Supervision::~Supervision()
@@ -101,7 +119,25 @@ void Supervision::on_BoutonVannes_clicked()
     ui->labelVanne7->show();
     ui->labelvanne->show();
     ui->videV->show();
-
+    ui->label->hide();
+    ui->label_2->hide();
+    ui->label_3->hide();
+    ui->label_4->hide();
+    ui->label_5->hide();
+    ui->label_6->hide();
+    ui->label_7->hide();
+    ui->label_8->hide();
+    ui->label_9->hide();
+    ui->label_10->hide();
+    ui->label_11->hide();
+    ui->label_12->hide();
+    ui->labelCapteur1->hide();
+    ui->labelCapteur2->hide();
+    ui->labelCapteur3->hide();
+    ui->labelCapteur4->hide();
+    ui->labelCapteur5->hide();
+    ui->labelCapteur6->hide();
+    ui->labelInfoCapteur->hide();
 }
 
 void Supervision::on_BoutonPompes_clicked()
@@ -148,4 +184,104 @@ void Supervision::on_BoutonPompes_clicked()
     ui->labelVanne7->hide();
     ui->labelvanne->hide();
     ui->videV->hide();
+    ui->label->hide();
+    ui->label_2->hide();
+    ui->label_3->hide();
+    ui->label_4->hide();
+    ui->label_5->hide();
+    ui->label_6->hide();
+    ui->label_7->hide();
+    ui->label_8->hide();
+    ui->label_9->hide();
+    ui->label_10->hide();
+    ui->label_11->hide();
+    ui->label_12->hide();
+    ui->labelCapteur1->hide();
+    ui->labelCapteur2->hide();
+    ui->labelCapteur3->hide();
+    ui->labelCapteur4->hide();
+    ui->labelCapteur5->hide();
+    ui->labelCapteur6->hide();
+    ui->labelInfoCapteur->hide();
+}
+
+void Supervision::on_ArreterTapis_clicked()
+{
+    QString t = ui->ArreterTapis->text();
+    if(t=="Arreter Tapis")
+    {
+        ui->ArreterTapis->setText("Lancer Tapis");
+        ui->ArreterTapis->setStyleSheet("QPushButton { background-color: red; border: none; color: rgb(255, 255, 255);border-radius: 7px; font: 75 10pt 'Arial'; }");
+    }
+    else
+    {
+        ui->ArreterTapis->setText("Arreter Tapis");
+        ui->ArreterTapis->setStyleSheet("QPushButton { background-color: green; border: none; color: rgb(255, 255, 255);border-radius: 7px;font: 75 10pt 'Arial';}");
+    }
+
+}
+
+
+void Supervision::on_BoutonCapteur_clicked()
+{
+    ui->ArretPompe1->hide();
+    ui->ArretPompe2->hide();
+    ui->ArretPompe3->hide();
+    ui->Etatpompe1->hide();
+    ui->Etatpompe2->hide();
+    ui->Etatpompe3->hide();
+    ui->MarchePompe1->hide();
+    ui->MarchePompe2->hide();
+    ui->MarchePompe3->hide();
+    ui->infoPompe1->hide();
+    ui->infoPompe2->hide();
+    ui->infoPompe3->hide();
+    ui->labelEtatPompe->hide();
+    ui->labelInfoPompe->hide();
+    ui->labelPompe1->hide();
+    ui->labelPompe2->hide();
+    ui->labelPompe3->hide();
+    ui->EditVanne1->hide();
+    ui->EditVanne2->hide();
+    ui->EditVanne3->hide();
+    ui->EditVanne4->hide();
+    ui->EditVanne5->hide();
+    ui->EditVanne6->hide();
+    ui->EditVanne7->hide();
+    ui->modifValeurVanne1->hide();
+    ui->boutonModifVanne2->hide();
+    ui->boutonModifVanne3->hide();
+    ui->boutonModifVanne4->hide();
+    ui->boutonModifVanne5->hide();
+    ui->boutonModifVanne6->hide();
+    ui->boutonModifVanne7->hide();
+    ui->labelModifValVanne->hide();
+    ui->labelVanne1->hide();
+    ui->labelVanne2->hide();
+    ui->labelVanne3->hide();
+    ui->labelVanne4->hide();
+    ui->labelVanne5->hide();
+    ui->labelVanne6->hide();
+    ui->labelVanne7->hide();
+    ui->labelvanne->hide();
+    ui->videV->hide();
+    ui->label->show();
+    ui->label_2->show();
+    ui->label_3->show();
+    ui->label_4->show();
+    ui->label_5->show();
+    ui->label_6->show();
+    ui->label_7->show();
+    ui->label_8->show();
+    ui->label_9->show();
+    ui->label_10->show();
+    ui->label_11->show();
+    ui->label_12->show();
+    ui->labelCapteur1->show();
+    ui->labelCapteur2->show();
+    ui->labelCapteur3->show();
+    ui->labelCapteur4->show();
+    ui->labelCapteur5->show();
+    ui->labelCapteur6->show();
+    ui->labelInfoCapteur->show();
 }

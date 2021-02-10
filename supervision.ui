@@ -33,7 +33,7 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>300</y>
+     <y>250</y>
      <width>811</width>
      <height>111</height>
     </rect>
@@ -71,13 +71,6 @@ font: 75 8pt &quot;Arial&quot;;</string>
       </property>
       <property name="text">
        <string>Marche</string>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="0">
-     <widget class="QLabel" name="videP">
-      <property name="text">
-       <string/>
       </property>
      </widget>
     </item>
@@ -183,13 +176,20 @@ font: 75 8pt &quot;Arial&quot;;</string>
     <item row="2" column="3">
      <widget class="QLineEdit" name="infoPompe3"/>
     </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="videP">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
    </layout>
   </widget>
   <widget class="QWidget" name="gridLayoutWidget">
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>160</y>
+     <y>140</y>
      <width>811</width>
      <height>101</height>
     </rect>
@@ -311,19 +311,12 @@ font: 75 8pt &quot;Arial&quot;;</string>
     <item row="1" column="0">
      <widget class="QLabel" name="labelvanne">
       <property name="text">
-       <string>Ouverture Vanne :</string>
+       <string>Ouverture des Vannes :</string>
       </property>
      </widget>
     </item>
     <item row="1" column="6">
      <widget class="QLineEdit" name="EditVanne6"/>
-    </item>
-    <item row="0" column="0">
-     <widget class="QLabel" name="videV">
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
     </item>
     <item row="3" column="5">
      <widget class="QPushButton" name="boutonModifVanne5">
@@ -384,6 +377,13 @@ font: 75 8pt &quot;Arial&quot;;</string>
     <item row="1" column="3">
      <widget class="QLineEdit" name="EditVanne3"/>
     </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="videV">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
    </layout>
   </widget>
   <widget class="QLabel" name="Titre">
@@ -406,7 +406,7 @@ font: 75 8pt &quot;Arial&quot;;</string>
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>80</y>
+     <y>70</y>
      <width>811</width>
      <height>51</height>
     </rect>
@@ -479,7 +479,7 @@ font: 75 10pt &quot;Arial&quot;;</string>
      </spacer>
     </item>
     <item>
-     <widget class="QPushButton" name="BoutonTapis">
+     <widget class="QPushButton" name="ArreterTapis">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
         <horstretch>0</horstretch>
@@ -488,13 +488,13 @@ font: 75 10pt &quot;Arial&quot;;</string>
       </property>
       <property name="styleSheet">
        <string notr="true">border: none;
-background-color: rgb(43, 43, 43);
+background-color: rgb(0, 170, 0);
 color: rgb(255, 255, 255);
 border-radius: 7px;
 font: 75 10pt &quot;Arial&quot;;</string>
       </property>
       <property name="text">
-       <string>Tapis</string>
+       <string>Arreter Tapis</string>
       </property>
      </widget>
     </item>
@@ -536,24 +536,143 @@ font: 75 10pt &quot;Arial&quot;;</string>
   <widget class="QWidget" name="gridLayoutWidget_3">
    <property name="geometry">
     <rect>
-     <x>160</x>
-     <y>460</y>
-     <width>160</width>
-     <height>80</height>
+     <x>10</x>
+     <y>370</y>
+     <width>811</width>
+     <height>111</height>
     </rect>
    </property>
-   <layout class="QGridLayout" name="gridLayout">
-    <item row="1" column="0">
-     <widget class="QPushButton" name="pushButton_2">
+   <layout class="QGridLayout" name="gridCapteur">
+    <item row="0" column="5">
+     <widget class="QLabel" name="labelCapteur5">
       <property name="text">
-       <string>PushButton</string>
+       <string>Capteur 5</string>
       </property>
      </widget>
     </item>
-    <item row="0" column="0">
-     <widget class="QPushButton" name="pushButton">
+    <item row="0" column="2">
+     <widget class="QLabel" name="labelCapteur2">
       <property name="text">
-       <string>PushButton</string>
+       <string>Capteur 2</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="4">
+     <widget class="QLabel" name="labelCapteur4">
+      <property name="text">
+       <string>Capteur 4</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="6">
+     <widget class="QLabel" name="labelCapteur6">
+      <property name="text">
+       <string>Capteur 6</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="labelInfoCapteur">
+      <property name="text">
+       <string>Information Capteurs :</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="3">
+     <widget class="QLabel" name="labelCapteur3">
+      <property name="text">
+       <string>Capteur 3</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLabel" name="labelCapteur1">
+      <property name="text">
+       <string>Capteur 1</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="2">
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="4">
+     <widget class="QLabel" name="label_10">
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="5">
+     <widget class="QLabel" name="label_11">
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QLabel" name="label_7">
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>Niveau D'eau</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="5">
+     <widget class="QLabel" name="label_5">
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="6">
+     <widget class="QLabel" name="label_12">
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="3">
+     <widget class="QLabel" name="label_9">
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="3">
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="6">
+     <widget class="QLabel" name="label_6">
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="2">
+     <widget class="QLabel" name="label_8">
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="4">
+     <widget class="QLabel" name="label_4">
+      <property name="text">
+       <string>TextLabel</string>
       </property>
      </widget>
     </item>
