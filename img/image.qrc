@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>logo.jpg</file>
+        <file>logoCool.png</file>
+        <file>params.png</file>
+        <file>parc.jpg</file>
+        <file>paupyrenees.png</file>
+        <file>reglage.png</file>
+    </qresource>
+</RCC>
