@@ -1,7 +1,8 @@
 #ifndef SUPERVISION_H
 #define SUPERVISION_H
-
+#include <QMessageBox>
 #include <QDialog>
+#include <QDebug>
 
 namespace Ui {
 class Supervision;
@@ -24,6 +25,8 @@ private slots:
     void on_ArreterTapis_clicked();
 
     void on_BoutonCapteur_clicked();
+
+    void on_modifValeurVanne1_clicked();
 
 private:
     Ui::Supervision *ui;

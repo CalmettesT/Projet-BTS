@@ -1,6 +1,6 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
-
+#include <QDebug>
 #include <QMainWindow>
 
 namespace Ui {
@@ -14,6 +14,8 @@ class MainWindow : public QMainWindow
 public:
 
     explicit MainWindow(QWidget *parent = 0);
+    void setDebit();
+    int getDebit();
     ~MainWindow();
 
 private slots:
@@ -34,10 +36,13 @@ private slots:
     void on_Supervision_clicked();
 
     void on_ValiderDebit_clicked();
-    
+
+    void on_validerMode_clicked();
+
 private:
     Ui::MainWindow *ui;
     int debit;
+    QString modeParc;
 };
 
 #endif // MAINWINDOW_H

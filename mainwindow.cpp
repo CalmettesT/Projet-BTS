@@ -1,11 +1,8 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-
 #include "supervision.h"
-
 #include "QMessageBox"
 #include "QString"
-#include <QDebug>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -48,7 +45,6 @@ void MainWindow::on_BoutonVanne5_clicked()
     QMessageBox::about(this,"Vanne 5","Information Vanne 5 : \n Ouverutre Vanne : ");
 }
 
-
 void MainWindow::on_BoutonVanne6_clicked()
 {
     QMessageBox::about(this,"Vanne 6","Information Vanne 6 : \n Ouverutre Vanne : ");
@@ -69,8 +65,22 @@ void MainWindow::on_Supervision_clicked()
 void MainWindow::on_ValiderDebit_clicked()
 {
     QString debit = ui->lineDebit->text();
-    qDebug() << "green" << debit;
+    qDebug() << "Debit :" << debit;
 }
 
+void MainWindow::on_validerMode_clicked()
+{
+    modeParc = ui->ModeParc->currentText();
+    qDebug()<<"Mode Parc :"<<modeParc;
+}
 
+void MainWindow::setDebit()
+{
+    QString d= ui->lineDebit->text();
+    debit = d.toInt();
+}
 
+int MainWindow::getDebit()
+{
+    return debit;
+}

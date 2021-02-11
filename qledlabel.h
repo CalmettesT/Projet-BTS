@@ -8,13 +8,14 @@ class QLedLabel : public QLabel
     Q_OBJECT
     int debit;
     int charo;
+    QString modeParc;
 public:
     explicit QLedLabel(QWidget *parent = 0);
 
     enum Etat{
-        EtatOk=1,
-        EtatWarning=2,
-        EtatError=3
+        EtatOk,
+        EtatWarning,
+        EtatError
     };
 
 

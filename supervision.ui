@@ -6,678 +6,605 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>834</width>
-    <height>550</height>
+    <width>684</width>
+    <height>445</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QDialogButtonBox" name="buttonBox">
-   <property name="geometry">
-    <rect>
-     <x>470</x>
-     <y>500</y>
-     <width>341</width>
-     <height>32</height>
-    </rect>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Horizontal</enum>
-   </property>
-   <property name="standardButtons">
-    <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
-   </property>
-  </widget>
-  <widget class="QWidget" name="gridLayoutWidget_2">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>250</y>
-     <width>811</width>
-     <height>111</height>
-    </rect>
-   </property>
-   <layout class="QGridLayout" name="gridModifPompes">
-    <item row="1" column="0">
-     <widget class="QLabel" name="labelEtatPompe">
-      <property name="text">
-       <string>Etat Pompe :</string>
-      </property>
-     </widget>
-    </item>
-    <item row="2" column="0">
-     <widget class="QLabel" name="labelInfoPompe">
-      <property name="text">
-       <string>Information :</string>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="3">
-     <widget class="QLabel" name="labelPompe3">
-      <property name="text">
-       <string>Pompe N°3</string>
-      </property>
-     </widget>
-    </item>
-    <item row="3" column="1">
-     <widget class="QPushButton" name="MarchePompe1">
-      <property name="styleSheet">
-       <string notr="true">border: none;
-border-radius: 3px;
-background-color: rgb(43, 43, 43);
-color: rgb(255, 255, 255);
-font: 75 8pt &quot;Arial&quot;;</string>
-      </property>
-      <property name="text">
-       <string>Marche</string>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="1">
-     <widget class="QLabel" name="labelPompe1">
-      <property name="text">
-       <string>Pompe N°1</string>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="2">
-     <widget class="QLabel" name="labelPompe2">
-      <property name="text">
-       <string>Pompe N°2</string>
-      </property>
-     </widget>
-    </item>
-    <item row="4" column="1">
-     <widget class="QPushButton" name="ArretPompe1">
-      <property name="styleSheet">
-       <string notr="true">border: none;
-border-radius: 3px;
-background-color: rgb(43, 43, 43);
-color: rgb(255, 255, 255);
-font: 75 8pt &quot;Arial&quot;;</string>
-      </property>
-      <property name="text">
-       <string>Arret</string>
-      </property>
-     </widget>
-    </item>
-    <item row="3" column="2">
-     <widget class="QPushButton" name="MarchePompe2">
-      <property name="styleSheet">
-       <string notr="true">border: none;
-border-radius: 3px;
-background-color: rgb(43, 43, 43);
-color: rgb(255, 255, 255);
-font: 75 8pt &quot;Arial&quot;;</string>
-      </property>
-      <property name="text">
-       <string>Marche</string>
-      </property>
-     </widget>
-    </item>
-    <item row="4" column="2">
-     <widget class="QPushButton" name="ArretPompe2">
-      <property name="styleSheet">
-       <string notr="true">border: none;
-border-radius: 3px;
-background-color: rgb(43, 43, 43);
-color: rgb(255, 255, 255);
-font: 75 8pt &quot;Arial&quot;;</string>
-      </property>
-      <property name="text">
-       <string>Arret</string>
-      </property>
-     </widget>
-    </item>
-    <item row="4" column="3">
-     <widget class="QPushButton" name="ArretPompe3">
-      <property name="styleSheet">
-       <string notr="true">border: none;
-border-radius: 3px;
-background-color: rgb(43, 43, 43);
-color: rgb(255, 255, 255);
-font: 75 8pt &quot;Arial&quot;;</string>
-      </property>
-      <property name="text">
-       <string>Arret</string>
-      </property>
-     </widget>
-    </item>
-    <item row="3" column="3">
-     <widget class="QPushButton" name="MarchePompe3">
-      <property name="styleSheet">
-       <string notr="true">border: none;
-border-radius: 3px;
-background-color: rgb(43, 43, 43);
-color: rgb(255, 255, 255);
-font: 75 8pt &quot;Arial&quot;;</string>
-      </property>
-      <property name="text">
-       <string>Marche</string>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="1">
-     <widget class="QLineEdit" name="Etatpompe1"/>
-    </item>
-    <item row="1" column="2">
-     <widget class="QLineEdit" name="Etatpompe2"/>
-    </item>
-    <item row="1" column="3">
-     <widget class="QLineEdit" name="Etatpompe3"/>
-    </item>
-    <item row="2" column="1">
-     <widget class="QLineEdit" name="infoPompe1"/>
-    </item>
-    <item row="2" column="2">
-     <widget class="QLineEdit" name="infoPompe2"/>
-    </item>
-    <item row="2" column="3">
-     <widget class="QLineEdit" name="infoPompe3"/>
-    </item>
-    <item row="0" column="0">
-     <widget class="QLabel" name="videP">
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-    </item>
-   </layout>
-  </widget>
-  <widget class="QWidget" name="gridLayoutWidget">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>140</y>
-     <width>811</width>
-     <height>101</height>
-    </rect>
-   </property>
-   <layout class="QGridLayout" name="gridModifVannes" rowstretch="0,0,0,0" columnstretch="0,0,0,0,0,0,0,0" rowminimumheight="0,0,0,0">
-    <item row="3" column="2">
-     <widget class="QPushButton" name="boutonModifVanne2">
-      <property name="styleSheet">
-       <string notr="true">border: none;
-border-radius: 3px;
-background-color: rgb(43, 43, 43);
-color: rgb(255, 255, 255);
-font: 75 8pt &quot;Arial&quot;;</string>
-      </property>
-      <property name="text">
-       <string>Modifier</string>
-      </property>
-     </widget>
-    </item>
-    <item row="3" column="3">
-     <widget class="QPushButton" name="boutonModifVanne3">
-      <property name="styleSheet">
-       <string notr="true">border: none;
-border-radius: 3px;
-background-color: rgb(43, 43, 43);
-color: rgb(255, 255, 255);
-font: 75 8pt &quot;Arial&quot;;</string>
-      </property>
-      <property name="text">
-       <string>Modifier</string>
-      </property>
-     </widget>
-    </item>
-    <item row="3" column="4">
-     <widget class="QPushButton" name="boutonModifVanne4">
-      <property name="styleSheet">
-       <string notr="true">border: none;
-border-radius: 3px;
-background-color: rgb(43, 43, 43);
-color: rgb(255, 255, 255);
-font: 75 8pt &quot;Arial&quot;;</string>
-      </property>
-      <property name="text">
-       <string>Modifier</string>
-      </property>
-     </widget>
-    </item>
-    <item row="3" column="1">
-     <widget class="QPushButton" name="modifValeurVanne1">
-      <property name="styleSheet">
-       <string notr="true">border: none;
-border-radius: 3px;
-background-color: rgb(43, 43, 43);
-color: rgb(255, 255, 255);
-font: 75 8pt &quot;Arial&quot;;</string>
-      </property>
-      <property name="text">
-       <string>Modifier</string>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="4">
-     <widget class="QLineEdit" name="EditVanne4"/>
-    </item>
-    <item row="1" column="2">
-     <widget class="QLineEdit" name="EditVanne2"/>
-    </item>
-    <item row="1" column="1">
-     <widget class="QLineEdit" name="EditVanne1"/>
-    </item>
-    <item row="1" column="7">
-     <widget class="QLineEdit" name="EditVanne7"/>
-    </item>
-    <item row="0" column="1">
-     <widget class="QLabel" name="labelVanne1">
-      <property name="text">
-       <string>Vanne1</string>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="7">
-     <widget class="QLabel" name="labelVanne7">
-      <property name="text">
-       <string>Vanne7</string>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="6">
-     <widget class="QLabel" name="labelVanne6">
-      <property name="text">
-       <string>Vanne6</string>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="5">
-     <widget class="QLabel" name="labelVanne5">
-      <property name="text">
-       <string>Vanne5</string>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="3">
-     <widget class="QLabel" name="labelVanne3">
-      <property name="text">
-       <string>Vanne3</string>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="2">
-     <widget class="QLabel" name="labelVanne2">
-      <property name="text">
-       <string>Vanne2</string>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="5">
-     <widget class="QLineEdit" name="EditVanne5"/>
-    </item>
-    <item row="1" column="0">
-     <widget class="QLabel" name="labelvanne">
-      <property name="text">
-       <string>Ouverture des Vannes :</string>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="6">
-     <widget class="QLineEdit" name="EditVanne6"/>
-    </item>
-    <item row="3" column="5">
-     <widget class="QPushButton" name="boutonModifVanne5">
-      <property name="styleSheet">
-       <string notr="true">border: none;
-border-radius: 3px;
-background-color: rgb(43, 43, 43);
-color: rgb(255, 255, 255);
-font: 75 8pt &quot;Arial&quot;;</string>
-      </property>
-      <property name="text">
-       <string>Modifier</string>
-      </property>
-     </widget>
-    </item>
-    <item row="3" column="6">
-     <widget class="QPushButton" name="boutonModifVanne6">
-      <property name="styleSheet">
-       <string notr="true">border: none;
-border-radius: 3px;
-background-color: rgb(43, 43, 43);
-color: rgb(255, 255, 255);
-font: 75 8pt &quot;Arial&quot;;</string>
-      </property>
-      <property name="text">
-       <string>Modifier</string>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="4">
-     <widget class="QLabel" name="labelVanne4">
-      <property name="text">
-       <string>Vanne4</string>
-      </property>
-     </widget>
-    </item>
-    <item row="3" column="7">
-     <widget class="QPushButton" name="boutonModifVanne7">
-      <property name="styleSheet">
-       <string notr="true">border: none;
-border-radius: 3px;
-background-color: rgb(43, 43, 43);
-color: rgb(255, 255, 255);
-font: 75 8pt &quot;Arial&quot;;</string>
-      </property>
-      <property name="text">
-       <string>Modifier</string>
-      </property>
-     </widget>
-    </item>
-    <item row="3" column="0">
-     <widget class="QLabel" name="labelModifValVanne">
-      <property name="text">
-       <string>Modifier Valeur :</string>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="3">
-     <widget class="QLineEdit" name="EditVanne3"/>
-    </item>
-    <item row="0" column="0">
-     <widget class="QLabel" name="videV">
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-    </item>
-   </layout>
-  </widget>
-  <widget class="QLabel" name="Titre">
-   <property name="geometry">
-    <rect>
-     <x>300</x>
-     <y>20</y>
-     <width>241</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">font: 75 18pt &quot;Arial&quot;;</string>
-   </property>
-   <property name="text">
-    <string>Supervision du Stade</string>
-   </property>
-  </widget>
-  <widget class="QWidget" name="horizontalLayoutWidget">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>70</y>
-     <width>811</width>
-     <height>51</height>
-    </rect>
-   </property>
-   <layout class="QHBoxLayout" name="horizontalLayout" stretch="2,0,2,0,2,0,2">
-    <item>
-     <widget class="QPushButton" name="BoutonVannes">
-      <property name="sizePolicy">
-       <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
-        <horstretch>0</horstretch>
-        <verstretch>0</verstretch>
-       </sizepolicy>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">border: none;
+  <layout class="QHBoxLayout" name="horizontalLayout_2">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="Titre">
+       <property name="styleSheet">
+        <string notr="true">font: 75 18pt &quot;Arial&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Supervision du Stade</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout" stretch="2,0,2,0,2,0,2">
+       <item>
+        <widget class="QPushButton" name="BoutonVannes">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: none;
 background-color: rgb(43, 43, 43);
 color: rgb(255, 255, 255);
 border-radius: 7px;
 font: 75 10pt &quot;Arial&quot;;</string>
-      </property>
-      <property name="text">
-       <string>Modifier Vannes</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <spacer name="horizontalSpacer">
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
-      </property>
-      <property name="sizeHint" stdset="0">
-       <size>
-        <width>30</width>
-        <height>20</height>
-       </size>
-      </property>
-     </spacer>
-    </item>
-    <item>
-     <widget class="QPushButton" name="BoutonPompes">
-      <property name="sizePolicy">
-       <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
-        <horstretch>0</horstretch>
-        <verstretch>0</verstretch>
-       </sizepolicy>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">border: none;
+         </property>
+         <property name="text">
+          <string>Modifier Vannes</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>30</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="BoutonPompes">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: none;
 background-color: rgb(43, 43, 43);
 color: rgb(255, 255, 255);
 border-radius: 7px;
 font: 75 10pt &quot;Arial&quot;;</string>
-      </property>
-      <property name="text">
-       <string>Modifier Pompes</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <spacer name="horizontalSpacer_2">
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
-      </property>
-      <property name="sizeHint" stdset="0">
-       <size>
-        <width>40</width>
-        <height>20</height>
-       </size>
-      </property>
-     </spacer>
-    </item>
-    <item>
-     <widget class="QPushButton" name="ArreterTapis">
-      <property name="sizePolicy">
-       <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
-        <horstretch>0</horstretch>
-        <verstretch>0</verstretch>
-       </sizepolicy>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">border: none;
+         </property>
+         <property name="text">
+          <string>Modifier Pompes</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="ArreterTapis">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: none;
 background-color: rgb(0, 170, 0);
 color: rgb(255, 255, 255);
 border-radius: 7px;
 font: 75 10pt &quot;Arial&quot;;</string>
-      </property>
-      <property name="text">
-       <string>Arreter Tapis</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <spacer name="horizontalSpacer_3">
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
-      </property>
-      <property name="sizeHint" stdset="0">
-       <size>
-        <width>40</width>
-        <height>20</height>
-       </size>
-      </property>
-     </spacer>
-    </item>
-    <item>
-     <widget class="QPushButton" name="BoutonCapteur">
-      <property name="sizePolicy">
-       <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
-        <horstretch>0</horstretch>
-        <verstretch>0</verstretch>
-       </sizepolicy>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">border: none;
+         </property>
+         <property name="text">
+          <string>Arreter Tapis</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="BoutonCapteur">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: none;
 background-color: rgb(43, 43, 43);
 color: rgb(255, 255, 255);
 border-radius: 7px;
 font: 75 10pt &quot;Arial&quot;;</string>
-      </property>
-      <property name="text">
-       <string>Capteurs</string>
-      </property>
-     </widget>
-    </item>
-   </layout>
-  </widget>
-  <widget class="QWidget" name="gridLayoutWidget_3">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>370</y>
-     <width>811</width>
-     <height>111</height>
-    </rect>
-   </property>
-   <layout class="QGridLayout" name="gridCapteur">
-    <item row="0" column="5">
-     <widget class="QLabel" name="labelCapteur5">
-      <property name="text">
-       <string>Capteur 5</string>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="2">
-     <widget class="QLabel" name="labelCapteur2">
-      <property name="text">
-       <string>Capteur 2</string>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="4">
-     <widget class="QLabel" name="labelCapteur4">
-      <property name="text">
-       <string>Capteur 4</string>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="6">
-     <widget class="QLabel" name="labelCapteur6">
-      <property name="text">
-       <string>Capteur 6</string>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="0">
-     <widget class="QLabel" name="labelInfoCapteur">
-      <property name="text">
-       <string>Information Capteurs :</string>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="3">
-     <widget class="QLabel" name="labelCapteur3">
-      <property name="text">
-       <string>Capteur 3</string>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="1">
-     <widget class="QLabel" name="labelCapteur1">
-      <property name="text">
-       <string>Capteur 1</string>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="2">
-     <widget class="QLabel" name="label_2">
-      <property name="text">
-       <string>TextLabel</string>
-      </property>
-     </widget>
-    </item>
-    <item row="2" column="4">
-     <widget class="QLabel" name="label_10">
-      <property name="text">
-       <string>TextLabel</string>
-      </property>
-     </widget>
-    </item>
-    <item row="2" column="5">
-     <widget class="QLabel" name="label_11">
-      <property name="text">
-       <string>TextLabel</string>
-      </property>
-     </widget>
-    </item>
-    <item row="2" column="1">
-     <widget class="QLabel" name="label_7">
-      <property name="text">
-       <string>TextLabel</string>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="1">
-     <widget class="QLabel" name="label">
-      <property name="text">
-       <string>Niveau D'eau</string>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="5">
-     <widget class="QLabel" name="label_5">
-      <property name="text">
-       <string>TextLabel</string>
-      </property>
-     </widget>
-    </item>
-    <item row="2" column="6">
-     <widget class="QLabel" name="label_12">
-      <property name="text">
-       <string>TextLabel</string>
-      </property>
-     </widget>
-    </item>
-    <item row="2" column="3">
-     <widget class="QLabel" name="label_9">
-      <property name="text">
-       <string>TextLabel</string>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="3">
-     <widget class="QLabel" name="label_3">
-      <property name="text">
-       <string>TextLabel</string>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="6">
-     <widget class="QLabel" name="label_6">
-      <property name="text">
-       <string>TextLabel</string>
-      </property>
-     </widget>
-    </item>
-    <item row="2" column="2">
-     <widget class="QLabel" name="label_8">
-      <property name="text">
-       <string>TextLabel</string>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="4">
-     <widget class="QLabel" name="label_4">
-      <property name="text">
-       <string>TextLabel</string>
-      </property>
-     </widget>
-    </item>
-   </layout>
-  </widget>
+         </property>
+         <property name="text">
+          <string>Capteurs</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QGridLayout" name="gridModifVannes" rowstretch="0,0,0,0" columnstretch="0,0,0,0,0,0,0,0">
+       <item row="3" column="4">
+        <widget class="QPushButton" name="boutonModifVanne4">
+         <property name="styleSheet">
+          <string notr="true">border: none;
+border-radius: 3px;
+background-color: rgb(43, 43, 43);
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;Arial&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Modifier</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="3">
+        <widget class="QPushButton" name="boutonModifVanne3">
+         <property name="styleSheet">
+          <string notr="true">border: none;
+border-radius: 3px;
+background-color: rgb(43, 43, 43);
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;Arial&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Modifier</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="2">
+        <widget class="QPushButton" name="boutonModifVanne2">
+         <property name="styleSheet">
+          <string notr="true">border: none;
+border-radius: 3px;
+background-color: rgb(43, 43, 43);
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;Arial&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Modifier</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QPushButton" name="boutonModifValeurVanne1">
+         <property name="styleSheet">
+          <string notr="true">border: none;
+border-radius: 3px;
+background-color: rgb(43, 43, 43);
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;Arial&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Modifier</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="4">
+        <widget class="QLineEdit" name="EditVanne4"/>
+       </item>
+       <item row="1" column="2">
+        <widget class="QLineEdit" name="EditVanne2"/>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="EditVanne1"/>
+       </item>
+       <item row="1" column="7">
+        <widget class="QLineEdit" name="EditVanne7"/>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLabel" name="labelVanne1">
+         <property name="text">
+          <string>Vanne1</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="7">
+        <widget class="QLabel" name="labelVanne7">
+         <property name="text">
+          <string>Vanne7</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="6">
+        <widget class="QLabel" name="labelVanne6">
+         <property name="text">
+          <string>Vanne6</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="5">
+        <widget class="QLabel" name="labelVanne5">
+         <property name="text">
+          <string>Vanne5</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <widget class="QLabel" name="labelVanne3">
+         <property name="text">
+          <string>Vanne3</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QLabel" name="labelVanne2">
+         <property name="text">
+          <string>Vanne2</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="5">
+        <widget class="QLineEdit" name="EditVanne5"/>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="labelvanne">
+         <property name="text">
+          <string>Ouverture des Vannes :</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="6">
+        <widget class="QLineEdit" name="EditVanne6"/>
+       </item>
+       <item row="3" column="5">
+        <widget class="QPushButton" name="boutonModifVanne5">
+         <property name="styleSheet">
+          <string notr="true">border: none;
+border-radius: 3px;
+background-color: rgb(43, 43, 43);
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;Arial&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Modifier</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="6">
+        <widget class="QPushButton" name="boutonModifVanne6">
+         <property name="styleSheet">
+          <string notr="true">border: none;
+border-radius: 3px;
+background-color: rgb(43, 43, 43);
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;Arial&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Modifier</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="4">
+        <widget class="QLabel" name="labelVanne4">
+         <property name="text">
+          <string>Vanne4</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="7">
+        <widget class="QPushButton" name="boutonModifVanne7">
+         <property name="styleSheet">
+          <string notr="true">border: none;
+border-radius: 3px;
+background-color: rgb(43, 43, 43);
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;Arial&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Modifier</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="labelModifValVanne">
+         <property name="text">
+          <string>Modifier Valeur :</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="QLineEdit" name="EditVanne3"/>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="videV">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QGridLayout" name="gridModifPompes">
+       <item row="0" column="0">
+        <widget class="QLabel" name="videP">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="labelEtatPompe">
+         <property name="text">
+          <string>Etat Pompe :</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="labelInfoPompe">
+         <property name="text">
+          <string>Information :</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <widget class="QLabel" name="labelPompe3">
+         <property name="text">
+          <string>Pompe N°3</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QPushButton" name="MarchePompe1">
+         <property name="styleSheet">
+          <string notr="true">border: none;
+border-radius: 3px;
+background-color: rgb(43, 43, 43);
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;Arial&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Marche</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLabel" name="labelPompe1">
+         <property name="text">
+          <string>Pompe N°1</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QLabel" name="labelPompe2">
+         <property name="text">
+          <string>Pompe N°2</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QPushButton" name="ArretPompe1">
+         <property name="styleSheet">
+          <string notr="true">border: none;
+border-radius: 3px;
+background-color: rgb(43, 43, 43);
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;Arial&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Arret</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="2">
+        <widget class="QPushButton" name="MarchePompe2">
+         <property name="styleSheet">
+          <string notr="true">border: none;
+border-radius: 3px;
+background-color: rgb(43, 43, 43);
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;Arial&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Marche</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="2">
+        <widget class="QPushButton" name="ArretPompe2">
+         <property name="styleSheet">
+          <string notr="true">border: none;
+border-radius: 3px;
+background-color: rgb(43, 43, 43);
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;Arial&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Arret</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="3">
+        <widget class="QPushButton" name="ArretPompe3">
+         <property name="styleSheet">
+          <string notr="true">border: none;
+border-radius: 3px;
+background-color: rgb(43, 43, 43);
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;Arial&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Arret</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="3">
+        <widget class="QPushButton" name="MarchePompe3">
+         <property name="styleSheet">
+          <string notr="true">border: none;
+border-radius: 3px;
+background-color: rgb(43, 43, 43);
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;Arial&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Marche</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="Etatpompe1"/>
+       </item>
+       <item row="1" column="2">
+        <widget class="QLineEdit" name="Etatpompe2"/>
+       </item>
+       <item row="1" column="3">
+        <widget class="QLineEdit" name="Etatpompe3"/>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="infoPompe1"/>
+       </item>
+       <item row="2" column="2">
+        <widget class="QLineEdit" name="infoPompe2"/>
+       </item>
+       <item row="2" column="3">
+        <widget class="QLineEdit" name="infoPompe3"/>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QGridLayout" name="gridCapteur">
+       <item row="0" column="5">
+        <widget class="QLabel" name="labelCapteur5">
+         <property name="text">
+          <string>Capteur 5</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QLabel" name="labelCapteur2">
+         <property name="text">
+          <string>Capteur 2</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="4">
+        <widget class="QLabel" name="labelCapteur4">
+         <property name="text">
+          <string>Capteur 4</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="6">
+        <widget class="QLabel" name="labelCapteur6">
+         <property name="text">
+          <string>Capteur 6</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <widget class="QLabel" name="labelCapteur3">
+         <property name="text">
+          <string>Capteur 3</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLabel" name="labelCapteur1">
+         <property name="text">
+          <string>Capteur 1</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QLabel" name="nivEauCap2">
+         <property name="text">
+          <string>info</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLabel" name="nivEauCap1">
+         <property name="text">
+          <string>info</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="5">
+        <widget class="QLabel" name="nivEauCap5">
+         <property name="text">
+          <string>info</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="QLabel" name="nivEauCap3">
+         <property name="text">
+          <string>info</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="6">
+        <widget class="QLabel" name="nivEauCap6">
+         <property name="text">
+          <string>info</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="4">
+        <widget class="QLabel" name="nivEauCap4">
+         <property name="text">
+          <string>info</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>Niveau D'eau :</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="labelInfoCapteur">
+         <property name="text">
+          <string>Information Capteurs :</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QDialogButtonBox" name="buttonBox">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="standardButtons">
+        <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
  </widget>
  <resources/>
  <connections>
