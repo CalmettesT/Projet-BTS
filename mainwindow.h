@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 #include <QDebug>
 #include <QMainWindow>
+#include "qledlabel.h"
 
 namespace Ui {
 class MainWindow;
@@ -14,8 +15,10 @@ class MainWindow : public QMainWindow
 public:
 
     explicit MainWindow(QWidget *parent = 0);
-    void setDebit();
-    int getDebit();
+    //void setDebit();
+    //int getDebit();
+    //void setModeParc();
+    //QString getModeParc();
     ~MainWindow();
 
 private slots:
@@ -41,8 +44,10 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
-    int debit;
-    QString modeParc;
+    int debit2;
+    QString modeParc2;
+    QLedLabel pompe;
+
 };
 
 #endif // MAINWINDOW_H

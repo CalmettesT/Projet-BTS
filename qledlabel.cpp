@@ -1,9 +1,9 @@
 #include "qledlabel.h"
-
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-
 #include <QDebug>
+
+
 //Couleur de la pompe
 static const int SIZE = 20;
 static const QString greenSS = QString("color: white;border-radius: %1;background-color: qlineargradient(spread:pad, x1:0.145, y1:0.16, x2:1, y2:1, stop:0 rgba(20, 252, 7, 255), stop:1 rgba(25, 134, 5, 255));").arg(SIZE/2);
@@ -14,20 +14,24 @@ static const QString orangeSS = QString("color: white;border-radius: %1;backgrou
 QLedLabel::QLedLabel(QWidget *parent) :
     QLabel(parent)
 {
-    //TENTATIVE D'UTILISATION DU lineDebit
-    //MainWindow cool;
-    //debit = cool.getDebit();
+    //debit = debit.gestionDebit();
+    //modeParc = modeParc.gestionModeParc();
     setFixedSize(SIZE, SIZE);
     if (modeParc=="Gravitaire")
     {
-            setState(EtatOk);
+            setState(Arret);
+    }
+    else if (modeParc=="Circuit Fermé")
+    {
+        setState(Marche);
     }
     else
     {
-        if (debit>10)setState(EtatOk);
-            else if (debit>5 && debit<10) setState(EtatWarning);
-            else  setState(EtatError);
+        if (debit>=10)setState(Marche);
+            else if (debit>=5 && debit<10) setState(EtatWarning);
+            else  setState(Arret);
     }
+
 }
 
 void QLedLabel::setState(Etat state)
@@ -39,12 +43,12 @@ void QLedLabel::setState(Etat state)
             setStyleSheet(orangeSS);
 
         break;
-        case EtatError:
+        case Arret:
             qDebug() << "red" << state;
             setStyleSheet(redSS);
 
         break;
-        case EtatOk:
+        case Marche:
              qDebug() << "green" << state;
              setStyleSheet(greenSS);
         break;
@@ -56,7 +60,20 @@ void QLedLabel::setState(Etat state)
 
 void QLedLabel::setState(bool state)
 {
-    setState(state ? EtatOk : EtatError);
+    setState(state ? Marche : Arret);
+}
+
+int QLedLabel::gestionDebit(int debit3)
+{
+    debit=debit3;
+    qDebug()<<"charo"<<debit;
+    return debit;
+}
+
+QString QLedLabel::gestionModeParc(QString modeParc3)
+{
+    modeParc=modeParc3;
+    return modeParc;
 }
 
 

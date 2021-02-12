@@ -4,6 +4,9 @@
 #include "QMessageBox"
 #include "QString"
 
+
+
+
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
@@ -37,22 +40,22 @@ void MainWindow::on_BoutonVanne3_clicked()
 
 void MainWindow::on_BoutonVanne4_clicked()
 {
-    QMessageBox::about(this,"Vanne 4","Information Vanne 4 \n : \n Ouverutre Vanne : ");
+    QMessageBox::about(this,"Vanne 4","Information Vanne 4 : \n Ouverutre Vanne : \n");
 }
 
 void MainWindow::on_BoutonVanne5_clicked()
 {
-    QMessageBox::about(this,"Vanne 5","Information Vanne 5 : \n Ouverutre Vanne : ");
+    QMessageBox::about(this,"Vanne 5","Information Vanne 5 : \n Ouverutre Vanne : \n");
 }
 
 void MainWindow::on_BoutonVanne6_clicked()
 {
-    QMessageBox::about(this,"Vanne 6","Information Vanne 6 : \n Ouverutre Vanne : ");
+    QMessageBox::about(this,"Vanne 6","Information Vanne 6 : \n Ouverutre Vanne : \n");
 }
 
 void MainWindow::on_BoutonVanne7_clicked()
 {
-    QMessageBox::about(this,"Vanne 7","Information Vanne 7 : \n Ouverutre Vanne : ");
+    QMessageBox::about(this,"Vanne 7","Information Vanne 7 : \n Ouverutre Vanne : \n");
 }
 
 void MainWindow::on_Supervision_clicked()
@@ -64,23 +67,36 @@ void MainWindow::on_Supervision_clicked()
 
 void MainWindow::on_ValiderDebit_clicked()
 {
-    QString debit = ui->lineDebit->text();
-    qDebug() << "Debit :" << debit;
+    QString d= ui->lineDebit->text();
+    debit2 = d.toInt();
+    pompe.gestionDebit(debit2);
+    qDebug() << "Debit :" << debit2;
 }
 
 void MainWindow::on_validerMode_clicked()
 {
-    modeParc = ui->ModeParc->currentText();
-    qDebug()<<"Mode Parc :"<<modeParc;
+    modeParc2 = ui->ModeParc->currentText();
+    pompe.gestionModeParc(modeParc2);
+    qDebug()<<"Mode Parc :"<<modeParc2;
 }
 
-void MainWindow::setDebit()
-{
-    QString d= ui->lineDebit->text();
-    debit = d.toInt();
-}
+//void MainWindow::setDebit()
+//{
+//    QString d= ui->lineDebit->text();
+//    debit = d.toInt();
+//}
 
-int MainWindow::getDebit()
-{
-    return debit;
-}
+//int MainWindow::getDebit()
+//{
+//    return debit;
+//}
+
+//MainWindow::setModeParc()
+//{
+//    modeParc = ui->ModeParc->currentText();
+//}
+
+//QString MainWindow::getModeParc()
+//{
+//    return modeParc;
+//}

@@ -13,6 +13,9 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(212, 212, 212);</string>
+  </property>
   <widget class="QWidget" name="centralWidget">
    <layout class="QHBoxLayout" name="horizontalLayout">
     <item>
@@ -52,11 +55,28 @@ font: 75 8pt &quot;Arial&quot;;</string>
         <item>
          <widget class="QPushButton" name="ValiderDebit">
           <property name="styleSheet">
-           <string notr="true">border: none;
-border-radius: 3px;
-background-color: rgb(43, 43, 43);
-color: rgb(255, 255, 255);
-font: 75 10pt &quot;Arial&quot;;</string>
+           <string notr="true">QPushButton {
+	font: 75 10pt &quot;Arial&quot;;
+	color: rgb(255, 255, 255);
+         border: 2px solid #8f8f91;
+         border-radius: 3px;
+         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                           stop: 0 #181716, stop: 1 #3D3C3A);
+         min-width: 80px;
+     }
+
+     QPushButton:pressed {
+         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                           stop: 0 #3D3C3A, stop: 1 #181716);
+     }
+
+     QPushButton:flat {
+         border: none; /* no border for a flat push button */
+     }
+
+     QPushButton:default {
+         border-color: navy; /* make the default button prominent */
+     }</string>
           </property>
           <property name="text">
            <string>Valider</string>
@@ -103,11 +123,29 @@ font: 75 8pt &quot;Arial&quot;;</string>
         <item>
          <widget class="QPushButton" name="validerMode">
           <property name="styleSheet">
-           <string notr="true">border: none;
-border-radius: 3px;
-background-color: rgb(43, 43, 43);
-color: rgb(255, 255, 255);
-font: 75 10pt &quot;Arial&quot;;</string>
+           <string notr="true">QPushButton {
+	font: 75 10pt &quot;Arial&quot;;
+	color: rgb(255, 255, 255);
+         border: 2px solid #8f8f91;
+         border-radius: 3px;
+         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                           stop: 0 #181716, stop: 1 #3D3C3A);
+         min-width: 80px;
+     }
+
+     QPushButton:pressed {
+         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                           stop: 0 #3D3C3A, stop: 1 #181716);
+     }
+
+     QPushButton:flat {
+         border: none; /* no border for a flat push button */
+     }
+
+     QPushButton:default {
+         border-color: navy; /* make the default button prominent */
+     }
+</string>
           </property>
           <property name="text">
            <string>Valider</string>
@@ -121,35 +159,31 @@ font: 75 10pt &quot;Arial&quot;;</string>
         <property name="title">
          <string>Stade</string>
         </property>
-        <widget class="QLabel" name="imgParc">
-         <property name="geometry">
-          <rect>
-           <x>10</x>
-           <y>23</y>
-           <width>861</width>
-           <height>411</height>
-          </rect>
-         </property>
-         <property name="minimumSize">
-          <size>
-           <width>428</width>
-           <height>224</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font: 8pt &quot;MS Shell Dlg 2&quot;;
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="0" column="0">
+          <widget class="QLabel" name="imgParc">
+           <property name="minimumSize">
+            <size>
+             <width>428</width>
+             <height>224</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 8pt &quot;MS Shell Dlg 2&quot;;
 image: url(:/img/parc.jpg);</string>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-         <property name="scaledContents">
-          <bool>true</bool>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignJustify|Qt::AlignVCenter</set>
-         </property>
-        </widget>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignJustify|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
         <widget class="QPushButton" name="BoutonVanne2">
          <property name="geometry">
           <rect>
@@ -333,11 +367,29 @@ border-radius: 6px;</string>
            </sizepolicy>
           </property>
           <property name="styleSheet">
-           <string notr="true">border: none;
-background-color: rgb(43, 43, 43);
-color: rgb(255, 255, 255);
-border-radius: 7px;
-font: 75 12pt &quot;Arial&quot;;</string>
+           <string notr="true">QPushButton {
+	font: 75 12pt &quot;Arial&quot;;
+	color: rgb(255, 255, 255);
+         border: 2px solid #8f8f91;
+         border-radius: 6px;
+         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                           stop: 0 #181716, stop: 1 #3D3C3A);
+         min-width: 80px;
+     }
+
+     QPushButton:pressed {
+         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                           stop: 0 #3D3C3A, stop: 1 #181716);
+     }
+
+     QPushButton:flat {
+         border: none; /* no border for a flat push button */
+     }
+
+     QPushButton:default {
+         border-color: navy; /* make the default button prominent */
+     }
+</string>
           </property>
           <property name="text">
            <string>Camera</string>
@@ -369,11 +421,29 @@ font: 75 12pt &quot;Arial&quot;;</string>
            </sizepolicy>
           </property>
           <property name="styleSheet">
-           <string notr="true">border: none;
-font: 75 12pt &quot;Arial&quot;;
-background-color: rgb(43, 43, 43);
-color: rgb(255, 255, 255);
-border-radius: 7px;</string>
+           <string notr="true">QPushButton {
+	font: 75 12pt &quot;Arial&quot;;
+	color: rgb(255, 255, 255);
+         border: 2px solid #8f8f91;
+         border-radius: 6px;
+         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                           stop: 0 #181716, stop: 1 #3D3C3A);
+         min-width: 80px;
+     }
+
+     QPushButton:pressed {
+         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                           stop: 0 #3D3C3A, stop: 1 #181716);
+     }
+
+     QPushButton:flat {
+         border: none; /* no border for a flat push button */
+     }
+
+     QPushButton:default {
+         border-color: navy; /* make the default button prominent */
+     }
+</string>
           </property>
           <property name="text">
            <string>Supervision</string>
@@ -405,11 +475,29 @@ border-radius: 7px;</string>
            </sizepolicy>
           </property>
           <property name="styleSheet">
-           <string notr="true">border: none;
-background-color: rgb(43, 43, 43);
-color: rgb(255, 255, 255);
-border-radius: 7px;
-font: 75 12pt &quot;Arial&quot;;</string>
+           <string notr="true">QPushButton {
+	font: 75 12pt &quot;Arial&quot;;
+	color: rgb(255, 255, 255);
+         border: 2px solid #8f8f91;
+         border-radius: 6px;
+         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                           stop: 0 #181716, stop: 1 #3D3C3A);
+         min-width: 80px;
+     }
+
+     QPushButton:pressed {
+         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                           stop: 0 #3D3C3A, stop: 1 #181716);
+     }
+
+     QPushButton:flat {
+         border: none; /* no border for a flat push button */
+     }
+
+     QPushButton:default {
+         border-color: navy; /* make the default button prominent */
+     }
+</string>
           </property>
           <property name="text">
            <string>Agenda</string>

@@ -197,13 +197,13 @@ void Supervision::on_ArreterTapis_clicked()
     if(t=="Arreter Tapis")
     {
         ui->ArreterTapis->setText("Lancer Tapis");
-        ui->ArreterTapis->setStyleSheet("QPushButton { background-color: red; border: none; color: rgb(255, 255, 255);border-radius: 7px; font: 75 10pt 'Arial'; }");
+        ui->ArreterTapis->setStyleSheet("QPushButton { background-color: red; border: 2px solid #A52109; color: rgb(255, 255, 255);border-radius: 7px; font: 75 12pt 'Arial'; }");
         QMessageBox::about(this,"Etat Du Tapis","Le Tapis a été Arreté");
     }
     else
     {
         ui->ArreterTapis->setText("Arreter Tapis");
-        ui->ArreterTapis->setStyleSheet("QPushButton { background-color: green; border: none; color: rgb(255, 255, 255);border-radius: 7px;font: 75 10pt 'Arial';}");
+        ui->ArreterTapis->setStyleSheet("QPushButton { background-color: green; border: 2px solid #46BB1B; color: rgb(255, 255, 255);border-radius: 7px;font: 75 12pt 'Arial';}");
         QMessageBox::about(this,"Etat Du Tapis","Le Tapis a été Lancé");
     }
 
