@@ -15,10 +15,8 @@ class MainWindow : public QMainWindow
 public:
 
     explicit MainWindow(QWidget *parent = 0);
-    //void setDebit();
-    //int getDebit();
-    //void setModeParc();
-    //QString getModeParc();
+    int recupDebit(int debit2);
+    QString recupModeParc(QString modeParc2);
     ~MainWindow();
 
 private slots:

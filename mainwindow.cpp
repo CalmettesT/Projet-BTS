@@ -14,7 +14,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
     ui->ModeParc->addItem("Gravitaire");
     ui->ModeParc->addItem("Mixte");
-    ui->ModeParc->addItem("Circuit Fermé");
+    ui->ModeParc->addItem("Circuit Ferme");
 }
 
 MainWindow::~MainWindow()
@@ -69,34 +69,52 @@ void MainWindow::on_ValiderDebit_clicked()
 {
     QString d= ui->lineDebit->text();
     debit2 = d.toInt();
-    pompe.gestionDebit(debit2);
+    pompe.setDebit(debit2);
     qDebug() << "Debit :" << debit2;
 }
 
 void MainWindow::on_validerMode_clicked()
 {
     modeParc2 = ui->ModeParc->currentText();
-    pompe.gestionModeParc(modeParc2);
+    pompe.setModeParc(modeParc2);
     qDebug()<<"Mode Parc :"<<modeParc2;
 }
+
+
+
+int MainWindow::recupDebit(int debit2)
+{
+    QString d= ui->lineDebit->text();
+    debit2 = d.toInt();
+    return debit2;
+}
+
+QString MainWindow::recupModeParc(QString modeParc2)
+{
+    modeParc2 = ui->ModeParc->currentText();
+    return modeParc2;
+}
+
+
+
 
 //void MainWindow::setDebit()
 //{
 //    QString d= ui->lineDebit->text();
-//    debit = d.toInt();
+//    debit2 = d.toInt();
 //}
 
 //int MainWindow::getDebit()
 //{
-//    return debit;
+//    return debit2;
 //}
 
-//MainWindow::setModeParc()
+//void MainWindow::setModeParc()
 //{
-//    modeParc = ui->ModeParc->currentText();
+//    modeParc2 = ui->ModeParc->currentText();
 //}
 
 //QString MainWindow::getModeParc()
 //{
-//    return modeParc;
+//    return modeParc2;
 //}

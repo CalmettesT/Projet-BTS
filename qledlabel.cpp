@@ -10,18 +10,41 @@ static const QString greenSS = QString("color: white;border-radius: %1;backgroun
 static const QString redSS = QString("color: white;border-radius: %1;background-color: qlineargradient(spread:pad, x1:0.145, y1:0.16, x2:0.92, y2:0.988636, stop:0 rgba(255, 12, 12, 255), stop:0.869347 rgba(103, 0, 0, 255));").arg(SIZE/2);
 static const QString orangeSS = QString("color: white;border-radius: %1;background-color: qlineargradient(spread:pad, x1:0.232, y1:0.272, x2:0.98, y2:0.959773, stop:0 rgba(255, 113, 4, 255), stop:1 rgba(91, 41, 7, 255))").arg(SIZE/2);
 
+void QLedLabel::setDebit(int debit3)
+{
+    debit=debit3;
+    qDebug()<<"charo"<<debit;
+}
+
+int QLedLabel::getDebit()
+{
+    qDebug()<<"GET charo"<<debit;
+    return debit;
+}
+
+void QLedLabel::setModeParc(QString modeParc3)
+{
+    modeParc=modeParc3;
+
+}
+
+QString QLedLabel::getModeParc()
+{
+    return modeParc;
+}
+
 
 QLedLabel::QLedLabel(QWidget *parent) :
     QLabel(parent)
 {
-    //debit = debit.gestionDebit();
-    //modeParc = modeParc.gestionModeParc();
+    debit = getDebit();
+    modeParc = getModeParc();
     setFixedSize(SIZE, SIZE);
     if (modeParc=="Gravitaire")
     {
             setState(Arret);
     }
-    else if (modeParc=="Circuit Fermé")
+    else if (modeParc=="Circuit Ferme")
     {
         setState(Marche);
     }
@@ -63,17 +86,18 @@ void QLedLabel::setState(bool state)
     setState(state ? Marche : Arret);
 }
 
-int QLedLabel::gestionDebit(int debit3)
-{
-    debit=debit3;
-    qDebug()<<"charo"<<debit;
-    return debit;
-}
+//int QLedLabel::gestionDebit(int debit3)
+//{
+//    debit=debit3;
+//    qDebug()<<"charo"<<debit;
+//    return debit;
+//}
 
-QString QLedLabel::gestionModeParc(QString modeParc3)
-{
-    modeParc=modeParc3;
-    return modeParc;
-}
+//QString QLedLabel::gestionModeParc(QString modeParc3)
+//{
+//    modeParc=modeParc3;
+//    return modeParc;
+//}
+
 
 

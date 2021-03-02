@@ -17,8 +17,8 @@
    <string notr="true">background-color: rgb(212, 212, 212);</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <layout class="QHBoxLayout" name="horizontalLayout">
-    <item>
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
      <layout class="QVBoxLayout" name="verticalLayout" stretch="0,7,1">
       <property name="spacing">
        <number>0</number>
@@ -30,7 +30,7 @@
        <number>0</number>
       </property>
       <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="0,1,1,1,1,1,1">
+       <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="0,1,0,1,1,1,0">
         <item>
          <widget class="QLabel" name="Debit">
           <property name="styleSheet">
@@ -54,6 +54,12 @@ font: 75 8pt &quot;Arial&quot;;</string>
         </item>
         <item>
          <widget class="QPushButton" name="ValiderDebit">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
           <property name="styleSheet">
            <string notr="true">QPushButton {
 	font: 75 10pt &quot;Arial&quot;;
@@ -122,6 +128,12 @@ font: 75 8pt &quot;Arial&quot;;</string>
         </item>
         <item>
          <widget class="QPushButton" name="validerMode">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
           <property name="styleSheet">
            <string notr="true">QPushButton {
 	font: 75 10pt &quot;Arial&quot;;

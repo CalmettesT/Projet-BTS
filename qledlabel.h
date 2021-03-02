@@ -12,8 +12,12 @@ public:
     explicit QLedLabel(QWidget *parent = 0);
 
     enum Etat{Marche,EtatWarning,Arret};
-    int gestionDebit(int debit3);
-    QString gestionModeParc(QString modeParc3);
+    //int gestionDebit(int debit3);
+    //QString gestionModeParc(QString modeParc3);
+    void setDebit(int debit3);
+    int getDebit();
+    void setModeParc(QString modeParc3);
+    QString getModeParc();
 
 
 
