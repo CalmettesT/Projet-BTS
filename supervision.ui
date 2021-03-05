@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>796</width>
-    <height>445</height>
+    <width>840</width>
+    <height>601</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -18,7 +18,7 @@
   </property>
   <layout class="QHBoxLayout" name="horizontalLayout_2">
    <item>
-    <layout class="QVBoxLayout" name="verticalLayout" stretch="0,1,0,3,3,2">
+    <layout class="QVBoxLayout" name="verticalLayout" stretch="0,1,0,2,2,2,0">
      <item>
       <widget class="QLabel" name="Titre">
        <property name="styleSheet">
@@ -35,7 +35,7 @@ font: 75 18pt &quot;Arial&quot;;</string>
        <item>
         <widget class="QPushButton" name="BoutonVannes">
          <property name="sizePolicy">
-          <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
            <horstretch>0</horstretch>
            <verstretch>0</verstretch>
           </sizepolicy>
@@ -86,7 +86,7 @@ font: 75 18pt &quot;Arial&quot;;</string>
        <item>
         <widget class="QPushButton" name="BoutonPompes">
          <property name="sizePolicy">
-          <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
            <horstretch>0</horstretch>
            <verstretch>0</verstretch>
           </sizepolicy>
@@ -137,7 +137,7 @@ font: 75 18pt &quot;Arial&quot;;</string>
        <item>
         <widget class="QPushButton" name="ArreterTapis">
          <property name="sizePolicy">
-          <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
            <horstretch>0</horstretch>
            <verstretch>0</verstretch>
           </sizepolicy>
@@ -170,7 +170,7 @@ font: 75 12pt &quot;Arial&quot;;</string>
        <item>
         <widget class="QPushButton" name="BoutonCapteur">
          <property name="sizePolicy">
-          <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
            <horstretch>0</horstretch>
            <verstretch>0</verstretch>
           </sizepolicy>
@@ -208,11 +208,27 @@ font: 75 12pt &quot;Arial&quot;;</string>
       </layout>
      </item>
      <item>
+      <spacer name="verticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::MinimumExpanding</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
       <layout class="QGridLayout" name="gridModifVannes" rowstretch="0,0,0,0" columnstretch="0,0,0,0,0,0,0,0">
        <item row="3" column="4">
         <widget class="QPushButton" name="boutonModifVanne4">
          <property name="sizePolicy">
-          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
            <horstretch>0</horstretch>
            <verstretch>0</verstretch>
           </sizepolicy>
@@ -249,7 +265,7 @@ font: 75 12pt &quot;Arial&quot;;</string>
        <item row="3" column="3">
         <widget class="QPushButton" name="boutonModifVanne3">
          <property name="sizePolicy">
-          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
            <horstretch>0</horstretch>
            <verstretch>0</verstretch>
           </sizepolicy>
@@ -286,7 +302,7 @@ font: 75 12pt &quot;Arial&quot;;</string>
        <item row="3" column="2">
         <widget class="QPushButton" name="boutonModifVanne2">
          <property name="sizePolicy">
-          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
            <horstretch>0</horstretch>
            <verstretch>0</verstretch>
           </sizepolicy>
@@ -323,7 +339,7 @@ font: 75 12pt &quot;Arial&quot;;</string>
        <item row="3" column="1">
         <widget class="QPushButton" name="boutonModifValeurVanne1">
          <property name="sizePolicy">
-          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
            <horstretch>0</horstretch>
            <verstretch>0</verstretch>
           </sizepolicy>
@@ -360,16 +376,26 @@ font: 75 12pt &quot;Arial&quot;;</string>
        <item row="1" column="4">
         <widget class="QLineEdit" name="EditVanne4">
          <property name="styleSheet">
-          <string notr="true">background-color: rgb(173, 172, 175);
-</string>
+          <string notr="true">QLineEdit 
+{
+     border: 1px solid black;
+     border-radius: 3px;
+	background-color: rgb(100,100, 100);
+     selection-background-color: black;
+ }</string>
          </property>
         </widget>
        </item>
        <item row="1" column="2">
         <widget class="QLineEdit" name="EditVanne2">
          <property name="styleSheet">
-          <string notr="true">background-color: rgb(173, 172, 175);
-</string>
+          <string notr="true">QLineEdit 
+{
+     border: 1px solid black;
+     border-radius: 3px;
+	background-color: rgb(100,100, 100);
+     selection-background-color: black;
+ }</string>
          </property>
         </widget>
        </item>
@@ -382,16 +408,26 @@ font: 75 12pt &quot;Arial&quot;;</string>
           </sizepolicy>
          </property>
          <property name="styleSheet">
-          <string notr="true">background-color: rgb(173, 172, 175);
-</string>
+          <string notr="true">QLineEdit 
+{
+     border: 1px solid black;
+     border-radius: 3px;
+	background-color: rgb(100,100, 100);
+     selection-background-color: black;
+ }</string>
          </property>
         </widget>
        </item>
        <item row="1" column="7">
         <widget class="QLineEdit" name="EditVanne7">
          <property name="styleSheet">
-          <string notr="true">background-color: rgb(173, 172, 175);
-</string>
+          <string notr="true">QLineEdit 
+{
+     border: 1px solid black;
+     border-radius: 3px;
+	background-color: rgb(100,100, 100);
+     selection-background-color: black;
+ }</string>
          </property>
         </widget>
        </item>
@@ -458,8 +494,13 @@ font: 75 12pt &quot;Arial&quot;;</string>
        <item row="1" column="5">
         <widget class="QLineEdit" name="EditVanne5">
          <property name="styleSheet">
-          <string notr="true">background-color: rgb(173, 172, 175);
-</string>
+          <string notr="true">QLineEdit 
+{
+     border: 1px solid black;
+     border-radius: 3px;
+	background-color: rgb(100,100, 100);
+     selection-background-color: black;
+ }</string>
          </property>
         </widget>
        </item>
@@ -476,15 +517,20 @@ font: 75 12pt &quot;Arial&quot;;</string>
        <item row="1" column="6">
         <widget class="QLineEdit" name="EditVanne6">
          <property name="styleSheet">
-          <string notr="true">background-color: rgb(173, 172, 175);
-</string>
+          <string notr="true">QLineEdit 
+{
+     border: 1px solid black;
+     border-radius: 3px;
+	background-color: rgb(100,100, 100);
+     selection-background-color: black;
+ }</string>
          </property>
         </widget>
        </item>
        <item row="3" column="5">
         <widget class="QPushButton" name="boutonModifVanne5">
          <property name="sizePolicy">
-          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
            <horstretch>0</horstretch>
            <verstretch>0</verstretch>
           </sizepolicy>
@@ -521,7 +567,7 @@ font: 75 12pt &quot;Arial&quot;;</string>
        <item row="3" column="6">
         <widget class="QPushButton" name="boutonModifVanne6">
          <property name="sizePolicy">
-          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
            <horstretch>0</horstretch>
            <verstretch>0</verstretch>
           </sizepolicy>
@@ -568,7 +614,7 @@ font: 75 12pt &quot;Arial&quot;;</string>
        <item row="3" column="7">
         <widget class="QPushButton" name="boutonModifVanne7">
          <property name="sizePolicy">
-          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
            <horstretch>0</horstretch>
            <verstretch>0</verstretch>
           </sizepolicy>
@@ -615,8 +661,13 @@ font: 75 12pt &quot;Arial&quot;;</string>
        <item row="1" column="3">
         <widget class="QLineEdit" name="EditVanne3">
          <property name="styleSheet">
-          <string notr="true">background-color: rgb(173, 172, 175);
-</string>
+          <string notr="true">QLineEdit 
+{
+     border: 1px solid black;
+     border-radius: 3px;
+	background-color: rgb(100,100, 100);
+     selection-background-color: black;
+ }</string>
          </property>
         </widget>
        </item>
@@ -630,7 +681,7 @@ font: 75 12pt &quot;Arial&quot;;</string>
       </layout>
      </item>
      <item>
-      <layout class="QGridLayout" name="gridModifPompes">
+      <layout class="QGridLayout" name="gridModifPompes" rowstretch="0,0,0,1,1" rowminimumheight="0,0,0,1,1">
        <item row="0" column="0">
         <widget class="QLabel" name="videP">
          <property name="text">
@@ -695,14 +746,6 @@ font: 75 12pt &quot;Arial&quot;;</string>
          </property>
         </widget>
        </item>
-       <item row="2" column="3">
-        <widget class="QLineEdit" name="infoPompe3">
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(173, 172, 175);
-</string>
-         </property>
-        </widget>
-       </item>
        <item row="2" column="0">
         <widget class="QLabel" name="labelInfoPompe">
          <property name="styleSheet">
@@ -716,8 +759,13 @@ font: 75 12pt &quot;Arial&quot;;</string>
        <item row="1" column="3">
         <widget class="QLineEdit" name="Etatpompe3">
          <property name="styleSheet">
-          <string notr="true">background-color: rgb(173, 172, 175);
-</string>
+          <string notr="true">QLineEdit 
+{
+     border: 1px solid black;
+     border-radius: 3px;
+	background-color: rgb(100,100, 100);
+     selection-background-color: black;
+ }</string>
          </property>
         </widget>
        </item>
@@ -805,35 +853,29 @@ font: 75 12pt &quot;Arial&quot;;</string>
          </property>
         </widget>
        </item>
-       <item row="2" column="2">
-        <widget class="QLineEdit" name="infoPompe2">
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(173, 172, 175);
-</string>
-         </property>
-        </widget>
-       </item>
        <item row="1" column="2">
         <widget class="QLineEdit" name="Etatpompe2">
          <property name="styleSheet">
-          <string notr="true">background-color: rgb(173, 172, 175);
-</string>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="1">
-        <widget class="QLineEdit" name="infoPompe1">
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(173, 172, 175);
-</string>
+          <string notr="true">QLineEdit 
+{
+     border: 1px solid black;
+     border-radius: 3px;
+	background-color: rgb(100,100, 100);
+     selection-background-color: black;
+ }</string>
          </property>
         </widget>
        </item>
        <item row="1" column="1">
         <widget class="QLineEdit" name="Etatpompe1">
          <property name="styleSheet">
-          <string notr="true">background-color: rgb(173, 172, 175);
-</string>
+          <string notr="true">QLineEdit 
+{
+     border: 1px solid black;
+     border-radius: 3px;
+	background-color: rgb(100,100, 100);
+     selection-background-color: black;
+ }</string>
          </property>
         </widget>
        </item>
@@ -958,27 +1000,131 @@ font: 75 12pt &quot;Arial&quot;;</string>
          </property>
         </widget>
        </item>
-      </layout>
-     </item>
-     <item>
-      <layout class="QGridLayout" name="gridCapteur">
-       <item row="0" column="5">
-        <widget class="QLabel" name="labelCapteur5">
-         <property name="styleSheet">
-          <string notr="true">color: rgb(0, 0, 0);</string>
+       <item row="2" column="1">
+        <widget class="QPlainTextEdit" name="infoPompe1">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
          </property>
-         <property name="text">
-          <string>Capteur 5</string>
+         <property name="styleSheet">
+          <string notr="true">QPlainTextEdit
+{
+     border: 1px solid black;
+     border-radius: 3px;
+	background-color: rgb(100,100, 100);
+     selection-background-color: black;
+ }</string>
          </property>
         </widget>
        </item>
-       <item row="0" column="2">
-        <widget class="QLabel" name="labelCapteur2">
+       <item row="2" column="2">
+        <widget class="QPlainTextEdit" name="infoPompe2">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPlainTextEdit
+{
+     border: 1px solid black;
+     border-radius: 3px;
+	background-color: rgb(100,100, 100);
+     selection-background-color: black;
+ }</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="3">
+        <widget class="QPlainTextEdit" name="infoPompe3">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPlainTextEdit
+{
+     border: 1px solid black;
+     border-radius: 3px;
+	background-color: rgb(100,100, 100);
+     selection-background-color: black;
+ }</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QGridLayout" name="gridCapteur" rowstretch="0,0">
+       <item row="0" column="0">
+        <widget class="QLabel" name="labelInfoCapteur">
          <property name="styleSheet">
           <string notr="true">color: rgb(0, 0, 0);</string>
          </property>
          <property name="text">
-          <string>Capteur 2</string>
+          <string>Information Capteurs :</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QPlainTextEdit" name="nivEauCap2">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPlainTextEdit
+{
+     border: 1px solid black;
+     border-radius: 3px;
+	background-color: rgb(100,100, 100);
+     selection-background-color: black;
+ }</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="6">
+        <widget class="QPlainTextEdit" name="nivEauCap6">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPlainTextEdit
+{
+     border: 1px solid black;
+     border-radius: 3px;
+	background-color: rgb(100,100, 100);
+     selection-background-color: black;
+ }</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="QPlainTextEdit" name="nivEauCap3">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPlainTextEdit
+{
+     border: 1px solid black;
+     border-radius: 3px;
+	background-color: rgb(100,100, 100);
+     selection-background-color: black;
+ }</string>
          </property>
         </widget>
        </item>
@@ -992,23 +1138,51 @@ font: 75 12pt &quot;Arial&quot;;</string>
          </property>
         </widget>
        </item>
-       <item row="0" column="6">
-        <widget class="QLabel" name="labelCapteur6">
-         <property name="styleSheet">
-          <string notr="true">color: rgb(0, 0, 0);</string>
+       <item row="1" column="5">
+        <widget class="QPlainTextEdit" name="nivEauCap5">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
          </property>
-         <property name="text">
-          <string>Capteur 6</string>
+         <property name="styleSheet">
+          <string notr="true">QPlainTextEdit
+{
+     border: 1px solid black;
+     border-radius: 3px;
+	background-color: rgb(100,100, 100);
+     selection-background-color: black;
+ }</string>
          </property>
         </widget>
        </item>
-       <item row="0" column="3">
-        <widget class="QLabel" name="labelCapteur3">
+       <item row="1" column="4">
+        <widget class="QPlainTextEdit" name="nivEauCap4">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPlainTextEdit
+{
+     border: 1px solid black;
+     border-radius: 3px;
+	background-color: rgb(100,100, 100);
+     selection-background-color: black;
+ }</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="5">
+        <widget class="QLabel" name="labelCapteur5">
          <property name="styleSheet">
           <string notr="true">color: rgb(0, 0, 0);</string>
          </property>
          <property name="text">
-          <string>Capteur 3</string>
+          <string>Capteur 5</string>
          </property>
         </widget>
        </item>
@@ -1022,66 +1196,6 @@ font: 75 12pt &quot;Arial&quot;;</string>
          </property>
         </widget>
        </item>
-       <item row="1" column="2">
-        <widget class="QLabel" name="nivEauCap2">
-         <property name="styleSheet">
-          <string notr="true">color: rgb(0, 0, 0);</string>
-         </property>
-         <property name="text">
-          <string>info</string>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="1">
-        <widget class="QLabel" name="nivEauCap1">
-         <property name="styleSheet">
-          <string notr="true">color: rgb(0, 0, 0);</string>
-         </property>
-         <property name="text">
-          <string>info</string>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="5">
-        <widget class="QLabel" name="nivEauCap5">
-         <property name="styleSheet">
-          <string notr="true">color: rgb(0, 0, 0);</string>
-         </property>
-         <property name="text">
-          <string>info</string>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="3">
-        <widget class="QLabel" name="nivEauCap3">
-         <property name="styleSheet">
-          <string notr="true">color: rgb(0, 0, 0);</string>
-         </property>
-         <property name="text">
-          <string>info</string>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="6">
-        <widget class="QLabel" name="nivEauCap6">
-         <property name="styleSheet">
-          <string notr="true">color: rgb(0, 0, 0);</string>
-         </property>
-         <property name="text">
-          <string>info</string>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="4">
-        <widget class="QLabel" name="nivEauCap4">
-         <property name="styleSheet">
-          <string notr="true">color: rgb(0, 0, 0);</string>
-         </property>
-         <property name="text">
-          <string>info</string>
-         </property>
-        </widget>
-       </item>
        <item row="1" column="0">
         <widget class="QLabel" name="label">
          <property name="styleSheet">
@@ -1092,13 +1206,52 @@ font: 75 12pt &quot;Arial&quot;;</string>
          </property>
         </widget>
        </item>
-       <item row="0" column="0">
-        <widget class="QLabel" name="labelInfoCapteur">
+       <item row="0" column="3">
+        <widget class="QLabel" name="labelCapteur3">
          <property name="styleSheet">
           <string notr="true">color: rgb(0, 0, 0);</string>
          </property>
          <property name="text">
-          <string>Information Capteurs :</string>
+          <string>Capteur 3</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QLabel" name="labelCapteur2">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(0, 0, 0);</string>
+         </property>
+         <property name="text">
+          <string>Capteur 2</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="6">
+        <widget class="QLabel" name="labelCapteur6">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(0, 0, 0);</string>
+         </property>
+         <property name="text">
+          <string>Capteur 6</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QPlainTextEdit" name="nivEauCap1">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPlainTextEdit
+{
+     border: 1px solid black;
+     border-radius: 3px;
+	background-color: rgb(100,100, 100);
+     selection-background-color: black;
+ }</string>
          </property>
         </widget>
        </item>
@@ -1151,8 +1304,8 @@ font: 75 12pt &quot;Arial&quot;;</string>
    <slot>accept()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>248</x>
-     <y>254</y>
+     <x>258</x>
+     <y>590</y>
     </hint>
     <hint type="destinationlabel">
      <x>157</x>
@@ -1167,8 +1320,8 @@ font: 75 12pt &quot;Arial&quot;;</string>
    <slot>reject()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>316</x>
-     <y>260</y>
+     <x>326</x>
+     <y>590</y>
     </hint>
     <hint type="destinationlabel">
      <x>286</x>

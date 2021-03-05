@@ -6,6 +6,13 @@ Supervision::Supervision(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::Supervision)
 {
+    infoVanne1 = "cc";
+    infoVanne2 = "ca va";
+    infoVanne3 = "bien";
+    infoVanne4 = "et";
+    infoVanne5 = "toi";
+    infoVanne6 = "oui";
+    infoVanne7 = "moi aussi";
     ui->setupUi(this);
     ui->ArretPompe1->hide();
     ui->ArretPompe2->hide();
@@ -62,6 +69,16 @@ Supervision::Supervision(QWidget *parent) :
     ui->labelCapteur5->hide();
     ui->labelCapteur6->hide();
     ui->labelInfoCapteur->hide();
+    ui->EditVanne1->setText(infoVanne1);
+    ui->EditVanne2->setText(infoVanne2);
+    ui->EditVanne3->setText(infoVanne3);
+    ui->EditVanne4->setText(infoVanne4);
+    ui->EditVanne5->setText(infoVanne5);
+    ui->EditVanne6->setText(infoVanne6);
+    ui->EditVanne7->setText(infoVanne7);
+    ui->Etatpompe1->setText(etatP1);
+    ui->Etatpompe2->setText(etatP2);
+    ui->Etatpompe3->setText(etatP3);
 }
 
 Supervision::~Supervision()
@@ -198,13 +215,13 @@ void Supervision::on_ArreterTapis_clicked()
     {
         ui->ArreterTapis->setText("Lancer Tapis");
         ui->ArreterTapis->setStyleSheet("QPushButton { background-color: red; border: 2px solid #A52109; color: rgb(255, 255, 255);border-radius: 7px; font: 75 12pt 'Arial'; }");
-        QMessageBox::about(this,"Etat Du Tapis","Le Tapis a été Arreté");
+        QMessageBox::about(this,"Etat Du Tapis","Le Tapis a ete Arrete");
     }
     else
     {
         ui->ArreterTapis->setText("Arreter Tapis");
         ui->ArreterTapis->setStyleSheet("QPushButton { background-color: green; border: 2px solid #46BB1B; color: rgb(255, 255, 255);border-radius: 7px;font: 75 12pt 'Arial';}");
-        QMessageBox::about(this,"Etat Du Tapis","Le Tapis a été Lancé");
+        QMessageBox::about(this,"Etat Du Tapis","Le Tapis a ete Lance");
     }
 
 }
@@ -269,8 +286,96 @@ void Supervision::on_BoutonCapteur_clicked()
     ui->labelInfoCapteur->show();
 }
 
-void Supervision::on_modifValeurVanne1_clicked()
+
+void Supervision::on_boutonModifValeurVanne1_clicked()
 {
-    QString valVanne1 = ui->EditVanne1->text();
-    qDebug() << "Info vanne 1 :" << valVanne1;
+
+    infoVanne1 = ui->EditVanne1->text();
+    ui->EditVanne1->setText(infoVanne1);
+    qDebug() << "modif V1 marche : " << infoVanne1;
 }
+
+void Supervision::on_boutonModifVanne2_clicked()
+{
+    infoVanne2 = ui->EditVanne2->text();
+    ui->EditVanne2->setText(infoVanne2);
+    qDebug() << "modif V2 marche : " << infoVanne2;
+}
+
+void Supervision::on_boutonModifVanne3_clicked()
+{
+    infoVanne3 = ui->EditVanne3->text();
+    ui->EditVanne3->setText(infoVanne3);
+    qDebug() << "modif V3 marche : " << infoVanne3;
+}
+
+void Supervision::on_boutonModifVanne4_clicked()
+{
+    infoVanne4 = ui->EditVanne4->text();
+    ui->EditVanne4->setText(infoVanne4);
+    qDebug() << "modif V4 marche : " << infoVanne4;
+}
+
+void Supervision::on_boutonModifVanne5_clicked()
+{
+    infoVanne5 = ui->EditVanne5->text();
+    ui->EditVanne5->setText(infoVanne5);
+    qDebug() << "modif V5 marche : " << infoVanne5;
+}
+
+void Supervision::on_boutonModifVanne6_clicked()
+{
+    infoVanne6 = ui->EditVanne6->text();
+    ui->EditVanne6->setText(infoVanne6);
+    qDebug() << "modif V6 marche : " << infoVanne6;
+}
+
+void Supervision::on_boutonModifVanne7_clicked()
+{
+    infoVanne7 = ui->EditVanne7->text();
+    ui->EditVanne7->setText(infoVanne7);
+    qDebug() << "modif V7 marche : " << infoVanne7;
+}
+
+void Supervision::on_MarchePompe1_clicked()
+{
+    etatP1 = "Pompe 1 en marche";
+    ui->Etatpompe1->setText(etatP1);
+
+}
+
+void Supervision::on_MarchePompe2_clicked()
+{
+    etatP2 = "Pompe 2 en marche";
+    ui->Etatpompe2->setText(etatP2);
+}
+
+void Supervision::on_MarchePompe3_clicked()
+{
+    etatP3 = "Pompe 3 en marche";
+    ui->Etatpompe3->setText(etatP3);
+}
+
+void Supervision::on_ArretPompe1_clicked()
+{
+    etatP1 = "Pompe 1 arrete";
+    ui->Etatpompe1->setText(etatP1);
+}
+
+void Supervision::on_ArretPompe2_clicked()
+{
+    etatP2 = "Pompe 2 arrete";
+    ui->Etatpompe2->setText(etatP2);
+}
+
+void Supervision::on_ArretPompe3_clicked()
+{
+    etatP3 = "Pompe 3 arrete";
+    ui->Etatpompe3->setText(etatP3);
+}
+
+//QString Supervision::getEtatPompe()
+//{
+//    ui->Etatpompe1->text();
+//    return etatP1;
+//}

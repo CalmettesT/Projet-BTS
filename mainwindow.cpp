@@ -1,6 +1,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include "supervision.h"
+#include "qledlabel.h"
 #include "QMessageBox"
 #include "QString"
 
@@ -15,6 +15,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->ModeParc->addItem("Gravitaire");
     ui->ModeParc->addItem("Mixte");
     ui->ModeParc->addItem("Circuit Ferme");
+    connect(ui->camera,SIGNAL(clicked()),ui->agenda,SLOT(animateClick()));
 }
 
 MainWindow::~MainWindow()
@@ -69,7 +70,8 @@ void MainWindow::on_ValiderDebit_clicked()
 {
     QString d= ui->lineDebit->text();
     debit2 = d.toInt();
-    pompe.setDebit(debit2);
+    pompe.setDebit2(debit2);
+    pompe.couleurPompe();
     qDebug() << "Debit :" << debit2;
 }
 
@@ -77,16 +79,14 @@ void MainWindow::on_validerMode_clicked()
 {
     modeParc2 = ui->ModeParc->currentText();
     pompe.setModeParc(modeParc2);
+    pompe.couleurPompe();
     qDebug()<<"Mode Parc :"<<modeParc2;
 }
 
-
-
-int MainWindow::recupDebit(int debit2)
+void MainWindow::setDebit1(int debit2)
 {
     QString d= ui->lineDebit->text();
     debit2 = d.toInt();
-    return debit2;
 }
 
 QString MainWindow::recupModeParc(QString modeParc2)
@@ -96,18 +96,6 @@ QString MainWindow::recupModeParc(QString modeParc2)
 }
 
 
-
-
-//void MainWindow::setDebit()
-//{
-//    QString d= ui->lineDebit->text();
-//    debit2 = d.toInt();
-//}
-
-//int MainWindow::getDebit()
-//{
-//    return debit2;
-//}
 
 //void MainWindow::setModeParc()
 //{

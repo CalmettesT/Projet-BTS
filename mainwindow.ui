@@ -19,7 +19,7 @@
   <widget class="QWidget" name="centralWidget">
    <layout class="QGridLayout" name="gridLayout_2">
     <item row="0" column="0">
-     <layout class="QVBoxLayout" name="verticalLayout" stretch="0,6,1">
+     <layout class="QVBoxLayout" name="verticalLayout" stretch="0,14,2">
       <property name="spacing">
        <number>0</number>
       </property>
@@ -30,7 +30,7 @@
        <number>0</number>
       </property>
       <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="0,1,0,1,0,0,1,0">
+       <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="0,2,0,0,1,1,2,0,0">
         <item>
          <widget class="QLabel" name="Debit">
           <property name="styleSheet">
@@ -43,22 +43,40 @@
         </item>
         <item>
          <widget class="QLineEdit" name="lineDebit">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
           <property name="styleSheet">
            <string notr="true">QLineEdit 
 {
-     border: 1px solid gray;
+     border: 1px solid black;
      border-radius: 4px;
-     padding: 0 8px;
-     background: black;
-     selection-background-color: darkgray;
+	background-color: rgb(100,100, 100);
+     selection-background-color: black;
  }</string>
           </property>
          </widget>
         </item>
         <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>10</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
          <widget class="QPushButton" name="ValiderDebit">
           <property name="sizePolicy">
-           <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+           <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
             <horstretch>0</horstretch>
             <verstretch>0</verstretch>
            </sizepolicy>
@@ -106,37 +124,6 @@
          </spacer>
         </item>
         <item>
-         <widget class="QPushButton" name="pushButton">
-          <property name="styleSheet">
-           <string notr="true">QPushButton {
-	font: 75 10pt &quot;Arial&quot;;
-	color: rgb(255, 255, 255);
-         border: 1px solid #8f8f91;
-         border-radius: 3px;
-         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
-                                           stop: 0 #181716, stop: 1 #3D3C3A);
-         min-width: 80px;
-     }
-
-     QPushButton:pressed {
-         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
-                                           stop: 0 #3D3C3A, stop: 1 #181716);
-     }
-
-     QPushButton:flat {
-         border: none; /* no border for a flat push button */
-     }
-
-     QPushButton:default {
-         border-color: navy; /* make the default button prominent */
-     }</string>
-          </property>
-          <property name="text">
-           <string>Maxime</string>
-          </property>
-         </widget>
-        </item>
-        <item>
          <spacer name="horizontalSpacer_7">
           <property name="orientation">
            <enum>Qt::Horizontal</enum>
@@ -151,6 +138,12 @@
         </item>
         <item>
          <widget class="QComboBox" name="ModeParc">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
           <property name="styleSheet">
            <string notr="true">QComboBox 
 {
@@ -207,9 +200,22 @@
          </widget>
         </item>
         <item>
+         <spacer name="horizontalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>10</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
          <widget class="QPushButton" name="validerMode">
           <property name="sizePolicy">
-           <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
             <horstretch>0</horstretch>
             <verstretch>0</verstretch>
            </sizepolicy>
@@ -479,6 +485,7 @@ border-radius: 6px;</string>
           <string>  P1</string>
          </property>
         </widget>
+        <zorder>BoutonVanne1</zorder>
         <zorder>imgParc</zorder>
         <zorder>BoutonVanne6</zorder>
         <zorder>BoutonVanne4</zorder>

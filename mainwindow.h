@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 #include <QDebug>
 #include <QMainWindow>
+#include "supervision.h"
 #include "qledlabel.h"
 
 namespace Ui {
@@ -15,7 +16,8 @@ class MainWindow : public QMainWindow
 public:
 
     explicit MainWindow(QWidget *parent = 0);
-    int recupDebit(int debit2);
+    void setDebit1(int debit2);
+    int getDebit();
     QString recupModeParc(QString modeParc2);
     ~MainWindow();
 

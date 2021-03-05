@@ -15,6 +15,7 @@ class Supervision : public QDialog
 public:
     explicit Supervision(QWidget *parent = 0);
     ~Supervision();
+    QString getEtatPompe();
     
 private slots:
 
@@ -26,10 +27,44 @@ private slots:
 
     void on_BoutonCapteur_clicked();
 
-    void on_modifValeurVanne1_clicked();
+    void on_boutonModifValeurVanne1_clicked();
+
+    void on_boutonModifVanne2_clicked();
+
+    void on_boutonModifVanne3_clicked();
+
+    void on_boutonModifVanne4_clicked();
+
+    void on_boutonModifVanne5_clicked();
+
+    void on_boutonModifVanne6_clicked();
+
+    void on_boutonModifVanne7_clicked();
+
+    void on_MarchePompe1_clicked();
+
+    void on_MarchePompe2_clicked();
+
+    void on_MarchePompe3_clicked();
+
+    void on_ArretPompe1_clicked();
+
+    void on_ArretPompe2_clicked();
+
+    void on_ArretPompe3_clicked();
 
 private:
     Ui::Supervision *ui;
+    QString infoVanne1;
+    QString infoVanne2;
+    QString infoVanne3;
+    QString infoVanne4;
+    QString infoVanne5;
+    QString infoVanne6;
+    QString infoVanne7;
+    QString etatP1;
+    QString etatP2;
+    QString etatP3;
 };
 
 #endif // SUPERVISION_H
