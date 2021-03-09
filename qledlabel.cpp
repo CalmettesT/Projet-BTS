@@ -52,13 +52,10 @@ int QLedLabel::getDebit()
     return debit;
 }
 
-
-
 QString QLedLabel::getModeParc()
 {
     return modeParc;
 }
-
 
 QLedLabel::QLedLabel(QWidget *parent) :
     QLabel(parent)
@@ -86,68 +83,32 @@ QLedLabel::QLedLabel(QWidget *parent) :
 
 }
 
-
 void QLedLabel::setState(bool state)
 {
     setState(state ? Marche : Arret);
 }
-
 
 QString QLedLabel::getPompe1(QString stateP1)
 {
     return stateP1;
 }
 
-void QLedLabel::couleurPompe()
+void QLedLabel::couleurPompe(QLedLabel& c)
 {
-
-    debit = getDebit();
-    qDebug()<<"test debit"<<debit;
-    modeParc = getModeParc();
-    qDebug()<<"test mode"<<modeParc;
     setFixedSize(SIZE, SIZE);
-
-//    pompe1 = pompe.getEtatPompe();
-//    if(pompe1 == "Pompe 1 en marche")
-//    {
-//    setState(Marche);
-//    }
-
-    if (modeParc=="Gravitaire")
-    {
-        setState(3);
-    }
-    else if (modeParc=="Circuit Ferme")
-    {
-        setState(1);
-    }
-
-    if (debit >=10)
-    {
-        setState(Marche);
-        qDebug()<<"led verte d>10";
-    }
-    else
-    {
-        setState(Arret);
-    }
-
-
+  if (modeParc=="Gravitaire")
+  {
+      c.setState(Arret);
+  }
+  else if (modeParc=="Circuit Ferme")
+  {
+      c.setState(Marche);
+  }
+  else
+  {
+      if (debit>=10) c.setState(Marche);
+          else if (debit>=5 && debit<10) c.setState(EtatWarning);
+          else  c.setState(Arret);
+  }
 }
-
-
-//int QLedLabel::gestionDebit(int debit3)
-//{
-//    debit=debit3;
-//    qDebug()<<"charo"<<debit;
-//    return debit;
-//}
-
-//QString QLedLabel::gestionModeParc(QString modeParc3)
-//{
-//    modeParc=modeParc3;
-//    return modeParc;
-//}
-
-
 

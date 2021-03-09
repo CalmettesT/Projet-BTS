@@ -86,7 +86,6 @@ Supervision::~Supervision()
     delete ui;
 }
 
-
 void Supervision::on_BoutonVannes_clicked()
 {
     ui->ArretPompe1->hide();
@@ -226,7 +225,6 @@ void Supervision::on_ArreterTapis_clicked()
 
 }
 
-
 void Supervision::on_BoutonCapteur_clicked()
 {
     ui->ArretPompe1->hide();
@@ -285,7 +283,6 @@ void Supervision::on_BoutonCapteur_clicked()
     ui->labelCapteur6->show();
     ui->labelInfoCapteur->show();
 }
-
 
 void Supervision::on_boutonModifValeurVanne1_clicked()
 {
@@ -374,8 +371,3 @@ void Supervision::on_ArretPompe3_clicked()
     ui->Etatpompe3->setText(etatP3);
 }
 
-//QString Supervision::getEtatPompe()
-//{
-//    ui->Etatpompe1->text();
-//    return etatP1;
-//}

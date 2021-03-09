@@ -71,19 +71,23 @@ void MainWindow::on_ValiderDebit_clicked()
     QString d= ui->lineDebit->text();
     debit2 = d.toInt();
     pompe.setDebit2(debit2);
-    pompe.couleurPompe();
+    pompe.couleurPompe(pompe);
     qDebug() << "Debit :" << debit2;
+//    if (debit2>10)
+//    {
+//        ui->ModeParc->
+//    }
 }
 
 void MainWindow::on_validerMode_clicked()
 {
     modeParc2 = ui->ModeParc->currentText();
     pompe.setModeParc(modeParc2);
-    pompe.couleurPompe();
+    pompe.couleurPompe(pompe);
     qDebug()<<"Mode Parc :"<<modeParc2;
 }
 
-void MainWindow::setDebit1(int debit2)
+void MainWindow::setDebit1()
 {
     QString d= ui->lineDebit->text();
     debit2 = d.toInt();
