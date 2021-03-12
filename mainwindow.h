@@ -40,6 +40,8 @@ private slots:
 
     void on_validerMode_clicked();
 
+    void couleurPompe();
+
 private:
     Ui::MainWindow *ui;
     int debit2;

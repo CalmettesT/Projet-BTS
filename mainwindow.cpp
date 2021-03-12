@@ -15,7 +15,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->comboBox_ModeParc->addItem("Gravitaire");
     ui->comboBox_ModeParc->addItem("Mixte");
     ui->comboBox_ModeParc->addItem("Circuit Ferme");
-    //connect(ui->camera,SIGNAL(clicked()),ui->agenda,SLOT(animateClick()));
+    //connect(pompe,SIGNAL(setStyleSheet()),this,SLOT(couleurPompe()));
 }
 
 MainWindow::~MainWindow()
@@ -66,12 +66,14 @@ void MainWindow::on_Supervision_clicked()
     supervision.exec();
 }
 
+
+//***********************************************Changer couleur pompe************************************************
 void MainWindow::on_ValiderDebit_clicked()
 {
     QString d= ui->lineDebit->text();
     debit2 = d.toInt();
     pompe.setDebit2(debit2);
-    pompe.couleurPompe(pompe);
+    pompe.couleurPompe();
     qDebug() << "Debit :" << debit2;
 }
 
@@ -79,7 +81,7 @@ void MainWindow::on_validerMode_clicked()
 {
     modeParc2 = ui->comboBox_ModeParc->currentText();
     pompe.setModeParc(modeParc2);
-    pompe.couleurPompe(pompe);
+    pompe.couleurPompe();
     qDebug()<<"Mode Parc :"<<modeParc2;
 }
 
@@ -87,6 +89,11 @@ QString MainWindow::recupModeParc(QString modeParc2)
 {
     modeParc2 = ui->comboBox_ModeParc->currentText();
     return modeParc2;
+}
+
+void MainWindow::couleurPompe()
+{
+    qDebug()<<"changement de couleur";
 }
 
 

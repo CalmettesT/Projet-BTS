@@ -81,6 +81,9 @@ QLedLabel::QLedLabel(QWidget *parent) :
             else if (debit>=5 && debit<10) setState(EtatWarning);
             else  setState(Arret);
     }
+    setState(Marche);
+    setState(EtatWarning);
+
 }
 
 void QLedLabel::setState(bool state)
@@ -93,42 +96,25 @@ QString QLedLabel::getPompe1(QString stateP1)
     return stateP1;
 }
 
-void QLedLabel::couleurPompe(QLedLabel& c)
+void QLedLabel::couleurPompe()
 {
     setFixedSize(SIZE, SIZE);
-//    pompe1 = pompe.getEtatPompe();
-//    if(pompe1 == "Pompe 1 en marche")
-//    {
-//        setState(Marche);
-//    }
-
-    if (modeParc=="Gravitaire")
-    {
-        c.setState(Arret);
-    }
-    else if (modeParc=="Circuit Ferme")
-    {
-        c.setState(Marche);
-    }
-    else
-    {
         if (debit>=10)
         {
-            qDebug() << "debit qled"<< debit;
-            c.setStyleSheet(0);
-            c.setState(Marche);
+            qDebug() << "debit qled vert"<< debit;
+            setStyleSheet(greenSS);
         }
         else if (debit>=5 && debit<10)
         {
-            c.setStyleSheet(0);
-            c.setState(EtatWarning);
+            qDebug() << "debit qled orange"<< debit;
+            setStyleSheet(orangeSS);
         }
         else
         {
-            c.setStyleSheet(0);
-            c.setState(Arret);
+            qDebug() << "debit qled rouge"<< debit;
+            setStyleSheet(redSS);
         }
-    }
+
 }
 
 QLedLabel::~QLedLabel()
