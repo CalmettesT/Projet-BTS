@@ -13,6 +13,12 @@ Supervision::Supervision(QWidget *parent) :
     infoVanne5 = "toi";
     infoVanne6 = "oui";
     infoVanne7 = "moi aussi";
+    infoCapteur1 = "les";
+    infoCapteur2 = "valeurs";
+    infoCapteur3 = "des";
+    infoCapteur4 = "capteur";
+    infoCapteur5 = "par";
+    infoCapteur6 = "automate";
     ui->setupUi(this);
     ui->ArretPompe1->hide();
     ui->ArretPompe2->hide();
@@ -79,6 +85,12 @@ Supervision::Supervision(QWidget *parent) :
     ui->Etatpompe1->setText(etatP1);
     ui->Etatpompe2->setText(etatP2);
     ui->Etatpompe3->setText(etatP3);
+    ui->nivEauCap1->setText(infoCapteur1);
+    ui->nivEauCap2->setText(infoCapteur2);
+    ui->nivEauCap3->setText(infoCapteur3);
+    ui->nivEauCap4->setText(infoCapteur4);
+    ui->nivEauCap5->setText(infoCapteur5);
+    ui->nivEauCap6->setText(infoCapteur6);
 }
 
 Supervision::~Supervision()
@@ -370,4 +382,3 @@ void Supervision::on_ArretPompe3_clicked()
     etatP3 = "Pompe 3 arrete";
     ui->Etatpompe3->setText(etatP3);
 }
-

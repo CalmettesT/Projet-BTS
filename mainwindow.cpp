@@ -12,10 +12,10 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    ui->ModeParc->addItem("Gravitaire");
-    ui->ModeParc->addItem("Mixte");
-    ui->ModeParc->addItem("Circuit Ferme");
-    connect(ui->camera,SIGNAL(clicked()),ui->agenda,SLOT(animateClick()));
+    ui->comboBox_ModeParc->addItem("Gravitaire");
+    ui->comboBox_ModeParc->addItem("Mixte");
+    ui->comboBox_ModeParc->addItem("Circuit Ferme");
+    //connect(ui->camera,SIGNAL(clicked()),ui->agenda,SLOT(animateClick()));
 }
 
 MainWindow::~MainWindow()
@@ -73,32 +73,21 @@ void MainWindow::on_ValiderDebit_clicked()
     pompe.setDebit2(debit2);
     pompe.couleurPompe(pompe);
     qDebug() << "Debit :" << debit2;
-//    if (debit2>10)
-//    {
-//        ui->ModeParc->
-//    }
 }
 
 void MainWindow::on_validerMode_clicked()
 {
-    modeParc2 = ui->ModeParc->currentText();
+    modeParc2 = ui->comboBox_ModeParc->currentText();
     pompe.setModeParc(modeParc2);
     pompe.couleurPompe(pompe);
     qDebug()<<"Mode Parc :"<<modeParc2;
 }
 
-void MainWindow::setDebit1()
-{
-    QString d= ui->lineDebit->text();
-    debit2 = d.toInt();
-}
-
 QString MainWindow::recupModeParc(QString modeParc2)
 {
-    modeParc2 = ui->ModeParc->currentText();
+    modeParc2 = ui->comboBox_ModeParc->currentText();
     return modeParc2;
 }
-
 
 
 //void MainWindow::setModeParc()

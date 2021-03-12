@@ -62,6 +62,12 @@ private:
     QString infoVanne5;
     QString infoVanne6;
     QString infoVanne7;
+    QString infoCapteur1;
+    QString infoCapteur2;
+    QString infoCapteur3;
+    QString infoCapteur4;
+    QString infoCapteur5;
+    QString infoCapteur6;
     QString etatP1;
     QString etatP2;
     QString etatP3;

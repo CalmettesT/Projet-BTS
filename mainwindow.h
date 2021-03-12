@@ -16,8 +16,6 @@ class MainWindow : public QMainWindow
 public:
 
     explicit MainWindow(QWidget *parent = 0);
-    void setDebit1();
-    int getDebit();
     QString recupModeParc(QString modeParc2);
     ~MainWindow();
 
