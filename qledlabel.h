@@ -21,7 +21,7 @@ public:
     void setDebit2(int debit3);
     int getDebit();
 
-    void couleurPompe();
+    void couleurPompe(QLedLabel &c);
 
     void setModeParc(QString modeParc3);
     QString getModeParc();
