@@ -66,7 +66,6 @@ void MainWindow::on_Supervision_clicked()
     supervision.exec();
 }
 
-
 //***********************************************Changer couleur pompe************************************************
 void MainWindow::on_ValiderDebit_clicked()
 {
@@ -96,13 +95,11 @@ void MainWindow::couleurPompe()
     qDebug()<<"changement de couleur";
 }
 
+//***********************************************INTEGRATION AGENDA************************************************
 
-//void MainWindow::setModeParc()
-//{
-//    modeParc2 = ui->ModeParc->currentText();
-//}
-
-//QString MainWindow::getModeParc()
-//{
-//    return modeParc2;
-//}
+void MainWindow::on_agenda_clicked()
+{
+    InterfaceAgenda a;
+    a.setModal(true);
+    a.exec();
+}

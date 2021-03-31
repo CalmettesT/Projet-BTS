@@ -3,6 +3,7 @@
 #include <QDebug>
 #include <QMainWindow>
 #include "supervision.h"
+#include "interfaceagenda.h"
 #include "qledlabel.h"
 
 namespace Ui {
@@ -41,6 +42,8 @@ private slots:
     void on_validerMode_clicked();
 
     void couleurPompe();
+
+    void on_agenda_clicked();
 
 private:
     Ui::MainWindow *ui;

@@ -20,6 +20,12 @@ Supervision::Supervision(QWidget *parent) :
     infoCapteur5 = "par";
     infoCapteur6 = "automate";
     ui->setupUi(this);
+    ui->horizontalSpacerV1->minimumSize();
+    ui->horizontalSpacerV2->minimumSize();
+    ui->horizontalSpacerC1->minimumSize();
+    ui->horizontalSpacerC2->minimumSize();
+
+    //**************************************POMPE**************************************************
     ui->ArretPompe1->hide();
     ui->ArretPompe2->hide();
     ui->ArretPompe3->hide();
@@ -37,13 +43,21 @@ Supervision::Supervision(QWidget *parent) :
     ui->labelPompe1->hide();
     ui->labelPompe2->hide();
     ui->labelPompe3->hide();
-    ui->EditVanne1->hide();
-    ui->EditVanne2->hide();
-    ui->EditVanne3->hide();
-    ui->EditVanne4->hide();
-    ui->EditVanne5->hide();
-    ui->EditVanne6->hide();
-    ui->EditVanne7->hide();
+    //**************************************Vannes**************************************************
+    ui->SliderVanne1->hide();
+    ui->SliderVanne2->hide();
+    ui->SliderVanne3->hide();
+    ui->SliderVanne4->hide();
+    ui->SliderVanne5->hide();
+    ui->SliderVanne6->hide();
+    ui->SliderVanne7->hide();
+    ui->groupBoxV1->hide();
+    ui->groupBoxV2->hide();
+    ui->groupBoxV3->hide();
+    ui->groupBoxV4->hide();
+    ui->groupBoxV5->hide();
+    ui->groupBoxV6->hide();
+    ui->groupBoxV7->hide();
     ui->boutonModifValeurVanne1->hide();
     ui->boutonModifVanne2->hide();
     ui->boutonModifVanne3->hide();
@@ -52,16 +66,9 @@ Supervision::Supervision(QWidget *parent) :
     ui->boutonModifVanne6->hide();
     ui->boutonModifVanne7->hide();
     ui->labelModifValVanne->hide();
-    ui->labelVanne1->hide();
-    ui->labelVanne2->hide();
-    ui->labelVanne3->hide();
-    ui->labelVanne4->hide();
-    ui->labelVanne5->hide();
-    ui->labelVanne6->hide();
-    ui->labelVanne7->hide();
     ui->labelvanne->hide();
-    ui->videV->hide();
     ui->label->hide();
+    //**************************************Capteur**************************************************
     ui->nivEauCap1->hide();
     ui->nivEauCap2->hide();
     ui->nivEauCap3->hide();
@@ -75,22 +82,22 @@ Supervision::Supervision(QWidget *parent) :
     ui->labelCapteur5->hide();
     ui->labelCapteur6->hide();
     ui->labelInfoCapteur->hide();
-    ui->EditVanne1->setText(infoVanne1);
-    ui->EditVanne2->setText(infoVanne2);
-    ui->EditVanne3->setText(infoVanne3);
-    ui->EditVanne4->setText(infoVanne4);
-    ui->EditVanne5->setText(infoVanne5);
-    ui->EditVanne6->setText(infoVanne6);
-    ui->EditVanne7->setText(infoVanne7);
+//    ui->EditVanne1->setText(infoVanne1);
+//    ui->EditVanne2->setText(infoVanne2);
+//    ui->EditVanne3->setText(infoVanne3);
+//    ui->EditVanne4->setText(infoVanne4);
+//    ui->EditVanne5->setText(infoVanne5);
+//    ui->EditVanne6->setText(infoVanne6);
+//    ui->EditVanne7->setText(infoVanne7);
     ui->Etatpompe1->setText(etatP1);
     ui->Etatpompe2->setText(etatP2);
     ui->Etatpompe3->setText(etatP3);
-    ui->nivEauCap1->setText(infoCapteur1);
-    ui->nivEauCap2->setText(infoCapteur2);
-    ui->nivEauCap3->setText(infoCapteur3);
-    ui->nivEauCap4->setText(infoCapteur4);
-    ui->nivEauCap5->setText(infoCapteur5);
-    ui->nivEauCap6->setText(infoCapteur6);
+//    ui->nivEauCap1->setText(infoCapteur1);
+//    ui->nivEauCap2->setText(infoCapteur2);
+//    ui->nivEauCap3->setText(infoCapteur3);
+//    ui->nivEauCap4->setText(infoCapteur4);
+//    ui->nivEauCap5->setText(infoCapteur5);
+//    ui->nivEauCap6->setText(infoCapteur6);
 }
 
 Supervision::~Supervision()
@@ -100,6 +107,9 @@ Supervision::~Supervision()
 
 void Supervision::on_BoutonVannes_clicked()
 {
+    ui->horizontalSpacerC1->minimumSize();
+    ui->horizontalSpacerC2->minimumSize();
+
     ui->ArretPompe1->hide();
     ui->ArretPompe2->hide();
     ui->ArretPompe3->hide();
@@ -118,13 +128,20 @@ void Supervision::on_BoutonVannes_clicked()
     ui->labelPompe2->hide();
     ui->labelPompe3->hide();
     ui->videP->hide();
-    ui->EditVanne1->show();
-    ui->EditVanne2->show();
-    ui->EditVanne3->show();
-    ui->EditVanne4->show();
-    ui->EditVanne5->show();
-    ui->EditVanne6->show();
-    ui->EditVanne7->show();
+    ui->SliderVanne1->show();
+    ui->SliderVanne2->show();
+    ui->SliderVanne3->show();
+    ui->SliderVanne4->show();
+    ui->SliderVanne5->show();
+    ui->SliderVanne6->show();
+    ui->SliderVanne7->show();
+    ui->groupBoxV1->show();
+    ui->groupBoxV2->show();
+    ui->groupBoxV3->show();
+    ui->groupBoxV4->show();
+    ui->groupBoxV5->show();
+    ui->groupBoxV6->show();
+    ui->groupBoxV7->show();
     ui->boutonModifValeurVanne1->show();
     ui->boutonModifVanne2->show();
     ui->boutonModifVanne3->show();
@@ -133,15 +150,7 @@ void Supervision::on_BoutonVannes_clicked()
     ui->boutonModifVanne6->show();
     ui->boutonModifVanne7->show();
     ui->labelModifValVanne->show();
-    ui->labelVanne1->show();
-    ui->labelVanne2->show();
-    ui->labelVanne3->show();
-    ui->labelVanne4->show();
-    ui->labelVanne5->show();
-    ui->labelVanne6->show();
-    ui->labelVanne7->show();
     ui->labelvanne->show();
-    ui->videV->show();
     ui->label->hide();
     ui->nivEauCap1->hide();
     ui->nivEauCap2->hide();
@@ -160,6 +169,11 @@ void Supervision::on_BoutonVannes_clicked()
 
 void Supervision::on_BoutonPompes_clicked()
 {
+    ui->horizontalSpacerV1->minimumSize();
+    ui->horizontalSpacerV2->minimumSize();
+    ui->horizontalSpacerC1->minimumSize();
+    ui->horizontalSpacerC2->minimumSize();
+
     ui->ArretPompe1->show();
     ui->ArretPompe2->show();
     ui->ArretPompe3->show();
@@ -178,13 +192,20 @@ void Supervision::on_BoutonPompes_clicked()
     ui->labelPompe2->show();
     ui->labelPompe3->show();
     ui->videP->show();
-    ui->EditVanne1->hide();
-    ui->EditVanne2->hide();
-    ui->EditVanne3->hide();
-    ui->EditVanne4->hide();
-    ui->EditVanne5->hide();
-    ui->EditVanne6->hide();
-    ui->EditVanne7->hide();
+    ui->SliderVanne1->hide();
+    ui->SliderVanne2->hide();
+    ui->SliderVanne3->hide();
+    ui->SliderVanne4->hide();
+    ui->SliderVanne5->hide();
+    ui->SliderVanne6->hide();
+    ui->SliderVanne7->hide();
+    ui->groupBoxV1->hide();
+    ui->groupBoxV2->hide();
+    ui->groupBoxV3->hide();
+    ui->groupBoxV4->hide();
+    ui->groupBoxV5->hide();
+    ui->groupBoxV6->hide();
+    ui->groupBoxV7->hide();
     ui->boutonModifValeurVanne1->hide();
     ui->boutonModifVanne2->hide();
     ui->boutonModifVanne3->hide();
@@ -193,15 +214,7 @@ void Supervision::on_BoutonPompes_clicked()
     ui->boutonModifVanne6->hide();
     ui->boutonModifVanne7->hide();
     ui->labelModifValVanne->hide();
-    ui->labelVanne1->hide();
-    ui->labelVanne2->hide();
-    ui->labelVanne3->hide();
-    ui->labelVanne4->hide();
-    ui->labelVanne5->hide();
-    ui->labelVanne6->hide();
-    ui->labelVanne7->hide();
     ui->labelvanne->hide();
-    ui->videV->hide();
     ui->label->hide();
     ui->nivEauCap1->hide();
     ui->nivEauCap2->hide();
@@ -239,6 +252,9 @@ void Supervision::on_ArreterTapis_clicked()
 
 void Supervision::on_BoutonCapteur_clicked()
 {
+    ui->horizontalSpacerV1->minimumSize();
+    ui->horizontalSpacerV2->minimumSize();
+
     ui->ArretPompe1->hide();
     ui->ArretPompe2->hide();
     ui->ArretPompe3->hide();
@@ -256,13 +272,20 @@ void Supervision::on_BoutonCapteur_clicked()
     ui->labelPompe1->hide();
     ui->labelPompe2->hide();
     ui->labelPompe3->hide();
-    ui->EditVanne1->hide();
-    ui->EditVanne2->hide();
-    ui->EditVanne3->hide();
-    ui->EditVanne4->hide();
-    ui->EditVanne5->hide();
-    ui->EditVanne6->hide();
-    ui->EditVanne7->hide();
+    ui->SliderVanne1->hide();
+    ui->SliderVanne2->hide();
+    ui->SliderVanne3->hide();
+    ui->SliderVanne4->hide();
+    ui->SliderVanne5->hide();
+    ui->SliderVanne6->hide();
+    ui->SliderVanne7->hide();
+    ui->groupBoxV1->hide();
+    ui->groupBoxV2->hide();
+    ui->groupBoxV3->hide();
+    ui->groupBoxV4->hide();
+    ui->groupBoxV5->hide();
+    ui->groupBoxV6->hide();
+    ui->groupBoxV7->hide();
     ui->boutonModifValeurVanne1->hide();
     ui->boutonModifVanne2->hide();
     ui->boutonModifVanne3->hide();
@@ -271,15 +294,7 @@ void Supervision::on_BoutonCapteur_clicked()
     ui->boutonModifVanne6->hide();
     ui->boutonModifVanne7->hide();
     ui->labelModifValVanne->hide();
-    ui->labelVanne1->hide();
-    ui->labelVanne2->hide();
-    ui->labelVanne3->hide();
-    ui->labelVanne4->hide();
-    ui->labelVanne5->hide();
-    ui->labelVanne6->hide();
-    ui->labelVanne7->hide();
     ui->labelvanne->hide();
-    ui->videV->hide();
     ui->label->show();
     ui->nivEauCap1->show();
     ui->nivEauCap2->show();
@@ -299,51 +314,51 @@ void Supervision::on_BoutonCapteur_clicked()
 void Supervision::on_boutonModifValeurVanne1_clicked()
 {
 
-    infoVanne1 = ui->EditVanne1->text();
-    ui->EditVanne1->setText(infoVanne1);
-    qDebug() << "modif V1 marche : " << infoVanne1;
+    //infoVanne1 = ui->SliderVanne1->;
+    //ui->EditVanne1->setText(infoVanne1);
+    //qDebug() << "modif V1 marche : " << infoVanne1;
 }
 
 void Supervision::on_boutonModifVanne2_clicked()
 {
-    infoVanne2 = ui->EditVanne2->text();
-    ui->EditVanne2->setText(infoVanne2);
-    qDebug() << "modif V2 marche : " << infoVanne2;
+//    infoVanne2 = ui->EditVanne2->text();
+//    ui->EditVanne2->setText(infoVanne2);
+//    qDebug() << "modif V2 marche : " << infoVanne2;
 }
 
 void Supervision::on_boutonModifVanne3_clicked()
 {
-    infoVanne3 = ui->EditVanne3->text();
-    ui->EditVanne3->setText(infoVanne3);
-    qDebug() << "modif V3 marche : " << infoVanne3;
+//    infoVanne3 = ui->EditVanne3->text();
+//    ui->EditVanne3->setText(infoVanne3);
+//    qDebug() << "modif V3 marche : " << infoVanne3;
 }
 
 void Supervision::on_boutonModifVanne4_clicked()
 {
-    infoVanne4 = ui->EditVanne4->text();
-    ui->EditVanne4->setText(infoVanne4);
-    qDebug() << "modif V4 marche : " << infoVanne4;
+//    infoVanne4 = ui->EditVanne4->text();
+//    ui->EditVanne4->setText(infoVanne4);
+//    qDebug() << "modif V4 marche : " << infoVanne4;
 }
 
 void Supervision::on_boutonModifVanne5_clicked()
 {
-    infoVanne5 = ui->EditVanne5->text();
-    ui->EditVanne5->setText(infoVanne5);
-    qDebug() << "modif V5 marche : " << infoVanne5;
+//    infoVanne5 = ui->EditVanne5->text();
+//    ui->EditVanne5->setText(infoVanne5);
+//    qDebug() << "modif V5 marche : " << infoVanne5;
 }
 
 void Supervision::on_boutonModifVanne6_clicked()
 {
-    infoVanne6 = ui->EditVanne6->text();
-    ui->EditVanne6->setText(infoVanne6);
-    qDebug() << "modif V6 marche : " << infoVanne6;
+//    infoVanne6 = ui->EditVanne6->text();
+//    ui->EditVanne6->setText(infoVanne6);
+//    qDebug() << "modif V6 marche : " << infoVanne6;
 }
 
 void Supervision::on_boutonModifVanne7_clicked()
 {
-    infoVanne7 = ui->EditVanne7->text();
-    ui->EditVanne7->setText(infoVanne7);
-    qDebug() << "modif V7 marche : " << infoVanne7;
+//    infoVanne7 = ui->EditVanne7->text();
+//    ui->EditVanne7->setText(infoVanne7);
+//    qDebug() << "modif V7 marche : " << infoVanne7;
 }
 
 void Supervision::on_MarchePompe1_clicked()
