@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 4.14.0, 2021-03-31T14:07:10. -->
+<!-- Written by QtCreator 4.14.0, 2021-04-06T23:38:52. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -300,6 +300,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/calmettesthomas/Desktop/build-SupervisionIHM2-Desktop_Qt_5_15_2_clang_64bit-Release/SupervisionIHM2.app/Contents/MacOS</value>
    </valuemap>
    <value type="int" key="ProjectExplorer.Target.RunConfigurationCount">1</value>
   </valuemap>

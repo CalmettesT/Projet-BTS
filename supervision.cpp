@@ -6,22 +6,8 @@ Supervision::Supervision(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::Supervision)
 {
-    infoVanne1 = "cc";
-    infoVanne2 = "ca va";
-    infoVanne3 = "bien";
-    infoVanne4 = "et";
-    infoVanne5 = "toi";
-    infoVanne6 = "oui";
-    infoVanne7 = "moi aussi";
-    infoCapteur1 = "les";
-    infoCapteur2 = "valeurs";
-    infoCapteur3 = "des";
-    infoCapteur4 = "capteur";
-    infoCapteur5 = "par";
-    infoCapteur6 = "automate";
+
     ui->setupUi(this);
-    ui->horizontalSpacerV1->minimumSize();
-    ui->horizontalSpacerV2->minimumSize();
     ui->horizontalSpacerC1->minimumSize();
     ui->horizontalSpacerC2->minimumSize();
 
@@ -75,6 +61,12 @@ Supervision::Supervision(QWidget *parent) :
     ui->nivEauCap4->hide();
     ui->nivEauCap5->hide();
     ui->nivEauCap6->hide();
+    ui->lcdC1->hide();
+    ui->lcdC2->hide();
+    ui->lcdC3->hide();
+    ui->lcdC4->hide();
+    ui->lcdC5->hide();
+    ui->lcdC6->hide();
     ui->labelCapteur1->hide();
     ui->labelCapteur2->hide();
     ui->labelCapteur3->hide();
@@ -107,8 +99,34 @@ Supervision::~Supervision()
 
 void Supervision::on_BoutonVannes_clicked()
 {
-    ui->horizontalSpacerC1->minimumSize();
-    ui->horizontalSpacerC2->minimumSize();
+    infoVanne1 = 67;
+    infoVanne2 = 59;
+    infoVanne3 = 24;
+    infoVanne4 = 12;
+    infoVanne5 = 89;
+    infoVanne6 = 56;
+    infoVanne7 = 45;
+
+    ui->lcdV1->display(infoVanne1);
+    ui->SliderVanne1->setValue(infoVanne1);
+
+    ui->lcdV2->display(infoVanne2);
+    ui->SliderVanne2->setValue(infoVanne2);
+
+    ui->lcdV3->display(infoVanne3);
+    ui->SliderVanne3->setValue(infoVanne3);
+
+    ui->lcdV4->display(infoVanne4);
+    ui->SliderVanne4->setValue(infoVanne4);
+
+    ui->lcdV5->display(infoVanne5);
+    ui->SliderVanne5->setValue(infoVanne5);
+
+    ui->lcdV6->display(infoVanne6);
+    ui->SliderVanne6->setValue(infoVanne6);
+
+    ui->lcdV7->display(infoVanne7);
+    ui->SliderVanne7->setValue(infoVanne7);
 
     ui->ArretPompe1->hide();
     ui->ArretPompe2->hide();
@@ -158,6 +176,12 @@ void Supervision::on_BoutonVannes_clicked()
     ui->nivEauCap4->hide();
     ui->nivEauCap5->hide();
     ui->nivEauCap6->hide();
+    ui->lcdC1->hide();
+    ui->lcdC2->hide();
+    ui->lcdC3->hide();
+    ui->lcdC4->hide();
+    ui->lcdC5->hide();
+    ui->lcdC6->hide();
     ui->labelCapteur1->hide();
     ui->labelCapteur2->hide();
     ui->labelCapteur3->hide();
@@ -169,10 +193,14 @@ void Supervision::on_BoutonVannes_clicked()
 
 void Supervision::on_BoutonPompes_clicked()
 {
-    ui->horizontalSpacerV1->minimumSize();
-    ui->horizontalSpacerV2->minimumSize();
-    ui->horizontalSpacerC1->minimumSize();
-    ui->horizontalSpacerC2->minimumSize();
+    etatP1 = "Pompe 1 en marche";
+    ui->Etatpompe1->setText(etatP1);
+
+    etatP2 = "Pompe 2 arrete";
+    ui->Etatpompe2->setText(etatP2);
+
+    etatP3 = "Pompe 3 en marche";
+    ui->Etatpompe3->setText(etatP3);
 
     ui->ArretPompe1->show();
     ui->ArretPompe2->show();
@@ -222,6 +250,12 @@ void Supervision::on_BoutonPompes_clicked()
     ui->nivEauCap4->hide();
     ui->nivEauCap5->hide();
     ui->nivEauCap6->hide();
+    ui->lcdC1->hide();
+    ui->lcdC2->hide();
+    ui->lcdC3->hide();
+    ui->lcdC4->hide();
+    ui->lcdC5->hide();
+    ui->lcdC6->hide();
     ui->labelCapteur1->hide();
     ui->labelCapteur2->hide();
     ui->labelCapteur3->hide();
@@ -231,30 +265,26 @@ void Supervision::on_BoutonPompes_clicked()
     ui->labelInfoCapteur->hide();
 }
 
-void Supervision::on_ArreterTapis_clicked()
-{
-    QString t = ui->ArreterTapis->text();
-    //Bouton change couleur et ecrit
-    if(t=="Arreter Tapis")
-    {
-        ui->ArreterTapis->setText("Lancer Tapis");
-        ui->ArreterTapis->setStyleSheet("QPushButton { background-color: red; border: 2px solid #A52109; color: rgb(255, 255, 255);border-radius: 7px; font: 75 12pt 'Arial'; }");
-        QMessageBox::about(this,"Etat Du Tapis","Le Tapis a ete Arrete");
-    }
-    else
-    {
-        ui->ArreterTapis->setText("Arreter Tapis");
-        ui->ArreterTapis->setStyleSheet("QPushButton { background-color: green; border: 2px solid #46BB1B; color: rgb(255, 255, 255);border-radius: 7px;font: 75 12pt 'Arial';}");
-        QMessageBox::about(this,"Etat Du Tapis","Le Tapis a ete Lance");
-    }
-
-}
+//void Supervision::on_ArreterTapis_clicked()
+//{
+//    QString t = ui->ArreterTapis->text();
+//    //Bouton change couleur et ecrit
+//    if(t=="Arreter Tapis")
+//    {
+//        ui->ArreterTapis->setText("Lancer Tapis");
+//        ui->ArreterTapis->setStyleSheet("QPushButton { background-color: red; border: 2px solid #A52109; color: rgb(255, 255, 255);border-radius: 7px; font: 75 12pt 'Arial'; }");
+//        QMessageBox::about(this,"Etat Du Tapis","Le Tapis a ete Arrete");
+//    }
+//    else
+//    {
+//        ui->ArreterTapis->setText("Arreter Tapis");
+//        ui->ArreterTapis->setStyleSheet("QPushButton { background-color: green; border: 2px solid #46BB1B; color: rgb(255, 255, 255);border-radius: 7px;font: 75 12pt 'Arial';}");
+//        QMessageBox::about(this,"Etat Du Tapis","Le Tapis a ete Lance");
+//    }
+//}
 
 void Supervision::on_BoutonCapteur_clicked()
 {
-    ui->horizontalSpacerV1->minimumSize();
-    ui->horizontalSpacerV2->minimumSize();
-
     ui->ArretPompe1->hide();
     ui->ArretPompe2->hide();
     ui->ArretPompe3->hide();
@@ -302,6 +332,12 @@ void Supervision::on_BoutonCapteur_clicked()
     ui->nivEauCap4->show();
     ui->nivEauCap5->show();
     ui->nivEauCap6->show();
+    ui->lcdC1->show();
+    ui->lcdC2->show();
+    ui->lcdC3->show();
+    ui->lcdC4->show();
+    ui->lcdC5->show();
+    ui->lcdC6->show();
     ui->labelCapteur1->show();
     ui->labelCapteur2->show();
     ui->labelCapteur3->show();
@@ -313,52 +349,44 @@ void Supervision::on_BoutonCapteur_clicked()
 
 void Supervision::on_boutonModifValeurVanne1_clicked()
 {
-
-    //infoVanne1 = ui->SliderVanne1->;
-    //ui->EditVanne1->setText(infoVanne1);
-    //qDebug() << "modif V1 marche : " << infoVanne1;
+    infoVanne1 = ui->SliderVanne1->value();
+    qDebug() << "modif V1 marche : " << infoVanne1;
 }
 
 void Supervision::on_boutonModifVanne2_clicked()
 {
-//    infoVanne2 = ui->EditVanne2->text();
-//    ui->EditVanne2->setText(infoVanne2);
-//    qDebug() << "modif V2 marche : " << infoVanne2;
+    infoVanne2 = ui->SliderVanne2->value();
+    qDebug() << "modif V2 marche : " << infoVanne2;
 }
 
 void Supervision::on_boutonModifVanne3_clicked()
 {
-//    infoVanne3 = ui->EditVanne3->text();
-//    ui->EditVanne3->setText(infoVanne3);
-//    qDebug() << "modif V3 marche : " << infoVanne3;
+    infoVanne3 = ui->SliderVanne3->value();
+    qDebug() << "modif V3 marche : " << infoVanne3;
 }
 
 void Supervision::on_boutonModifVanne4_clicked()
 {
-//    infoVanne4 = ui->EditVanne4->text();
-//    ui->EditVanne4->setText(infoVanne4);
-//    qDebug() << "modif V4 marche : " << infoVanne4;
+    infoVanne4 = ui->SliderVanne4->value();
+    qDebug() << "modif V4 marche : " << infoVanne4;
 }
 
 void Supervision::on_boutonModifVanne5_clicked()
 {
-//    infoVanne5 = ui->EditVanne5->text();
-//    ui->EditVanne5->setText(infoVanne5);
-//    qDebug() << "modif V5 marche : " << infoVanne5;
+    infoVanne5 = ui->SliderVanne5->value();
+    qDebug() << "modif V5 marche : " << infoVanne5;
 }
 
 void Supervision::on_boutonModifVanne6_clicked()
 {
-//    infoVanne6 = ui->EditVanne6->text();
-//    ui->EditVanne6->setText(infoVanne6);
-//    qDebug() << "modif V6 marche : " << infoVanne6;
+    infoVanne6 = ui->SliderVanne6->value();
+    qDebug() << "modif V6 marche : " << infoVanne6;
 }
 
 void Supervision::on_boutonModifVanne7_clicked()
 {
-//    infoVanne7 = ui->EditVanne7->text();
-//    ui->EditVanne7->setText(infoVanne7);
-//    qDebug() << "modif V7 marche : " << infoVanne7;
+    infoVanne7 = ui->SliderVanne7->value();
+    qDebug() << "modif V7 marche : " << infoVanne7;
 }
 
 void Supervision::on_MarchePompe1_clicked()

@@ -23,8 +23,6 @@ private slots:
 
     void on_BoutonPompes_clicked();
 
-    void on_ArreterTapis_clicked();
-
     void on_BoutonCapteur_clicked();
 
     void on_boutonModifValeurVanne1_clicked();
@@ -55,19 +53,19 @@ private slots:
 
 private:
     Ui::Supervision *ui;
-    QString infoVanne1;
-    QString infoVanne2;
-    QString infoVanne3;
-    QString infoVanne4;
-    QString infoVanne5;
-    QString infoVanne6;
-    QString infoVanne7;
-    QString infoCapteur1;
-    QString infoCapteur2;
-    QString infoCapteur3;
-    QString infoCapteur4;
-    QString infoCapteur5;
-    QString infoCapteur6;
+    int infoVanne1;
+    int infoVanne2;
+    int infoVanne3;
+    int infoVanne4;
+    int infoVanne5;
+    int infoVanne6;
+    int infoVanne7;
+    int infoCapteur1;
+    int infoCapteur2;
+    int infoCapteur3;
+    int infoCapteur4;
+    int infoCapteur5;
+    int infoCapteur6;
     QString etatP1;
     QString etatP2;
     QString etatP3;

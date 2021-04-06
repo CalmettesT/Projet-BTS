@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>660</width>
+    <width>667</width>
     <height>672</height>
    </rect>
   </property>
@@ -243,6 +243,9 @@ QCalendarWidget QAbstractItemView:enabled{
      <width>671</width>
      <height>681</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(219, 217, 221);</string>
    </property>
    <property name="text">
     <string/>
