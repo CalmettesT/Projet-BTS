@@ -29,6 +29,12 @@ Supervision::Supervision(QWidget *parent) :
     ui->labelPompe1->hide();
     ui->labelPompe2->hide();
     ui->labelPompe3->hide();
+    ui->groupBoxP1->hide();
+    ui->groupBoxP2->hide();
+    ui->groupBoxP3->hide();
+    ui->lcdP1->hide();
+    ui->lcdP2->hide();
+    ui->lcdP3->hide();
     //**************************************Vannes**************************************************
     ui->SliderVanne1->hide();
     ui->SliderVanne2->hide();
@@ -74,6 +80,12 @@ Supervision::Supervision(QWidget *parent) :
     ui->labelCapteur5->hide();
     ui->labelCapteur6->hide();
     ui->labelInfoCapteur->hide();
+    ui->groupBoxC1->hide();
+    ui->groupBoxC2->hide();
+    ui->groupBoxC3->hide();
+    ui->groupBoxC4->hide();
+    ui->groupBoxC5->hide();
+    ui->groupBoxC6->hide();
 //    ui->EditVanne1->setText(infoVanne1);
 //    ui->EditVanne2->setText(infoVanne2);
 //    ui->EditVanne3->setText(infoVanne3);
@@ -145,6 +157,13 @@ void Supervision::on_BoutonVannes_clicked()
     ui->labelPompe1->hide();
     ui->labelPompe2->hide();
     ui->labelPompe3->hide();
+    ui->groupBoxP1->hide();
+    ui->groupBoxP2->hide();
+    ui->groupBoxP3->hide();
+    ui->lcdP1->hide();
+    ui->lcdP2->hide();
+    ui->lcdP3->hide();
+
     ui->videP->hide();
     ui->SliderVanne1->show();
     ui->SliderVanne2->show();
@@ -188,6 +207,12 @@ void Supervision::on_BoutonVannes_clicked()
     ui->labelCapteur4->hide();
     ui->labelCapteur5->hide();
     ui->labelCapteur6->hide();
+    ui->groupBoxC1->hide();
+    ui->groupBoxC2->hide();
+    ui->groupBoxC3->hide();
+    ui->groupBoxC4->hide();
+    ui->groupBoxC5->hide();
+    ui->groupBoxC6->hide();
     ui->labelInfoCapteur->hide();
 }
 
@@ -219,6 +244,14 @@ void Supervision::on_BoutonPompes_clicked()
     ui->labelPompe1->show();
     ui->labelPompe2->show();
     ui->labelPompe3->show();
+    ui->groupBoxP1->show();
+    ui->groupBoxP2->show();
+    ui->groupBoxP3->show();
+    ui->lcdP1->show();
+    ui->lcdP2->show();
+    ui->lcdP3->show();
+
+
     ui->videP->show();
     ui->SliderVanne1->hide();
     ui->SliderVanne2->hide();
@@ -244,6 +277,8 @@ void Supervision::on_BoutonPompes_clicked()
     ui->labelModifValVanne->hide();
     ui->labelvanne->hide();
     ui->label->hide();
+
+
     ui->nivEauCap1->hide();
     ui->nivEauCap2->hide();
     ui->nivEauCap3->hide();
@@ -262,26 +297,14 @@ void Supervision::on_BoutonPompes_clicked()
     ui->labelCapteur4->hide();
     ui->labelCapteur5->hide();
     ui->labelCapteur6->hide();
+    ui->groupBoxC1->hide();
+    ui->groupBoxC2->hide();
+    ui->groupBoxC3->hide();
+    ui->groupBoxC4->hide();
+    ui->groupBoxC5->hide();
+    ui->groupBoxC6->hide();
     ui->labelInfoCapteur->hide();
 }
-
-//void Supervision::on_ArreterTapis_clicked()
-//{
-//    QString t = ui->ArreterTapis->text();
-//    //Bouton change couleur et ecrit
-//    if(t=="Arreter Tapis")
-//    {
-//        ui->ArreterTapis->setText("Lancer Tapis");
-//        ui->ArreterTapis->setStyleSheet("QPushButton { background-color: red; border: 2px solid #A52109; color: rgb(255, 255, 255);border-radius: 7px; font: 75 12pt 'Arial'; }");
-//        QMessageBox::about(this,"Etat Du Tapis","Le Tapis a ete Arrete");
-//    }
-//    else
-//    {
-//        ui->ArreterTapis->setText("Arreter Tapis");
-//        ui->ArreterTapis->setStyleSheet("QPushButton { background-color: green; border: 2px solid #46BB1B; color: rgb(255, 255, 255);border-radius: 7px;font: 75 12pt 'Arial';}");
-//        QMessageBox::about(this,"Etat Du Tapis","Le Tapis a ete Lance");
-//    }
-//}
 
 void Supervision::on_BoutonCapteur_clicked()
 {
@@ -302,6 +325,14 @@ void Supervision::on_BoutonCapteur_clicked()
     ui->labelPompe1->hide();
     ui->labelPompe2->hide();
     ui->labelPompe3->hide();
+    ui->groupBoxP1->hide();
+    ui->groupBoxP2->hide();
+    ui->groupBoxP3->hide();
+    ui->lcdP1->hide();
+    ui->lcdP2->hide();
+    ui->lcdP3->hide();
+
+
     ui->SliderVanne1->hide();
     ui->SliderVanne2->hide();
     ui->SliderVanne3->hide();
@@ -325,6 +356,8 @@ void Supervision::on_BoutonCapteur_clicked()
     ui->boutonModifVanne7->hide();
     ui->labelModifValVanne->hide();
     ui->labelvanne->hide();
+
+
     ui->label->show();
     ui->nivEauCap1->show();
     ui->nivEauCap2->show();
@@ -344,6 +377,12 @@ void Supervision::on_BoutonCapteur_clicked()
     ui->labelCapteur4->show();
     ui->labelCapteur5->show();
     ui->labelCapteur6->show();
+    ui->groupBoxC1->show();
+    ui->groupBoxC2->show();
+    ui->groupBoxC3->show();
+    ui->groupBoxC4->show();
+    ui->groupBoxC5->show();
+    ui->groupBoxC6->show();
     ui->labelInfoCapteur->show();
 }
 
@@ -425,3 +464,4 @@ void Supervision::on_ArretPompe3_clicked()
     etatP3 = "Pompe 3 arrete";
     ui->Etatpompe3->setText(etatP3);
 }
+
