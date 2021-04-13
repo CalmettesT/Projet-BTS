@@ -15,6 +15,7 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
     ajouter.cpp \
+    capteur.cpp \
     editseance.cpp \
     gestionxml.cpp \
     interfaceagenda.cpp \
@@ -25,6 +26,7 @@ SOURCES += main.cpp\
 
 HEADERS  += mainwindow.h \
     ajouter.h \
+    capteur.h \
     editseance.h \
     gestionxml.h \
     interfaceagenda.h \
@@ -34,6 +36,7 @@ HEADERS  += mainwindow.h \
 
 FORMS    += mainwindow.ui \
     ajouter.ui \
+    capteur.ui \
     editseance.ui \
     interfaceagenda.ui \
     supervision.ui \

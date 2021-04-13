@@ -1,5 +1,7 @@
 #include "supervision.h"
 #include "ui_supervision.h"
+#include "capteur.h"
+#include "ui_capteur.h"
 
 
 Supervision::Supervision(QWidget *parent) :
@@ -8,8 +10,7 @@ Supervision::Supervision(QWidget *parent) :
 {
 
     ui->setupUi(this);
-    ui->horizontalSpacerC1->minimumSize();
-    ui->horizontalSpacerC2->minimumSize();
+
 
     //**************************************POMPE**************************************************
     ui->ArretPompe1->hide();
@@ -35,6 +36,12 @@ Supervision::Supervision(QWidget *parent) :
     ui->lcdP1->hide();
     ui->lcdP2->hide();
     ui->lcdP3->hide();
+    ui->Etatpompe1->setText(etatP1);
+    ui->Etatpompe2->setText(etatP2);
+    ui->Etatpompe3->setText(etatP3);
+    ui->boutonValidePompe1->hide();
+    ui->boutonValidePompe2->hide();
+    ui->boutonValidePompe3->hide();
     //**************************************Vannes**************************************************
     ui->SliderVanne1->hide();
     ui->SliderVanne2->hide();
@@ -59,49 +66,8 @@ Supervision::Supervision(QWidget *parent) :
     ui->boutonModifVanne7->hide();
     ui->labelModifValVanne->hide();
     ui->labelvanne->hide();
-    ui->label->hide();
-    //**************************************Capteur**************************************************
-    ui->nivEauCap1->hide();
-    ui->nivEauCap2->hide();
-    ui->nivEauCap3->hide();
-    ui->nivEauCap4->hide();
-    ui->nivEauCap5->hide();
-    ui->nivEauCap6->hide();
-    ui->lcdC1->hide();
-    ui->lcdC2->hide();
-    ui->lcdC3->hide();
-    ui->lcdC4->hide();
-    ui->lcdC5->hide();
-    ui->lcdC6->hide();
-    ui->labelCapteur1->hide();
-    ui->labelCapteur2->hide();
-    ui->labelCapteur3->hide();
-    ui->labelCapteur4->hide();
-    ui->labelCapteur5->hide();
-    ui->labelCapteur6->hide();
-    ui->labelInfoCapteur->hide();
-    ui->groupBoxC1->hide();
-    ui->groupBoxC2->hide();
-    ui->groupBoxC3->hide();
-    ui->groupBoxC4->hide();
-    ui->groupBoxC5->hide();
-    ui->groupBoxC6->hide();
-//    ui->EditVanne1->setText(infoVanne1);
-//    ui->EditVanne2->setText(infoVanne2);
-//    ui->EditVanne3->setText(infoVanne3);
-//    ui->EditVanne4->setText(infoVanne4);
-//    ui->EditVanne5->setText(infoVanne5);
-//    ui->EditVanne6->setText(infoVanne6);
-//    ui->EditVanne7->setText(infoVanne7);
-    ui->Etatpompe1->setText(etatP1);
-    ui->Etatpompe2->setText(etatP2);
-    ui->Etatpompe3->setText(etatP3);
-//    ui->nivEauCap1->setText(infoCapteur1);
-//    ui->nivEauCap2->setText(infoCapteur2);
-//    ui->nivEauCap3->setText(infoCapteur3);
-//    ui->nivEauCap4->setText(infoCapteur4);
-//    ui->nivEauCap5->setText(infoCapteur5);
-//    ui->nivEauCap6->setText(infoCapteur6);
+
+
 }
 
 Supervision::~Supervision()
@@ -163,6 +129,9 @@ void Supervision::on_BoutonVannes_clicked()
     ui->lcdP1->hide();
     ui->lcdP2->hide();
     ui->lcdP3->hide();
+    ui->boutonValidePompe1->hide();
+    ui->boutonValidePompe2->hide();
+    ui->boutonValidePompe3->hide();
 
     ui->videP->hide();
     ui->SliderVanne1->show();
@@ -188,32 +157,6 @@ void Supervision::on_BoutonVannes_clicked()
     ui->boutonModifVanne7->show();
     ui->labelModifValVanne->show();
     ui->labelvanne->show();
-    ui->label->hide();
-    ui->nivEauCap1->hide();
-    ui->nivEauCap2->hide();
-    ui->nivEauCap3->hide();
-    ui->nivEauCap4->hide();
-    ui->nivEauCap5->hide();
-    ui->nivEauCap6->hide();
-    ui->lcdC1->hide();
-    ui->lcdC2->hide();
-    ui->lcdC3->hide();
-    ui->lcdC4->hide();
-    ui->lcdC5->hide();
-    ui->lcdC6->hide();
-    ui->labelCapteur1->hide();
-    ui->labelCapteur2->hide();
-    ui->labelCapteur3->hide();
-    ui->labelCapteur4->hide();
-    ui->labelCapteur5->hide();
-    ui->labelCapteur6->hide();
-    ui->groupBoxC1->hide();
-    ui->groupBoxC2->hide();
-    ui->groupBoxC3->hide();
-    ui->groupBoxC4->hide();
-    ui->groupBoxC5->hide();
-    ui->groupBoxC6->hide();
-    ui->labelInfoCapteur->hide();
 }
 
 void Supervision::on_BoutonPompes_clicked()
@@ -250,6 +193,9 @@ void Supervision::on_BoutonPompes_clicked()
     ui->lcdP1->show();
     ui->lcdP2->show();
     ui->lcdP3->show();
+    ui->boutonValidePompe1->show();
+    ui->boutonValidePompe2->show();
+    ui->boutonValidePompe3->show();
 
 
     ui->videP->show();
@@ -276,39 +222,22 @@ void Supervision::on_BoutonPompes_clicked()
     ui->boutonModifVanne7->hide();
     ui->labelModifValVanne->hide();
     ui->labelvanne->hide();
-    ui->label->hide();
-
-
-    ui->nivEauCap1->hide();
-    ui->nivEauCap2->hide();
-    ui->nivEauCap3->hide();
-    ui->nivEauCap4->hide();
-    ui->nivEauCap5->hide();
-    ui->nivEauCap6->hide();
-    ui->lcdC1->hide();
-    ui->lcdC2->hide();
-    ui->lcdC3->hide();
-    ui->lcdC4->hide();
-    ui->lcdC5->hide();
-    ui->lcdC6->hide();
-    ui->labelCapteur1->hide();
-    ui->labelCapteur2->hide();
-    ui->labelCapteur3->hide();
-    ui->labelCapteur4->hide();
-    ui->labelCapteur5->hide();
-    ui->labelCapteur6->hide();
-    ui->groupBoxC1->hide();
-    ui->groupBoxC2->hide();
-    ui->groupBoxC3->hide();
-    ui->groupBoxC4->hide();
-    ui->groupBoxC5->hide();
-    ui->groupBoxC6->hide();
-    ui->labelInfoCapteur->hide();
 }
 
 void Supervision::on_BoutonCapteur_clicked()
 {
-    ui->ArretPompe1->hide();
+
+    Capteur cap;
+    cap.setModal(true);
+    cap.exec();
+
+
+
+
+    ui->groupBoxP2->hide();
+    ui->groupBoxP3->hide();
+    ui->lcdP1->hide();
+    ui->lcdP2->hide();ui->ArretPompe1->hide();
     ui->ArretPompe2->hide();
     ui->ArretPompe3->hide();
     ui->Etatpompe1->hide();
@@ -326,10 +255,6 @@ void Supervision::on_BoutonCapteur_clicked()
     ui->labelPompe2->hide();
     ui->labelPompe3->hide();
     ui->groupBoxP1->hide();
-    ui->groupBoxP2->hide();
-    ui->groupBoxP3->hide();
-    ui->lcdP1->hide();
-    ui->lcdP2->hide();
     ui->lcdP3->hide();
 
 
@@ -356,34 +281,6 @@ void Supervision::on_BoutonCapteur_clicked()
     ui->boutonModifVanne7->hide();
     ui->labelModifValVanne->hide();
     ui->labelvanne->hide();
-
-
-    ui->label->show();
-    ui->nivEauCap1->show();
-    ui->nivEauCap2->show();
-    ui->nivEauCap3->show();
-    ui->nivEauCap4->show();
-    ui->nivEauCap5->show();
-    ui->nivEauCap6->show();
-    ui->lcdC1->show();
-    ui->lcdC2->show();
-    ui->lcdC3->show();
-    ui->lcdC4->show();
-    ui->lcdC5->show();
-    ui->lcdC6->show();
-    ui->labelCapteur1->show();
-    ui->labelCapteur2->show();
-    ui->labelCapteur3->show();
-    ui->labelCapteur4->show();
-    ui->labelCapteur5->show();
-    ui->labelCapteur6->show();
-    ui->groupBoxC1->show();
-    ui->groupBoxC2->show();
-    ui->groupBoxC3->show();
-    ui->groupBoxC4->show();
-    ui->groupBoxC5->show();
-    ui->groupBoxC6->show();
-    ui->labelInfoCapteur->show();
 }
 
 void Supervision::on_boutonModifValeurVanne1_clicked()
@@ -465,3 +362,23 @@ void Supervision::on_ArretPompe3_clicked()
     ui->Etatpompe3->setText(etatP3);
 }
 
+
+void Supervision::on_FichierLog_clicked()
+{
+    QFileInfo chemin;
+    QFileInfo log;
+    // Conversion de la chaîne en QFile pour pouvoir ouvrir le fichier log
+    QFile logfile(log.absoluteFilePath());
+
+    // Verifie que le fichier existe
+    if (chemin.exists() && chemin.isFile())
+    {
+        if (logfile.open(QIODevice::ReadOnly | QIODevice::Text))
+        {
+            QTextStream flux(&logfile);
+            // On récupère le contenu du fichier texte dans un QString
+            QString contenuTxt=flux.readAll();
+        }
+    }
+//    QString logFile = QFileDialog::getOpenFileName(this,"open a file","Maintosh_HD/Utilisateur/calmettesthomas/BTS/Projet-BTS/ajouter.cpp");
+}

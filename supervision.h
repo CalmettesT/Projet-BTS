@@ -3,6 +3,9 @@
 #include <QMessageBox>
 #include <QDialog>
 #include <QDebug>
+#include <QFileDialog>
+#include <QFile>
+#include <QString>
 
 namespace Ui {
 class Supervision;
@@ -50,6 +53,8 @@ private slots:
     void on_ArretPompe2_clicked();
 
     void on_ArretPompe3_clicked();
+
+    void on_FichierLog_clicked();
 
 private:
     Ui::Supervision *ui;
