@@ -2,16 +2,22 @@
 #include "ui_supervision.h"
 #include "capteur.h"
 #include "ui_capteur.h"
+#include <QFileDialog>
+#include <QFile>
 
+
+GestionLog supervisionLog;
 
 Supervision::Supervision(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::Supervision)
 {
 
+    supervisionLog.ajoutLog("ouverture de Supervision \n");
     ui->setupUi(this);
 
-
+    ui->pushButton->hide();
+    ui->textEditLog->hide();
     //**************************************POMPE**************************************************
     ui->ArretPompe1->hide();
     ui->ArretPompe2->hide();
@@ -73,10 +79,15 @@ Supervision::Supervision(QWidget *parent) :
 Supervision::~Supervision()
 {
     delete ui;
+    supervisionLog.ajoutLog("Fermeture Supervision \n");
 }
 
 void Supervision::on_BoutonVannes_clicked()
 {
+    ui->pushButton->hide();
+    ui->textEditLog->hide();
+    supervisionLog.ajoutLog("Ouverture des informations des vannes\n");
+
     infoVanne1 = 67;
     infoVanne2 = 59;
     infoVanne3 = 24;
@@ -161,6 +172,9 @@ void Supervision::on_BoutonVannes_clicked()
 
 void Supervision::on_BoutonPompes_clicked()
 {
+    ui->pushButton->hide();
+    ui->textEditLog->hide();
+    supervisionLog.ajoutLog("Ouverture des informations des pompes\n");
     etatP1 = "Pompe 1 en marche";
     ui->Etatpompe1->setText(etatP1);
 
@@ -226,38 +240,141 @@ void Supervision::on_BoutonPompes_clicked()
 
 void Supervision::on_BoutonCapteur_clicked()
 {
+    ui->pushButton->hide();
+    ui->textEditLog->hide();
 
     Capteur cap;
     cap.setModal(true);
     cap.exec();
+}
+
+void Supervision::on_boutonModifValeurVanne1_clicked()
+{
+    infoVanne1 = ui->SliderVanne1->value();
+    qDebug() << "modif V1 marche : " << infoVanne1;
+    //ajout dans log
+    supervisionLog.ajoutLog("modification vanne 1\n");
+}
+
+void Supervision::on_boutonModifVanne2_clicked()
+{
+    infoVanne2 = ui->SliderVanne2->value();
+    qDebug() << "modif V2 marche : " << infoVanne2;
+    //ajout dans log
+    supervisionLog.ajoutLog("modification vanne 2\n");
+}
+
+void Supervision::on_boutonModifVanne3_clicked()
+{
+    infoVanne3 = ui->SliderVanne3->value();
+    qDebug() << "modif V3 marche : " << infoVanne3;
+    //ajout dans log
+    supervisionLog.ajoutLog("modification vanne 3\n");
+}
+
+void Supervision::on_boutonModifVanne4_clicked()
+{
+    infoVanne4 = ui->SliderVanne4->value();
+    qDebug() << "modif V4 marche : " << infoVanne4;
+    //ajout dans log
+    supervisionLog.ajoutLog("modification vanne 4\n");
+}
+
+void Supervision::on_boutonModifVanne5_clicked()
+{
+    infoVanne5 = ui->SliderVanne5->value();
+    qDebug() << "modif V5 marche : " << infoVanne5;
+    //ajout dans log
+    supervisionLog.ajoutLog("modification vanne 5\n");
+}
+
+void Supervision::on_boutonModifVanne6_clicked()
+{
+    infoVanne6 = ui->SliderVanne6->value();
+    qDebug() << "modif V6 marche : " << infoVanne6;
+    //ajout dans log
+    supervisionLog.ajoutLog("modification vanne 6\n");
+}
+
+void Supervision::on_boutonModifVanne7_clicked()
+{
+    infoVanne7 = ui->SliderVanne7->value();
+    qDebug() << "modif V7 marche : " << infoVanne7;
+    //ajout dans log
+    supervisionLog.ajoutLog("modification vanne 7\n");
+}
+
+void Supervision::on_MarchePompe1_clicked()
+{
+    etatP1 = "Pompe 1 en marche";
+    ui->Etatpompe1->setText(etatP1);
+    //ajout dans log
+    supervisionLog.ajoutLog("pompe 1 mis en marche\n");
+
+}
+
+void Supervision::on_MarchePompe2_clicked()
+{
+    etatP2 = "Pompe 2 en marche";
+    ui->Etatpompe2->setText(etatP2);
+    //ajout dans log
+    supervisionLog.ajoutLog("pompe 2 mis en marche\n");
+}
+
+void Supervision::on_MarchePompe3_clicked()
+{
+    etatP3 = "Pompe 3 en marche";
+    ui->Etatpompe3->setText(etatP3);
+    //ajout dans log
+    supervisionLog.ajoutLog("pompe 3 mis en marche\n");
+}
+
+void Supervision::on_ArretPompe1_clicked()
+{
+    etatP1 = "Pompe 1 arrete";
+    ui->Etatpompe1->setText(etatP1);
+    //ajout dans log
+    supervisionLog.ajoutLog("pompe 1 arreté\n");
+}
+
+void Supervision::on_ArretPompe2_clicked()
+{
+    etatP2 = "Pompe 2 arrete";
+    ui->Etatpompe2->setText(etatP2);
+    //ajout dans log
+    supervisionLog.ajoutLog("pompe 2 arreté\n");
+}
+
+void Supervision::on_ArretPompe3_clicked()
+{
+    etatP3 = "Pompe 3 arrete";
+    ui->Etatpompe3->setText(etatP3);
+    //ajout dans log
+    supervisionLog.ajoutLog("pompe 3 arreté\n");
+}
+
+void Supervision::on_FichierLog_clicked()
+{
+    //affichage des log
+    ui->pushButton->show();
+    ui->textEditLog->show();
+    QFile file("/Users/calmettesthomas/BTS/Projet-BTS/Fichier_Log.txt");
+
+    if(!file.open(QFile::ReadOnly | QFile::Text))
+    {
+        QMessageBox::warning(this,"title","file not open");
+    }
+
+    QTextStream in(&file);
+    QString text = in.readAll();
+    ui->textEditLog->setPlainText(text);
+    file.close();
 
 
+    supervisionLog.ajoutLog("ouverture fichier log \n");
+    QDesktopServices::openUrl(QUrl("/Users/calmettesthomas/BTS/Projet-BTS/Fichier_Log.txt"));
 
-
-    ui->groupBoxP2->hide();
-    ui->groupBoxP3->hide();
-    ui->lcdP1->hide();
-    ui->lcdP2->hide();ui->ArretPompe1->hide();
-    ui->ArretPompe2->hide();
-    ui->ArretPompe3->hide();
-    ui->Etatpompe1->hide();
-    ui->Etatpompe2->hide();
-    ui->Etatpompe3->hide();
-    ui->MarchePompe1->hide();
-    ui->MarchePompe2->hide();
-    ui->MarchePompe3->hide();
-    ui->infoPompe1->hide();
-    ui->infoPompe2->hide();
-    ui->infoPompe3->hide();
-    ui->labelEtatPompe->hide();
-    ui->labelInfoPompe->hide();
-    ui->labelPompe1->hide();
-    ui->labelPompe2->hide();
-    ui->labelPompe3->hide();
-    ui->groupBoxP1->hide();
-    ui->lcdP3->hide();
-
-
+    ui->videP->show();
     ui->SliderVanne1->hide();
     ui->SliderVanne2->hide();
     ui->SliderVanne3->hide();
@@ -281,104 +398,58 @@ void Supervision::on_BoutonCapteur_clicked()
     ui->boutonModifVanne7->hide();
     ui->labelModifValVanne->hide();
     ui->labelvanne->hide();
+
+    ui->ArretPompe1->hide();
+    ui->ArretPompe2->hide();
+    ui->ArretPompe3->hide();
+    ui->Etatpompe1->hide();
+    ui->Etatpompe2->hide();
+    ui->Etatpompe3->hide();
+    ui->MarchePompe1->hide();
+    ui->MarchePompe2->hide();
+    ui->MarchePompe3->hide();
+    ui->infoPompe1->hide();
+    ui->infoPompe2->hide();
+    ui->infoPompe3->hide();
+    ui->labelEtatPompe->hide();
+    ui->labelInfoPompe->hide();
+    ui->labelPompe1->hide();
+    ui->labelPompe2->hide();
+    ui->labelPompe3->hide();
+    ui->groupBoxP1->hide();
+    ui->groupBoxP2->hide();
+    ui->groupBoxP3->hide();
+    ui->lcdP1->hide();
+    ui->lcdP2->hide();
+    ui->lcdP3->hide();
+    ui->boutonValidePompe1->hide();
+    ui->boutonValidePompe2->hide();
+    ui->boutonValidePompe3->hide();
 }
 
-void Supervision::on_boutonModifValeurVanne1_clicked()
+void Supervision::on_boutonValidePompe1_clicked()
 {
-    infoVanne1 = ui->SliderVanne1->value();
-    qDebug() << "modif V1 marche : " << infoVanne1;
+    supervisionLog.ajoutLog("modification Pompe 1 \n");
+    puiP1 = ui->infoPompe1->value();
+    qDebug() << "modif P1 : " << puiP1;
 }
 
-void Supervision::on_boutonModifVanne2_clicked()
+void Supervision::on_boutonValidePompe2_clicked()
 {
-    infoVanne2 = ui->SliderVanne2->value();
-    qDebug() << "modif V2 marche : " << infoVanne2;
+    supervisionLog.ajoutLog("modification Pompe 2 \n");
+    puiP2 = ui->infoPompe2->value();
+    qDebug() << "modif P2 : " << puiP2;
 }
 
-void Supervision::on_boutonModifVanne3_clicked()
+void Supervision::on_boutonValidePompe3_clicked()
 {
-    infoVanne3 = ui->SliderVanne3->value();
-    qDebug() << "modif V3 marche : " << infoVanne3;
+    supervisionLog.ajoutLog("modification Pompe 3 \n");
+    puiP3 = ui->infoPompe3->value();
+    qDebug() << "modif P3 : " << puiP3;
 }
 
-void Supervision::on_boutonModifVanne4_clicked()
+void Supervision::on_pushButton_clicked()
 {
-    infoVanne4 = ui->SliderVanne4->value();
-    qDebug() << "modif V4 marche : " << infoVanne4;
-}
-
-void Supervision::on_boutonModifVanne5_clicked()
-{
-    infoVanne5 = ui->SliderVanne5->value();
-    qDebug() << "modif V5 marche : " << infoVanne5;
-}
-
-void Supervision::on_boutonModifVanne6_clicked()
-{
-    infoVanne6 = ui->SliderVanne6->value();
-    qDebug() << "modif V6 marche : " << infoVanne6;
-}
-
-void Supervision::on_boutonModifVanne7_clicked()
-{
-    infoVanne7 = ui->SliderVanne7->value();
-    qDebug() << "modif V7 marche : " << infoVanne7;
-}
-
-void Supervision::on_MarchePompe1_clicked()
-{
-    etatP1 = "Pompe 1 en marche";
-    ui->Etatpompe1->setText(etatP1);
-
-}
-
-void Supervision::on_MarchePompe2_clicked()
-{
-    etatP2 = "Pompe 2 en marche";
-    ui->Etatpompe2->setText(etatP2);
-}
-
-void Supervision::on_MarchePompe3_clicked()
-{
-    etatP3 = "Pompe 3 en marche";
-    ui->Etatpompe3->setText(etatP3);
-}
-
-void Supervision::on_ArretPompe1_clicked()
-{
-    etatP1 = "Pompe 1 arrete";
-    ui->Etatpompe1->setText(etatP1);
-}
-
-void Supervision::on_ArretPompe2_clicked()
-{
-    etatP2 = "Pompe 2 arrete";
-    ui->Etatpompe2->setText(etatP2);
-}
-
-void Supervision::on_ArretPompe3_clicked()
-{
-    etatP3 = "Pompe 3 arrete";
-    ui->Etatpompe3->setText(etatP3);
-}
-
-
-void Supervision::on_FichierLog_clicked()
-{
-    QFileInfo chemin;
-    QFileInfo log;
-    // Conversion de la chaîne en QFile pour pouvoir ouvrir le fichier log
-    QFile logfile(log.absoluteFilePath());
-
-    // Verifie que le fichier existe
-    if (chemin.exists() && chemin.isFile())
-    {
-        if (logfile.open(QIODevice::ReadOnly | QIODevice::Text))
-        {
-            QTextStream flux(&logfile);
-            // On récupère le contenu du fichier texte dans un QString
-            QString contenuTxt=flux.readAll();
-        }
-    }
-//    QString logFile = QFileDialog::getOpenFileName(this,"open a file","Maintosh_HD/Utilisateur/calmettesthomas/BTS/Projet-BTS/ajouter.cpp");
+    ui->textEditLog->clear();
+    supervisionLog.clear();
 }

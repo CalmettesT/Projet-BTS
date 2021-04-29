@@ -4,6 +4,7 @@
 #include <QCoreApplication>
 #include <QtXml>
 #include <QDebug>
+#include "gestionlog.h"
 
 class gestionXml
 {

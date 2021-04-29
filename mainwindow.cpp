@@ -5,12 +5,14 @@
 #include "QString"
 
 
-
+GestionLog logMainWindow;
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
+
+    logMainWindow.ajoutLog("Lancement de l'application \n");
     ui->setupUi(this);
     ui->comboBox_ModeParc->addItem("Gravitaire");
     ui->comboBox_ModeParc->addItem("Mixte");
@@ -21,6 +23,7 @@ MainWindow::MainWindow(QWidget *parent) :
 MainWindow::~MainWindow()
 {
     delete ui;
+    logMainWindow.ajoutLog("Fermeture de l'application \n\n");
 }
 
 //***********************************************BOUTON DES VANNES************************************************
@@ -74,6 +77,8 @@ void MainWindow::on_ValiderDebit_clicked()
     pompe.setDebit2(debit2);
     pompe.couleurPompe(*ui->ledPompe1);
     qDebug() << "Debit :" << debit2;
+    //ajout dans log
+    logMainWindow.ajoutLog("changement de débit\n");
 }
 
 void MainWindow::on_validerMode_clicked()
@@ -82,6 +87,8 @@ void MainWindow::on_validerMode_clicked()
     pompe.setModeParc(modeParc2);
     pompe.couleurPompe(*ui->ledPompe1);
     qDebug()<<"Mode Parc :"<<modeParc2;
+    //ajout dans log
+    logMainWindow.ajoutLog("changement de mode du parc\n");
 }
 
 QString MainWindow::recupModeParc(QString modeParc2)
@@ -102,6 +109,7 @@ void MainWindow::on_agenda_clicked()
     InterfaceAgenda a;
     a.setModal(true);
     a.exec();
+    //ajout dans log
 }
 
 
@@ -114,11 +122,15 @@ void MainWindow::on_ArreterTapis_clicked()
         ui->ArreterTapis->setText("Lancer Tapis");
         ui->ArreterTapis->setStyleSheet("QPushButton { background-color: red; border: 2px solid #A52109; color: rgb(255, 255, 255);border-radius: 7px; font: 75 12pt 'Arial'; }");
         QMessageBox::about(this,"Etat Du Tapis","Le Tapis a ete Arrete");
+        //ajout dans log
+        logMainWindow.ajoutLog("Arret du tapis\n");
     }
     else
     {
         ui->ArreterTapis->setText("Arreter Tapis");
         ui->ArreterTapis->setStyleSheet("QPushButton { background-color: green; border: 2px solid #46BB1B; color: rgb(255, 255, 255);border-radius: 7px;font: 75 12pt 'Arial';}");
         QMessageBox::about(this,"Etat Du Tapis","Le Tapis a ete Lance");
+        //ajout dans log
+        logMainWindow.ajoutLog("Lancement du tapis\n");
     }
 }

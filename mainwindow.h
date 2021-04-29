@@ -5,6 +5,12 @@
 #include "supervision.h"
 #include "interfaceagenda.h"
 #include "qledlabel.h"
+#include "gestionlog.h"
+
+#include <iostream>
+#include <fstream>
+#include <string>
+using namespace std;
 
 namespace Ui {
 class MainWindow;
@@ -21,7 +27,6 @@ public:
     ~MainWindow();
 
 private slots:
-    void on_BoutonVanne5_clicked();
 
     void on_BoutonVanne1_clicked();
 
@@ -30,6 +35,8 @@ private slots:
     void on_BoutonVanne3_clicked();
 
     void on_BoutonVanne4_clicked();
+
+    void on_BoutonVanne5_clicked();
 
     void on_BoutonVanne6_clicked();
 

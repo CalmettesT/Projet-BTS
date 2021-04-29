@@ -1,10 +1,10 @@
 #ifndef QLEDLABEL_H
 #define QLEDLABEL_H
-//#include "mainwindow.h"
-//#include "ui_mainwindow.h"
+
 #include "QString"
 #include <QLabel>
 #include <QDebug>
+#include "gestionlog.h"
 
 class QLedLabel : public QLabel
 {

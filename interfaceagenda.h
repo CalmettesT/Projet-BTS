@@ -2,6 +2,7 @@
 #define INTERFACEAGENDA_H
 
 #include <QDialog>
+#include "gestionlog.h"
 
 namespace Ui {
 class InterfaceAgenda;

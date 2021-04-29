@@ -2,6 +2,7 @@
 #define CAPTEUR_H
 
 #include <QDialog>
+#include "gestionlog.h"
 
 namespace Ui {
 class Capteur;

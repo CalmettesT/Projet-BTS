@@ -6,6 +6,13 @@
 #include <QFileDialog>
 #include <QFile>
 #include <QString>
+#include "gestionlog.h"
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <QDesktopServices>
+using namespace std;
+
 
 namespace Ui {
 class Supervision;
@@ -56,6 +63,14 @@ private slots:
 
     void on_FichierLog_clicked();
 
+    void on_boutonValidePompe1_clicked();
+
+    void on_boutonValidePompe2_clicked();
+
+    void on_boutonValidePompe3_clicked();
+
+    void on_pushButton_clicked();
+
 private:
     Ui::Supervision *ui;
     int infoVanne1;
@@ -74,6 +89,9 @@ private:
     QString etatP1;
     QString etatP2;
     QString etatP3;
+    int puiP1;
+    int puiP2;
+    int puiP3;
 };
 
 #endif // SUPERVISION_H

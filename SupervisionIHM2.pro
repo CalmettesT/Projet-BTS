@@ -17,6 +17,7 @@ SOURCES += main.cpp\
     ajouter.cpp \
     capteur.cpp \
     editseance.cpp \
+    gestionlog.cpp \
     gestionxml.cpp \
     interfaceagenda.cpp \
         mainwindow.cpp \
@@ -28,6 +29,7 @@ HEADERS  += mainwindow.h \
     ajouter.h \
     capteur.h \
     editseance.h \
+    gestionlog.h \
     gestionxml.h \
     interfaceagenda.h \
     supervision.h \

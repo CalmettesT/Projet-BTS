@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>973</width>
-    <height>630</height>
+    <height>771</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -18,7 +18,7 @@
   </property>
   <layout class="QVBoxLayout" name="verticalLayout_2">
    <item>
-    <layout class="QVBoxLayout" name="verticalLayout" stretch="0,1,0,2,0">
+    <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0,1,0,0,0,2,0">
      <item>
       <widget class="QLabel" name="Titre">
        <property name="maximumSize">
@@ -35,6 +35,22 @@ font: 75 18pt &quot;Arial&quot;;</string>
         <string>Supervision du Stade</string>
        </property>
       </widget>
+     </item>
+     <item>
+      <spacer name="verticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Fixed</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
      </item>
      <item>
       <layout class="QHBoxLayout" name="horizontalLayout" stretch="2,0,2,0,2,0,2">
@@ -1334,146 +1350,58 @@ font: 75 18pt &quot;Arial&quot;;</string>
       </layout>
      </item>
      <item>
+      <widget class="QPlainTextEdit" name="textEditLog">
+       <property name="styleSheet">
+        <string notr="true">QPlainTextEdit
+{
+     border: 1px solid black;
+     border-radius: 3px;
+	background-color: rgb(100,100, 100);
+     selection-background-color: black;
+ }</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	font: 75 10pt &quot;Arial&quot;;
+	color: rgb(255, 255, 255);
+         border: 2px solid #8f8f91;
+         border-radius: 3px;
+         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                           stop: 0 #181716, stop: 1 #3D3C3A);
+         min-width: 80px;
+     }
+
+     QPushButton:pressed {
+         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                           stop: 0 #3D3C3A, stop: 1 #181716);
+     }
+
+     QPushButton:flat {
+         border: none; /* no border for a flat push button */
+     }
+
+     QPushButton:default {
+         border-color: navy; /* make the default button prominent */
+     }</string>
+       </property>
+       <property name="text">
+        <string>Effacer historique</string>
+       </property>
+      </widget>
+     </item>
+     <item>
       <layout class="QGridLayout" name="gridModifPompes" rowstretch="0,0,0,0,0">
-       <item row="3" column="1">
-        <widget class="QPushButton" name="MarchePompe1">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="minimumSize">
-          <size>
-           <width>84</width>
-           <height>25</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">QPushButton {
-	font: 75 10pt &quot;Arial&quot;;
-	color: rgb(255, 255, 255);
-         border: 2px solid #8f8f91;
-         border-radius: 3px;
-         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
-                                           stop: 0 #181716, stop: 1 #3D3C3A);
-         min-width: 80px;
-     }
-
-     QPushButton:pressed {
-         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
-                                           stop: 0 #3D3C3A, stop: 1 #181716);
-     }
-
-     QPushButton:flat {
-         border: none; /* no border for a flat push button */
-     }
-
-     QPushButton:default {
-         border-color: navy; /* make the default button prominent */
-     }</string>
-         </property>
-         <property name="text">
-          <string>Marche</string>
-         </property>
-        </widget>
-       </item>
-       <item row="4" column="3">
-        <widget class="QPushButton" name="ArretPompe3">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="minimumSize">
-          <size>
-           <width>84</width>
-           <height>25</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">QPushButton {
-	font: 75 10pt &quot;Arial&quot;;
-	color: rgb(255, 255, 255);
-         border: 2px solid #8f8f91;
-         border-radius: 3px;
-         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
-                                           stop: 0 #181716, stop: 1 #3D3C3A);
-         min-width: 80px;
-     }
-
-     QPushButton:pressed {
-         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
-                                           stop: 0 #3D3C3A, stop: 1 #181716);
-     }
-
-     QPushButton:flat {
-         border: none; /* no border for a flat push button */
-     }
-
-     QPushButton:default {
-         border-color: navy; /* make the default button prominent */
-     }</string>
-         </property>
-         <property name="text">
-          <string>Arret</string>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="0">
-        <widget class="QLabel" name="labelInfoPompe">
+       <item row="0" column="3">
+        <widget class="QLabel" name="labelPompe3">
          <property name="styleSheet">
           <string notr="true">color: rgb(0, 0, 0);</string>
          </property>
          <property name="text">
-          <string>Information :</string>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="2">
-        <widget class="QLabel" name="labelPompe2">
-         <property name="styleSheet">
-          <string notr="true">color: rgb(0, 0, 0);</string>
-         </property>
-         <property name="text">
-          <string>Pompe N°2</string>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="1">
-        <widget class="QLineEdit" name="Etatpompe1">
-         <property name="styleSheet">
-          <string notr="true">QLineEdit 
-{
-     border: 1px solid black;
-     border-radius: 3px;
-	background-color: rgb(100,100, 100);
-     selection-background-color: black;
- }</string>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="3">
-        <widget class="QLineEdit" name="Etatpompe3">
-         <property name="styleSheet">
-          <string notr="true">QLineEdit 
-{
-     border: 1px solid black;
-     border-radius: 3px;
-	background-color: rgb(100,100, 100);
-     selection-background-color: black;
- }</string>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="0">
-        <widget class="QLabel" name="labelEtatPompe">
-         <property name="styleSheet">
-          <string notr="true">color: rgb(0, 0, 0);</string>
-         </property>
-         <property name="text">
-          <string>Etat Pompe :</string>
+          <string>Pompe N°3</string>
          </property>
         </widget>
        </item>
@@ -1517,175 +1445,6 @@ font: 75 18pt &quot;Arial&quot;;</string>
          </property>
          <property name="text">
           <string>Arret</string>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="3">
-        <widget class="QLabel" name="labelPompe3">
-         <property name="styleSheet">
-          <string notr="true">color: rgb(0, 0, 0);</string>
-         </property>
-         <property name="text">
-          <string>Pompe N°3</string>
-         </property>
-        </widget>
-       </item>
-       <item row="3" column="2">
-        <widget class="QPushButton" name="MarchePompe2">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="minimumSize">
-          <size>
-           <width>84</width>
-           <height>25</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">QPushButton {
-	font: 75 10pt &quot;Arial&quot;;
-	color: rgb(255, 255, 255);
-         border: 2px solid #8f8f91;
-         border-radius: 3px;
-         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
-                                           stop: 0 #181716, stop: 1 #3D3C3A);
-         min-width: 80px;
-     }
-
-     QPushButton:pressed {
-         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
-                                           stop: 0 #3D3C3A, stop: 1 #181716);
-     }
-
-     QPushButton:flat {
-         border: none; /* no border for a flat push button */
-     }
-
-     QPushButton:default {
-         border-color: navy; /* make the default button prominent */
-     }</string>
-         </property>
-         <property name="text">
-          <string>Marche</string>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="0">
-        <widget class="QLabel" name="videP">
-         <property name="text">
-          <string/>
-         </property>
-        </widget>
-       </item>
-       <item row="3" column="3">
-        <widget class="QPushButton" name="MarchePompe3">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="minimumSize">
-          <size>
-           <width>84</width>
-           <height>25</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">QPushButton {
-	font: 75 10pt &quot;Arial&quot;;
-	color: rgb(255, 255, 255);
-         border: 2px solid #8f8f91;
-         border-radius: 3px;
-         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
-                                           stop: 0 #181716, stop: 1 #3D3C3A);
-         min-width: 80px;
-     }
-
-     QPushButton:pressed {
-         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
-                                           stop: 0 #3D3C3A, stop: 1 #181716);
-     }
-
-     QPushButton:flat {
-         border: none; /* no border for a flat push button */
-     }
-
-     QPushButton:default {
-         border-color: navy; /* make the default button prominent */
-     }</string>
-         </property>
-         <property name="text">
-          <string>Marche</string>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="2">
-        <widget class="QLineEdit" name="Etatpompe2">
-         <property name="styleSheet">
-          <string notr="true">QLineEdit 
-{
-     border: 1px solid black;
-     border-radius: 3px;
-	background-color: rgb(100,100, 100);
-     selection-background-color: black;
- }</string>
-         </property>
-        </widget>
-       </item>
-       <item row="4" column="2">
-        <widget class="QPushButton" name="ArretPompe2">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="minimumSize">
-          <size>
-           <width>84</width>
-           <height>25</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">QPushButton {
-	font: 75 10pt &quot;Arial&quot;;
-	color: rgb(255, 255, 255);
-         border: 2px solid #8f8f91;
-         border-radius: 3px;
-         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
-                                           stop: 0 #181716, stop: 1 #3D3C3A);
-         min-width: 80px;
-     }
-
-     QPushButton:pressed {
-         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
-                                           stop: 0 #3D3C3A, stop: 1 #181716);
-     }
-
-     QPushButton:flat {
-         border: none; /* no border for a flat push button */
-     }
-
-     QPushButton:default {
-         border-color: navy; /* make the default button prominent */
-     }</string>
-         </property>
-         <property name="text">
-          <string>Arret</string>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="1">
-        <widget class="QLabel" name="labelPompe1">
-         <property name="styleSheet">
-          <string notr="true">color: rgb(0, 0, 0);</string>
-         </property>
-         <property name="text">
-          <string>Pompe N°1</string>
          </property>
         </widget>
        </item>
@@ -1935,6 +1694,307 @@ font: 75 18pt &quot;Arial&quot;;</string>
            </widget>
           </item>
          </layout>
+        </widget>
+       </item>
+       <item row="4" column="3">
+        <widget class="QPushButton" name="ArretPompe3">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>84</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	font: 75 10pt &quot;Arial&quot;;
+	color: rgb(255, 255, 255);
+         border: 2px solid #8f8f91;
+         border-radius: 3px;
+         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                           stop: 0 #181716, stop: 1 #3D3C3A);
+         min-width: 80px;
+     }
+
+     QPushButton:pressed {
+         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                           stop: 0 #3D3C3A, stop: 1 #181716);
+     }
+
+     QPushButton:flat {
+         border: none; /* no border for a flat push button */
+     }
+
+     QPushButton:default {
+         border-color: navy; /* make the default button prominent */
+     }</string>
+         </property>
+         <property name="text">
+          <string>Arret</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="Etatpompe1">
+         <property name="styleSheet">
+          <string notr="true">QLineEdit 
+{
+     border: 1px solid black;
+     border-radius: 3px;
+	background-color: rgb(100,100, 100);
+     selection-background-color: black;
+ }</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLabel" name="labelPompe1">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(0, 0, 0);</string>
+         </property>
+         <property name="text">
+          <string>Pompe N°1</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="2">
+        <widget class="QPushButton" name="ArretPompe2">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>84</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	font: 75 10pt &quot;Arial&quot;;
+	color: rgb(255, 255, 255);
+         border: 2px solid #8f8f91;
+         border-radius: 3px;
+         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                           stop: 0 #181716, stop: 1 #3D3C3A);
+         min-width: 80px;
+     }
+
+     QPushButton:pressed {
+         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                           stop: 0 #3D3C3A, stop: 1 #181716);
+     }
+
+     QPushButton:flat {
+         border: none; /* no border for a flat push button */
+     }
+
+     QPushButton:default {
+         border-color: navy; /* make the default button prominent */
+     }</string>
+         </property>
+         <property name="text">
+          <string>Arret</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="labelEtatPompe">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(0, 0, 0);</string>
+         </property>
+         <property name="text">
+          <string>Etat Pompe :</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="QLineEdit" name="Etatpompe3">
+         <property name="styleSheet">
+          <string notr="true">QLineEdit 
+{
+     border: 1px solid black;
+     border-radius: 3px;
+	background-color: rgb(100,100, 100);
+     selection-background-color: black;
+ }</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QPushButton" name="MarchePompe1">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>84</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	font: 75 10pt &quot;Arial&quot;;
+	color: rgb(255, 255, 255);
+         border: 2px solid #8f8f91;
+         border-radius: 3px;
+         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                           stop: 0 #181716, stop: 1 #3D3C3A);
+         min-width: 80px;
+     }
+
+     QPushButton:pressed {
+         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                           stop: 0 #3D3C3A, stop: 1 #181716);
+     }
+
+     QPushButton:flat {
+         border: none; /* no border for a flat push button */
+     }
+
+     QPushButton:default {
+         border-color: navy; /* make the default button prominent */
+     }</string>
+         </property>
+         <property name="text">
+          <string>Marche</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="3">
+        <widget class="QPushButton" name="MarchePompe3">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>84</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	font: 75 10pt &quot;Arial&quot;;
+	color: rgb(255, 255, 255);
+         border: 2px solid #8f8f91;
+         border-radius: 3px;
+         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                           stop: 0 #181716, stop: 1 #3D3C3A);
+         min-width: 80px;
+     }
+
+     QPushButton:pressed {
+         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                           stop: 0 #3D3C3A, stop: 1 #181716);
+     }
+
+     QPushButton:flat {
+         border: none; /* no border for a flat push button */
+     }
+
+     QPushButton:default {
+         border-color: navy; /* make the default button prominent */
+     }</string>
+         </property>
+         <property name="text">
+          <string>Marche</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="videP">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="2">
+        <widget class="QPushButton" name="MarchePompe2">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>84</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	font: 75 10pt &quot;Arial&quot;;
+	color: rgb(255, 255, 255);
+         border: 2px solid #8f8f91;
+         border-radius: 3px;
+         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                           stop: 0 #181716, stop: 1 #3D3C3A);
+         min-width: 80px;
+     }
+
+     QPushButton:pressed {
+         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                           stop: 0 #3D3C3A, stop: 1 #181716);
+     }
+
+     QPushButton:flat {
+         border: none; /* no border for a flat push button */
+     }
+
+     QPushButton:default {
+         border-color: navy; /* make the default button prominent */
+     }</string>
+         </property>
+         <property name="text">
+          <string>Marche</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QLabel" name="labelPompe2">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(0, 0, 0);</string>
+         </property>
+         <property name="text">
+          <string>Pompe N°2</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="labelInfoPompe">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(0, 0, 0);</string>
+         </property>
+         <property name="text">
+          <string>Information :</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QLineEdit" name="Etatpompe2">
+         <property name="styleSheet">
+          <string notr="true">QLineEdit 
+{
+     border: 1px solid black;
+     border-radius: 3px;
+	background-color: rgb(100,100, 100);
+     selection-background-color: black;
+ }</string>
+         </property>
         </widget>
        </item>
        <item row="2" column="3">
