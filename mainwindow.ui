@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>893</width>
-    <height>675</height>
+    <height>682</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -275,6 +275,31 @@
         <property name="title">
          <string>Stade</string>
         </property>
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="0" column="0">
+          <widget class="QLabel" name="imgParc">
+           <property name="minimumSize">
+            <size>
+             <width>428</width>
+             <height>224</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 8pt &quot;MS Shell Dlg 2&quot;;
+image: url(:/img/parc.jpg);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignJustify|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
         <widget class="QPushButton" name="BoutonVanne3">
          <property name="geometry">
           <rect>
@@ -602,35 +627,6 @@
          </property>
          <property name="text">
           <string>V2</string>
-         </property>
-        </widget>
-        <widget class="QLabel" name="imgParc">
-         <property name="geometry">
-          <rect>
-           <x>12</x>
-           <y>21</y>
-           <width>851</width>
-           <height>471</height>
-          </rect>
-         </property>
-         <property name="minimumSize">
-          <size>
-           <width>428</width>
-           <height>224</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font: 8pt &quot;MS Shell Dlg 2&quot;;
-image: url(:/img/parc.jpg);</string>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-         <property name="scaledContents">
-          <bool>true</bool>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignJustify|Qt::AlignVCenter</set>
          </property>
         </widget>
         <widget class="QPushButton" name="ArreterTapis">

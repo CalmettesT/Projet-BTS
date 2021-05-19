@@ -20,7 +20,7 @@ void GestionLog::ajoutLog(string data)
     }
     else
     {
-        cout<<"erreur";
+        qDebug()<<"erreur";
     }
 
 }
@@ -30,19 +30,6 @@ void GestionLog::lectureLog()
     string ligne;
     string const nomDeFichier("/Users/calmettesthomas/BTS/Projet-BTS/Fichier_Log.txt");
     ifstream fichier("/Users/calmettesthomas/BTS/Projet-BTS/Fichier_Log.txt");
-
-    if(fichier)
-    {
-        while (getline(fichier,ligne))
-        {
-            cout<<ligne<<"\n";
-        }
-
-    }
-    else
-    {
-        cout<<"erreur";
-    }
 }
 
 void GestionLog::clear()
@@ -58,8 +45,4 @@ void GestionLog::clear()
         qDebug()<<"erreur supression";
     }
 }
-
-
-
-
 

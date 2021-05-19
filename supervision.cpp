@@ -352,7 +352,7 @@ void Supervision::on_ArretPompe3_clicked()
     //ajout dans log
     supervisionLog.ajoutLog("pompe 3 arreté\n");
 }
-//cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
 void Supervision::on_FichierLog_clicked()
 {
     //affichage des log
@@ -373,6 +373,8 @@ void Supervision::on_FichierLog_clicked()
 
     supervisionLog.ajoutLog("ouverture fichier log \n");
     QDesktopServices::openUrl(QUrl("/Users/calmettesthomas/BTS/Projet-BTS/Fichier_Log.txt"));
+
+
 
     ui->videP->show();
     ui->SliderVanne1->hide();

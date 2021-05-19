@@ -11,7 +11,7 @@
 #include <fstream>
 #include <string>
 #include <QDesktopServices>
-using namespace std;
+
 
 
 namespace Ui {

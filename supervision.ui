@@ -1364,6 +1364,12 @@ font: 75 18pt &quot;Arial&quot;;</string>
      </item>
      <item>
       <widget class="QPushButton" name="pushButton">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
        <property name="styleSheet">
         <string notr="true">QPushButton {
 	font: 75 10pt &quot;Arial&quot;;

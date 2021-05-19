@@ -52,8 +52,6 @@ private slots:
 
     void on_agenda_clicked();
 
-
-
     void on_ArreterTapis_clicked();
 
 private:

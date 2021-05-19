@@ -17,7 +17,6 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->comboBox_ModeParc->addItem("Gravitaire");
     ui->comboBox_ModeParc->addItem("Mixte");
     ui->comboBox_ModeParc->addItem("Circuit Ferme");
-    //connect(pompe,SIGNAL(setStyleSheet()),this,SLOT(couleurPompe()));
 }
 
 MainWindow::~MainWindow()
@@ -106,10 +105,7 @@ void MainWindow::couleurPompe()
 
 void MainWindow::on_agenda_clicked()
 {
-    InterfaceAgenda a;
-    a.setModal(true);
-    a.exec();
-    //ajout dans log
+
 }
 
 
