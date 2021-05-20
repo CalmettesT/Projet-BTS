@@ -3,10 +3,9 @@
 #include <QDebug>
 #include <QMainWindow>
 #include "supervision.h"
-#include "interfaceagenda.h"
 #include "qledlabel.h"
 #include "gestionlog.h"
-
+#include "ihmagenda.h"
 #include <iostream>
 #include <fstream>
 #include <string>

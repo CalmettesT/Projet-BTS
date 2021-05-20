@@ -4,7 +4,7 @@
 #include <QCoreApplication>
 #include <QtXml>
 #include <QDebug>
-#include "gestionlog.h"
+#include <QVector>
 
 class gestionXml
 {
@@ -14,10 +14,12 @@ public:
     void readElement(QString data);
     void structSenace(QString path);
     void newSeance(QString dateArrivee, QString dateDepart, QString heureDepart, QString heureArrivee, QString type);
-    void modElement(gestionXml& xml, QString dateArrivee, QString dateDepart, QString heureDepart, QString heureArrivee, QString type);
-    void supElement(QString data, QString id);
-    void setId(QString tag);
-    int getId();
+    void modElement(gestionXml& xml);
+    void supElement(QString id);
+    void setSenace(QString id);
+    QString getTab(int n);
+    int getNumberId();
+    QVector<int> idDay(QString data);
 
 private:
     QDomDocument document;
@@ -25,7 +27,7 @@ private:
     QDomNode noeud;
     QDomElement element;
     QDomElement dom_element;
-    int id;
+    QString tab[5];
 };
 
 #endif // GESTIONXML_H

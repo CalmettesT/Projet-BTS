@@ -106,7 +106,9 @@ void MainWindow::couleurPompe()
 
 void MainWindow::on_agenda_clicked()
 {
-
+    IHMagenda agenda;
+    agenda.setModal(true);
+    agenda.exec();
 }
 
 

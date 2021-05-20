@@ -6,6 +6,7 @@
 
 QT       += core gui
 QT += xml
+QT += network
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -14,21 +15,37 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
+    ajouter.cpp \
     capteur.cpp \
+    editseance.cpp \
     gestionlog.cpp \
+    gestionxml.cpp \
+    ihmagenda.cpp \
         mainwindow.cpp \
+    sockettest.cpp \
     supervision.cpp \
-    qledlabel.cpp
+    qledlabel.cpp \
+    supseance.cpp
 
 HEADERS  += mainwindow.h \
+    ajouter.h \
     capteur.h \
+    editseance.h \
     gestionlog.h \
+    gestionxml.h \
+    ihmagenda.h \
+    sockettest.h \
     supervision.h \
-    qledlabel.h
+    qledlabel.h \
+    supseance.h
 
 FORMS    += mainwindow.ui \
+    ajouter.ui \
     capteur.ui \
-    supervision.ui
+    editseance.ui \
+    ihmagenda.ui \
+    supervision.ui \
+    supseance.ui
 
 RESOURCES += \
     img/image.qrc \
