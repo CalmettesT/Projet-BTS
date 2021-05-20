@@ -62,17 +62,30 @@ QLedLabel::QLedLabel(QWidget *parent) :
 {
     setFixedSize(SIZE, SIZE);
 
-    if (modeParc=="Gravitaire")
+//    if (modeParc=="Gravitaire")
+//    {
+//        setState(Arret);
+//    }
+//    else if (modeParc=="Circuit Ferme")
+//    {
+//        setState(Marche);
+//    }
+//    else if(debit>=10)setState(Marche);
+//    else if (debit>=5 && debit<10) setState(EtatWarning);
+//    else  setState(Arret);
+
+    if (modeParc=="Gravitaire"||debit<=5)
     {
         setState(Arret);
     }
-    else if (modeParc=="Circuit Ferme")
+    else if (modeParc=="Circuit Ferme"||debit>=10)
     {
         setState(Marche);
     }
-    else if(debit>=10)setState(Marche);
-    else if (debit>=5 && debit<10) setState(EtatWarning);
-    else  setState(Arret);
+    else
+    {
+        setState(EtatWarning);
+    }
 }
 
 void QLedLabel::setState(bool state)
@@ -89,20 +102,20 @@ void QLedLabel::couleurPompe(QLedLabel &c)
 {
     setFixedSize(SIZE, SIZE);
 
-    if (modeParc=="Gravitaire")
+    if (modeParc=="Gravitaire" || debit<=5)
     {
+//        if(modeParc)
         c.setState(Arret);
     }
-    else if (modeParc=="Circuit Ferme")
+    else if (modeParc=="Circuit Ferme" || debit>=10)
     {
         c.setState(Marche);
     }
     else
     {
-        if (debit>=10)c.setState(Marche);
-            else if (debit>=5 && debit<10) c.setState(EtatWarning);
-            else  c.setState(Arret);
+        c.setState(EtatWarning);
     }
+
 
 }
 

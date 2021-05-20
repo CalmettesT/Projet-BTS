@@ -313,43 +313,6 @@
          <set>Qt::AlignJustify|Qt::AlignTop</set>
         </property>
         <layout class="QGridLayout" name="gridLayout">
-         <item row="0" column="5">
-          <widget class="QPushButton" name="BoutonVanne1">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">QPushButton {
-	font: 75 10pt &quot;Arial&quot;;
-	color: rgb(255, 255, 255);
-         border: 1px solid #8f8f91;
-         border-radius: 3px;
-         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
-                                           stop: 0 #181716, stop: 1 #3D3C3A);
-
-     }
-
-     QPushButton:pressed {
-         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
-                                           stop: 0 #3D3C3A, stop: 1 #181716);
-     }
-
-     QPushButton:flat {
-         border: none; /* no border for a flat push button */
-     }
-
-     QPushButton:default {
-         border-color: navy; /* make the default button prominent */
-     }</string>
-           </property>
-           <property name="text">
-            <string>V1</string>
-           </property>
-          </widget>
-         </item>
          <item row="3" column="2">
           <widget class="QPushButton" name="ArreterTapis">
            <property name="styleSheet">
@@ -374,43 +337,6 @@ font: 75 12pt &quot;Arial&quot;;</string>
            </property>
            <property name="text">
             <string>  P1</string>
-           </property>
-          </widget>
-         </item>
-         <item row="15" column="0">
-          <widget class="QPushButton" name="BoutonVanne6">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">QPushButton {
-	font: 75 10pt &quot;Arial&quot;;
-	color: rgb(255, 255, 255);
-         border: 1px solid #8f8f91;
-         border-radius: 3px;
-         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
-                                           stop: 0 #181716, stop: 1 #3D3C3A);
-
-     }
-
-     QPushButton:pressed {
-         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
-                                           stop: 0 #3D3C3A, stop: 1 #181716);
-     }
-
-     QPushButton:flat {
-         border: none; /* no border for a flat push button */
-     }
-
-     QPushButton:default {
-         border-color: navy; /* make the default button prominent */
-     }</string>
-           </property>
-           <property name="text">
-            <string>V6</string>
            </property>
           </widget>
          </item>
@@ -528,7 +454,7 @@ font: 75 12pt &quot;Arial&quot;;</string>
            </property>
           </widget>
          </item>
-         <item row="2" column="2">
+         <item row="2" column="2" colspan="2">
           <widget class="QPushButton" name="BoutonVanne7">
            <property name="sizePolicy">
             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
@@ -605,6 +531,80 @@ font: 75 12pt &quot;Arial&quot;;</string>
            </property>
            <property name="text">
             <string>V2</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="5">
+          <widget class="QPushButton" name="BoutonVanne1">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+	font: 75 10pt &quot;Arial&quot;;
+	color: rgb(255, 255, 255);
+         border: 1px solid #8f8f91;
+         border-radius: 3px;
+         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                           stop: 0 #181716, stop: 1 #3D3C3A);
+
+     }
+
+     QPushButton:pressed {
+         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                           stop: 0 #3D3C3A, stop: 1 #181716);
+     }
+
+     QPushButton:flat {
+         border: none; /* no border for a flat push button */
+     }
+
+     QPushButton:default {
+         border-color: navy; /* make the default button prominent */
+     }</string>
+           </property>
+           <property name="text">
+            <string>V1</string>
+           </property>
+          </widget>
+         </item>
+         <item row="15" column="0">
+          <widget class="QPushButton" name="BoutonVanne6">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+	font: 75 10pt &quot;Arial&quot;;
+	color: rgb(255, 255, 255);
+         border: 1px solid #8f8f91;
+         border-radius: 3px;
+         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                           stop: 0 #181716, stop: 1 #3D3C3A);
+
+     }
+
+     QPushButton:pressed {
+         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                           stop: 0 #3D3C3A, stop: 1 #181716);
+     }
+
+     QPushButton:flat {
+         border: none; /* no border for a flat push button */
+     }
+
+     QPushButton:default {
+         border-color: navy; /* make the default button prominent */
+     }</string>
+           </property>
+           <property name="text">
+            <string>V6</string>
            </property>
           </widget>
          </item>
