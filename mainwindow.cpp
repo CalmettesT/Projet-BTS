@@ -12,6 +12,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
 
+
     logMainWindow.ajoutLog("Lancement de l'application \n");
     ui->setupUi(this);
     ui->comboBox_ModeParc->addItem("Gravitaire");

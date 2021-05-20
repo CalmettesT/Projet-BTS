@@ -6,20 +6,32 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>893</width>
-    <height>682</height>
+    <width>848</width>
+    <height>647</height>
    </rect>
+  </property>
+  <property name="tabletTracking">
+   <bool>false</bool>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
   <property name="styleSheet">
    <string notr="true">background-color: rgb(212, 212, 212);</string>
   </property>
+  <property name="tabShape">
+   <enum>QTabWidget::Rounded</enum>
+  </property>
+  <property name="dockOptions">
+   <set>QMainWindow::AllowTabbedDocks|QMainWindow::AnimatedDocks|QMainWindow::VerticalTabs</set>
+  </property>
   <widget class="QWidget" name="centralWidget">
-   <layout class="QGridLayout" name="gridLayout_2">
-    <item row="0" column="0">
-     <layout class="QVBoxLayout" name="verticalLayout" stretch="0,14,2">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout" stretch="0,6,1">
       <property name="spacing">
        <number>0</number>
       </property>
@@ -254,8 +266,30 @@
       </item>
       <item>
        <widget class="QGroupBox" name="groupBox">
+        <property name="minimumSize">
+         <size>
+          <width>409</width>
+          <height>230</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>9999</width>
+          <height>9999</height>
+         </size>
+        </property>
+        <property name="mouseTracking">
+         <bool>true</bool>
+        </property>
+        <property name="tabletTracking">
+         <bool>true</bool>
+        </property>
+        <property name="toolTipDuration">
+         <number>1</number>
+        </property>
         <property name="styleSheet">
          <string notr="true"> QGroupBox {
+	border-image: url(:/img/parc.jpg);
 	color: rgb(0, 0, 0);
      background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
                                        stop: 0 #D4D4D4, stop: 1 #D4D4D4);
@@ -275,390 +309,306 @@
         <property name="title">
          <string>Stade</string>
         </property>
+        <property name="alignment">
+         <set>Qt::AlignJustify|Qt::AlignTop</set>
+        </property>
         <layout class="QGridLayout" name="gridLayout">
-         <item row="0" column="0">
-          <widget class="QLabel" name="imgParc">
-           <property name="minimumSize">
-            <size>
-             <width>428</width>
-             <height>224</height>
-            </size>
+         <item row="0" column="5">
+          <widget class="QPushButton" name="BoutonVanne1">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
            </property>
            <property name="styleSheet">
-            <string notr="true">font: 8pt &quot;MS Shell Dlg 2&quot;;
-image: url(:/img/parc.jpg);</string>
+            <string notr="true">QPushButton {
+	font: 75 10pt &quot;Arial&quot;;
+	color: rgb(255, 255, 255);
+         border: 1px solid #8f8f91;
+         border-radius: 3px;
+         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                           stop: 0 #181716, stop: 1 #3D3C3A);
+
+     }
+
+     QPushButton:pressed {
+         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                           stop: 0 #3D3C3A, stop: 1 #181716);
+     }
+
+     QPushButton:flat {
+         border: none; /* no border for a flat push button */
+     }
+
+     QPushButton:default {
+         border-color: navy; /* make the default button prominent */
+     }</string>
            </property>
            <property name="text">
-            <string/>
-           </property>
-           <property name="scaledContents">
-            <bool>true</bool>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignJustify|Qt::AlignVCenter</set>
+            <string>V1</string>
            </property>
           </widget>
          </item>
-        </layout>
-        <widget class="QPushButton" name="BoutonVanne3">
-         <property name="geometry">
-          <rect>
-           <x>370</x>
-           <y>110</y>
-           <width>21</width>
-           <height>21</height>
-          </rect>
-         </property>
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">QPushButton {
-	font: 75 10pt &quot;Arial&quot;;
-	color: rgb(255, 255, 255);
-         border: 1px solid #8f8f91;
-         border-radius: 3px;
-         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
-                                           stop: 0 #181716, stop: 1 #3D3C3A);
-
-     }
-
-     QPushButton:pressed {
-         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
-                                           stop: 0 #3D3C3A, stop: 1 #181716);
-     }
-
-     QPushButton:flat {
-         border: none; /* no border for a flat push button */
-     }
-
-     QPushButton:default {
-         border-color: navy; /* make the default button prominent */
-     }</string>
-         </property>
-         <property name="text">
-          <string>V3</string>
-         </property>
-        </widget>
-        <widget class="QPushButton" name="BoutonVanne6">
-         <property name="geometry">
-          <rect>
-           <x>160</x>
-           <y>410</y>
-           <width>21</width>
-           <height>21</height>
-          </rect>
-         </property>
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">QPushButton {
-	font: 75 10pt &quot;Arial&quot;;
-	color: rgb(255, 255, 255);
-         border: 1px solid #8f8f91;
-         border-radius: 3px;
-         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
-                                           stop: 0 #181716, stop: 1 #3D3C3A);
-
-     }
-
-     QPushButton:pressed {
-         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
-                                           stop: 0 #3D3C3A, stop: 1 #181716);
-     }
-
-     QPushButton:flat {
-         border: none; /* no border for a flat push button */
-     }
-
-     QPushButton:default {
-         border-color: navy; /* make the default button prominent */
-     }</string>
-         </property>
-         <property name="text">
-          <string>V6</string>
-         </property>
-        </widget>
-        <widget class="QPushButton" name="BoutonVanne5">
-         <property name="geometry">
-          <rect>
-           <x>520</x>
-           <y>170</y>
-           <width>21</width>
-           <height>21</height>
-          </rect>
-         </property>
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">QPushButton {
-	font: 75 10pt &quot;Arial&quot;;
-	color: rgb(255, 255, 255);
-         border: 1px solid #8f8f91;
-         border-radius: 3px;
-         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
-                                           stop: 0 #181716, stop: 1 #3D3C3A);
-
-     }
-
-     QPushButton:pressed {
-         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
-                                           stop: 0 #3D3C3A, stop: 1 #181716);
-     }
-
-     QPushButton:flat {
-         border: none; /* no border for a flat push button */
-     }
-
-     QPushButton:default {
-         border-color: navy; /* make the default button prominent */
-     }</string>
-         </property>
-         <property name="text">
-          <string>V5</string>
-         </property>
-        </widget>
-        <widget class="QPushButton" name="BoutonVanne1">
-         <property name="geometry">
-          <rect>
-           <x>756</x>
-           <y>110</y>
-           <width>21</width>
-           <height>21</height>
-          </rect>
-         </property>
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">QPushButton {
-	font: 75 10pt &quot;Arial&quot;;
-	color: rgb(255, 255, 255);
-         border: 1px solid #8f8f91;
-         border-radius: 3px;
-         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
-                                           stop: 0 #181716, stop: 1 #3D3C3A);
-
-     }
-
-     QPushButton:pressed {
-         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
-                                           stop: 0 #3D3C3A, stop: 1 #181716);
-     }
-
-     QPushButton:flat {
-         border: none; /* no border for a flat push button */
-     }
-
-     QPushButton:default {
-         border-color: navy; /* make the default button prominent */
-     }</string>
-         </property>
-         <property name="text">
-          <string>V1</string>
-         </property>
-        </widget>
-        <widget class="QPushButton" name="BoutonVanne4">
-         <property name="geometry">
-          <rect>
-           <x>400</x>
-           <y>140</y>
-           <width>21</width>
-           <height>21</height>
-          </rect>
-         </property>
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="mouseTracking">
-          <bool>false</bool>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">QPushButton {
-	font: 75 10pt &quot;Arial&quot;;
-	color: rgb(255, 255, 255);
-         border: 1px solid #8f8f91;
-         border-radius: 3px;
-         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
-                                           stop: 0 #181716, stop: 1 #3D3C3A);
-
-     }
-
-     QPushButton:pressed {
-         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
-                                           stop: 0 #3D3C3A, stop: 1 #181716);
-     }
-
-     QPushButton:flat {
-         border: none; /* no border for a flat push button */
-     }
-
-     QPushButton:default {
-         border-color: navy; /* make the default button prominent */
-     }</string>
-         </property>
-         <property name="text">
-          <string>V4</string>
-         </property>
-        </widget>
-        <widget class="QPushButton" name="BoutonVanne7">
-         <property name="geometry">
-          <rect>
-           <x>350</x>
-           <y>190</y>
-           <width>21</width>
-           <height>21</height>
-          </rect>
-         </property>
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">QPushButton {
-	font: 75 10pt &quot;Arial&quot;;
-	color: rgb(255, 255, 255);
-         border: 1px solid #8f8f91;
-         border-radius: 3px;
-         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
-                                           stop: 0 #181716, stop: 1 #3D3C3A);
-
-     }
-
-     QPushButton:pressed {
-         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
-                                           stop: 0 #3D3C3A, stop: 1 #181716);
-     }
-
-     QPushButton:flat {
-         border: none; /* no border for a flat push button */
-     }
-
-     QPushButton:default {
-         border-color: navy; /* make the default button prominent */
-     }</string>
-         </property>
-         <property name="text">
-          <string>V7</string>
-         </property>
-        </widget>
-        <widget class="QLedLabel" name="ledPompe1">
-         <property name="geometry">
-          <rect>
-           <x>290</x>
-           <y>260</y>
-           <width>16</width>
-           <height>16</height>
-          </rect>
-         </property>
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="text">
-          <string>  P1</string>
-         </property>
-        </widget>
-        <widget class="QPushButton" name="BoutonVanne2">
-         <property name="geometry">
-          <rect>
-           <x>430</x>
-           <y>100</y>
-           <width>21</width>
-           <height>21</height>
-          </rect>
-         </property>
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="sizeIncrement">
-          <size>
-           <width>16</width>
-           <height>16</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">QPushButton {
-	font: 75 10pt &quot;Arial&quot;;
-	color: rgb(255, 255, 255);
-         border: 1px solid #8f8f91;
-         border-radius: 3px;
-         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
-                                           stop: 0 #181716, stop: 1 #3D3C3A);
-
-     }
-
-     QPushButton:pressed {
-         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
-                                           stop: 0 #3D3C3A, stop: 1 #181716);
-     }
-
-     QPushButton:flat {
-         border: none; /* no border for a flat push button */
-     }
-
-     QPushButton:default {
-         border-color: navy; /* make the default button prominent */
-     }</string>
-         </property>
-         <property name="text">
-          <string>V2</string>
-         </property>
-        </widget>
-        <widget class="QPushButton" name="ArreterTapis">
-         <property name="geometry">
-          <rect>
-           <x>340</x>
-           <y>230</y>
-           <width>81</width>
-           <height>31</height>
-          </rect>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">border: 2px solid #A52109;
+         <item row="3" column="2">
+          <widget class="QPushButton" name="ArreterTapis">
+           <property name="styleSheet">
+            <string notr="true">border: 2px solid #A52109;
 background-color: rgb(240, 0, 0);
 color: rgb(255, 255, 255);
 border-radius: 7px;
 font: 75 12pt &quot;Arial&quot;;</string>
-         </property>
-         <property name="text">
-          <string>Lancer Tapis</string>
-         </property>
-        </widget>
-        <zorder>imgParc</zorder>
-        <zorder>BoutonVanne2</zorder>
-        <zorder>BoutonVanne1</zorder>
-        <zorder>BoutonVanne6</zorder>
-        <zorder>BoutonVanne4</zorder>
-        <zorder>BoutonVanne3</zorder>
-        <zorder>BoutonVanne5</zorder>
-        <zorder>BoutonVanne7</zorder>
-        <zorder>ledPompe1</zorder>
-        <zorder>ArreterTapis</zorder>
+           </property>
+           <property name="text">
+            <string>Lancer Tapis</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="QLedLabel" name="ledPompe1">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>  P1</string>
+           </property>
+          </widget>
+         </item>
+         <item row="15" column="0">
+          <widget class="QPushButton" name="BoutonVanne6">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+	font: 75 10pt &quot;Arial&quot;;
+	color: rgb(255, 255, 255);
+         border: 1px solid #8f8f91;
+         border-radius: 3px;
+         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                           stop: 0 #181716, stop: 1 #3D3C3A);
+
+     }
+
+     QPushButton:pressed {
+         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                           stop: 0 #3D3C3A, stop: 1 #181716);
+     }
+
+     QPushButton:flat {
+         border: none; /* no border for a flat push button */
+     }
+
+     QPushButton:default {
+         border-color: navy; /* make the default button prominent */
+     }</string>
+           </property>
+           <property name="text">
+            <string>V6</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <widget class="QPushButton" name="BoutonVanne3">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+	font: 75 10pt &quot;Arial&quot;;
+	color: rgb(255, 255, 255);
+         border: 1px solid #8f8f91;
+         border-radius: 3px;
+         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                           stop: 0 #181716, stop: 1 #3D3C3A);
+
+     }
+
+     QPushButton:pressed {
+         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                           stop: 0 #3D3C3A, stop: 1 #181716);
+     }
+
+     QPushButton:flat {
+         border: none; /* no border for a flat push button */
+     }
+
+     QPushButton:default {
+         border-color: navy; /* make the default button prominent */
+     }</string>
+           </property>
+           <property name="text">
+            <string>V3</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="3">
+          <widget class="QPushButton" name="BoutonVanne5">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+	font: 75 10pt &quot;Arial&quot;;
+	color: rgb(255, 255, 255);
+         border: 1px solid #8f8f91;
+         border-radius: 3px;
+         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                           stop: 0 #181716, stop: 1 #3D3C3A);
+
+     }
+
+     QPushButton:pressed {
+         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                           stop: 0 #3D3C3A, stop: 1 #181716);
+     }
+
+     QPushButton:flat {
+         border: none; /* no border for a flat push button */
+     }
+
+     QPushButton:default {
+         border-color: navy; /* make the default button prominent */
+     }</string>
+           </property>
+           <property name="text">
+            <string>V5</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <widget class="QPushButton" name="BoutonVanne4">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="mouseTracking">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+	font: 75 10pt &quot;Arial&quot;;
+	color: rgb(255, 255, 255);
+         border: 1px solid #8f8f91;
+         border-radius: 3px;
+         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                           stop: 0 #181716, stop: 1 #3D3C3A);
+
+     }
+
+     QPushButton:pressed {
+         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                           stop: 0 #3D3C3A, stop: 1 #181716);
+     }
+
+     QPushButton:flat {
+         border: none; /* no border for a flat push button */
+     }
+
+     QPushButton:default {
+         border-color: navy; /* make the default button prominent */
+     }</string>
+           </property>
+           <property name="text">
+            <string>V4</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="2">
+          <widget class="QPushButton" name="BoutonVanne7">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+	font: 75 10pt &quot;Arial&quot;;
+	color: rgb(255, 255, 255);
+         border: 1px solid #8f8f91;
+         border-radius: 3px;
+         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                           stop: 0 #181716, stop: 1 #3D3C3A);
+
+     }
+
+     QPushButton:pressed {
+         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                           stop: 0 #3D3C3A, stop: 1 #181716);
+     }
+
+     QPushButton:flat {
+         border: none; /* no border for a flat push button */
+     }
+
+     QPushButton:default {
+         border-color: navy; /* make the default button prominent */
+     }</string>
+           </property>
+           <property name="text">
+            <string>V7</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="3">
+          <widget class="QPushButton" name="BoutonVanne2">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="sizeIncrement">
+            <size>
+             <width>16</width>
+             <height>16</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+	font: 75 10pt &quot;Arial&quot;;
+	color: rgb(255, 255, 255);
+         border: 1px solid #8f8f91;
+         border-radius: 3px;
+         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                           stop: 0 #181716, stop: 1 #3D3C3A);
+
+     }
+
+     QPushButton:pressed {
+         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                           stop: 0 #3D3C3A, stop: 1 #181716);
+     }
+
+     QPushButton:flat {
+         border: none; /* no border for a flat push button */
+     }
+
+     QPushButton:default {
+         border-color: navy; /* make the default button prominent */
+     }</string>
+           </property>
+           <property name="text">
+            <string>V2</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
        </widget>
       </item>
       <item>
@@ -834,7 +784,7 @@ font: 75 12pt &quot;Arial&quot;;</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>893</width>
+     <width>848</width>
      <height>21</height>
     </rect>
    </property>

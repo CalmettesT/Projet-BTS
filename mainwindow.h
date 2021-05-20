@@ -59,7 +59,6 @@ private:
     int debit2;
     QString modeParc2;
     QLedLabel pompe;
-
 };
 
 #endif // MAINWINDOW_H
