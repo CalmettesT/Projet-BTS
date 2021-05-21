@@ -8,24 +8,17 @@
   <typeClient>debutant</typeClient>
  </seance>
  <seance id="2">
-  <dateArrivee>a</dateArrivee>
-  <heureArrivee>c</heureArrivee>
-  <dateDepart>b</dateDepart>
-  <heureDepart>c</heureDepart>
-  <typeClient>d</typeClient>
+  <dateArrivee>ven. mai 21 2021</dateArrivee>
+  <heureArrivee>10:04:28</heureArrivee>
+  <dateDepart>ven. mai 21 2021</dateDepart>
+  <heureDepart>10:04:28</heureDepart>
+  <typeClient>debutant</typeClient>
  </seance>
  <seance id="3">
-  <dateArrivee>a</dateArrivee>
-  <heureArrivee>c</heureArrivee>
-  <dateDepart>b</dateDepart>
-  <heureDepart>c</heureDepart>
-  <typeClient>d</typeClient>
- </seance>
- <seance id="4">
-  <dateArrivee>sam. avri. 23 2021</dateArrivee>
-  <heureArrivee>14:37:36</heureArrivee>
-  <dateDepart>sam. avri. 23 2021</dateDepart>
-  <heureDepart>16:37:36</heureDepart>
+  <dateArrivee>ven. mai 21 2021</dateArrivee>
+  <heureArrivee>10:04:28</heureArrivee>
+  <dateDepart>ven. mai 21 2021</dateDepart>
+  <heureDepart>10:04:28</heureDepart>
   <typeClient>debutant</typeClient>
  </seance>
 </seances>

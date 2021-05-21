@@ -47,11 +47,13 @@ private slots:
 
     void on_validerMode_clicked();
 
-    void couleurPompe();
-
     void on_agenda_clicked();
 
     void on_ArreterTapis_clicked();
+
+    void on_checkModeAuto_clicked();
+
+    void on_checkModeManuel_clicked();
 
 private:
     Ui::MainWindow *ui;

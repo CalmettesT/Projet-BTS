@@ -4,7 +4,7 @@
 #include <QFile>
 #include <QXmlStreamWriter>
 
-
+GestionLog logAgendaAjout;
 ajouter::ajouter(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::ajouter)
@@ -16,11 +16,15 @@ ajouter::ajouter(QWidget *parent) :
     ui->heureDepart->setTime(QTime::currentTime());
     ui->type->addItem("debutant");
     ui->type->addItem("confirme");
+
+    logAgendaAjout.ajoutLog("Ouverture de la fenetre d'ajout dans agenda\n");
 }
 
 ajouter::~ajouter()
 {
     delete ui;
+
+    logAgendaAjout.ajoutLog("Fermeture de la fenetre d'ajout dans agenda\n");
 }
 
 void ajouter::on_pushButton_clicked()
@@ -32,7 +36,9 @@ void ajouter::on_pushButton_clicked()
     QString type = ui->type->currentText();
 
     cTest.Connect();
-    xml.openFile("C:/Users/Christian GROS/Documents/xmlClass/test3.xml");
+    xml.openFile("/Users/calmettesthomas/BTS/Projet-Bts/xml/test3.xml");
 
     xml.newSeance(dateArrivee.toString(), dateDepart.toString(), heureDepart.toString(), heureArrivee.toString(), type);
+
+    logAgendaAjout.ajoutLog("Ajout d'une nouvelle séance\n");
 }

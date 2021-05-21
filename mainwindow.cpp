@@ -62,11 +62,37 @@ void MainWindow::on_BoutonVanne7_clicked()
     QMessageBox::about(this,"Vanne 7","Information Vanne 7 : \n Ouverutre Vanne : \n");
 }
 
+//***********************************************OUVRIR SUPERVISION************************************************
+
 void MainWindow::on_Supervision_clicked()
 {
     Supervision supervision;
     supervision.setModal(true);
     supervision.exec();
+}
+
+//***********************************************Gestion Tapis************************************************
+
+void MainWindow::on_ArreterTapis_clicked()
+{
+    QString t = ui->ArreterTapis->text();
+    //Bouton change couleur et ecrit
+    if(t=="Arreter Tapis")
+    {
+        ui->ArreterTapis->setText("Lancer Tapis");
+        ui->ArreterTapis->setStyleSheet("QPushButton { background-color: red; border: 2px solid #A52109; color: rgb(255, 255, 255);border-radius: 7px; font: 75 12pt 'Arial'; }");
+        QMessageBox::about(this,"Etat Du Tapis","Le Tapis a ete Arrete");
+        //ajout dans log
+        logMainWindow.ajoutLog("Arret du tapis\n");
+    }
+    else
+    {
+        ui->ArreterTapis->setText("Arreter Tapis");
+        ui->ArreterTapis->setStyleSheet("QPushButton { background-color: green; border: 2px solid #46BB1B; color: rgb(255, 255, 255);border-radius: 7px;font: 75 12pt 'Arial';}");
+        QMessageBox::about(this,"Etat Du Tapis","Le Tapis a ete Lance");
+        //ajout dans log
+        logMainWindow.ajoutLog("Lancement du tapis\n");
+    }
 }
 
 //***********************************************Changer couleur pompe************************************************
@@ -97,11 +123,6 @@ QString MainWindow::recupModeParc(QString modeParc2)
     return modeParc2;
 }
 
-void MainWindow::couleurPompe()
-{
-    qDebug()<<"changement de couleur";
-}
-
 //***********************************************INTEGRATION AGENDA************************************************
 
 void MainWindow::on_agenda_clicked()
@@ -112,24 +133,12 @@ void MainWindow::on_agenda_clicked()
 }
 
 
-void MainWindow::on_ArreterTapis_clicked()
+void MainWindow::on_checkModeAuto_clicked()
 {
-    QString t = ui->ArreterTapis->text();
-    //Bouton change couleur et ecrit
-    if(t=="Arreter Tapis")
-    {
-        ui->ArreterTapis->setText("Lancer Tapis");
-        ui->ArreterTapis->setStyleSheet("QPushButton { background-color: red; border: 2px solid #A52109; color: rgb(255, 255, 255);border-radius: 7px; font: 75 12pt 'Arial'; }");
-        QMessageBox::about(this,"Etat Du Tapis","Le Tapis a ete Arrete");
-        //ajout dans log
-        logMainWindow.ajoutLog("Arret du tapis\n");
-    }
-    else
-    {
-        ui->ArreterTapis->setText("Arreter Tapis");
-        ui->ArreterTapis->setStyleSheet("QPushButton { background-color: green; border: 2px solid #46BB1B; color: rgb(255, 255, 255);border-radius: 7px;font: 75 12pt 'Arial';}");
-        QMessageBox::about(this,"Etat Du Tapis","Le Tapis a ete Lance");
-        //ajout dans log
-        logMainWindow.ajoutLog("Lancement du tapis\n");
-    }
+    ui->checkModeManuel->stateChanged(0);
+}
+
+void MainWindow::on_checkModeManuel_clicked()
+{
+    ui->checkModeAuto->stateChanged(0);
 }

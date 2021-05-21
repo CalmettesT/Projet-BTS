@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>325</width>
-    <height>375</height>
+    <width>515</width>
+    <height>286</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,125 +16,237 @@
   <property name="styleSheet">
    <string notr="true">background-color: rgb(212, 212, 212);</string>
   </property>
-  <widget class="QGroupBox" name="groupBox">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>10</y>
-     <width>291</width>
-     <height>341</height>
-    </rect>
-   </property>
-   <property name="title">
-    <string>GroupBox</string>
-   </property>
-   <widget class="QWidget" name="verticalLayoutWidget_3">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>20</y>
-      <width>281</width>
-      <height>301</height>
-     </rect>
-    </property>
-    <layout class="QVBoxLayout" name="verticalLayout_4">
-     <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_3">
-       <item>
-        <layout class="QVBoxLayout" name="verticalLayout">
-         <item>
-          <widget class="QLabel" name="label">
-           <property name="font">
-            <font>
-             <pointsize>14</pointsize>
-            </font>
-           </property>
-           <property name="text">
-            <string>Date arrivee</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QLabel" name="label_4">
-           <property name="font">
-            <font>
-             <pointsize>14</pointsize>
-            </font>
-           </property>
-           <property name="text">
-            <string>Heure arrivee</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QLabel" name="label_3">
-           <property name="font">
-            <font>
-             <pointsize>14</pointsize>
-            </font>
-           </property>
-           <property name="text">
-            <string>Date depart</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QLabel" name="label_2">
-           <property name="font">
-            <font>
-             <pointsize>14</pointsize>
-            </font>
-           </property>
-           <property name="text">
-            <string>Heure depart</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QLabel" name="label_6">
-           <property name="font">
-            <font>
-             <pointsize>14</pointsize>
-            </font>
-           </property>
-           <property name="text">
-            <string>Type</string>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </item>
-       <item>
-        <layout class="QVBoxLayout" name="verticalLayout_2">
-         <item>
-          <widget class="QDateEdit" name="dateArrivee"/>
-         </item>
-         <item>
-          <widget class="QTimeEdit" name="heureArrivee"/>
-         </item>
-         <item>
-          <widget class="QDateEdit" name="dateDepart"/>
-         </item>
-         <item>
-          <widget class="QTimeEdit" name="heureDepart"/>
-         </item>
-         <item>
-          <widget class="QComboBox" name="type"/>
-         </item>
-        </layout>
-       </item>
-      </layout>
-     </item>
-     <item>
-      <widget class="QPushButton" name="pushButton">
-       <property name="text">
-        <string>AJOUTER</string>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
-  </widget>
+  <layout class="QVBoxLayout" name="verticalLayout_3">
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string/>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_5">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+             <widget class="QLabel" name="label">
+              <property name="font">
+               <font>
+                <pointsize>14</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(0, 0, 0);</string>
+              </property>
+              <property name="text">
+               <string>Date arrivee</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_4">
+              <property name="font">
+               <font>
+                <pointsize>14</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(0, 0, 0);</string>
+              </property>
+              <property name="text">
+               <string>Heure arrivee</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_3">
+              <property name="font">
+               <font>
+                <pointsize>14</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(0, 0, 0);</string>
+              </property>
+              <property name="text">
+               <string>Date depart</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_2">
+              <property name="font">
+               <font>
+                <pointsize>14</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(0, 0, 0);</string>
+              </property>
+              <property name="text">
+               <string>Heure depart</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_6">
+              <property name="font">
+               <font>
+                <pointsize>14</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(0, 0, 0);</string>
+              </property>
+              <property name="text">
+               <string>Type</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_2">
+            <item>
+             <widget class="QDateEdit" name="dateArrivee">
+              <property name="styleSheet">
+               <string notr="true"> QDateEdit{
+	background-color: rgb(100,100, 100);
+     padding-right: 10px; /* Crée un espace pour les flèches */
+     border-width: 3;
+ }
+
+ 
+</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QTimeEdit" name="heureArrivee">
+              <property name="styleSheet">
+               <string notr="true"> QTimeEdit{
+	background-color: rgb(100,100, 100);
+     padding-right: 10px; /* Crée un espace pour les flèches */
+     border-width: 3;
+ }
+
+ 
+</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QDateEdit" name="dateDepart">
+              <property name="styleSheet">
+               <string notr="true"> QDateEdit {
+	background-color: rgb(100,100, 100);
+     padding-right: 10px; /* Crée un espace pour les flèches */
+     border-width: 3;
+ }
+
+ 
+</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QTimeEdit" name="heureDepart">
+              <property name="styleSheet">
+               <string notr="true"> QTimeEdit{
+	background-color: rgb(100,100, 100);
+     padding-right: 10px; /* Crée un espace pour les flèches */
+     border-width: 3;
+ }
+
+ 
+</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="type">
+              <property name="styleSheet">
+               <string notr="true">QComboBox 
+{
+     border: 1px solid darkgray;
+     border-radius: 3px;
+     padding: 1px 18px 1px 3px;
+     min-width: 6em;
+
+ }
+
+
+QComboBox 
+{
+	
+	background-color: rgb(100, 100, 100);
+     border: 1px solid darkgray;
+     border-radius: 3px;
+     padding: 1px 18px 1px 3px;
+     min-width: 6em;
+ }
+ 
+ QComboBox:editable {
+     background: black;
+ }
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+
+ </string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton">
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+	
+	font: 75 16pt &quot;Arial&quot;;
+	color: rgb(255, 255, 255);
+         border: 2px solid #8f8f91;
+         border-radius: 6px;
+         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                           stop: 0 #181716, stop: 1 #3D3C3A);
+         min-width: 80px;
+     }
+
+     QPushButton:pressed {
+         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                           stop: 0 #3D3C3A, stop: 1 #181716);
+     }
+
+     QPushButton:flat {
+         border: none; /* no border for a flat push button */
+     }
+
+     QPushButton:default {
+         border-color: navy; /* make the default button prominent */
+     }
+</string>
+          </property>
+          <property name="text">
+           <string>AJOUTER</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
  </widget>
  <resources/>
  <connections/>

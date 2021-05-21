@@ -3,6 +3,7 @@
 
 #include <QDialog>
 #include "gestionxml.h"
+#include "gestionlog.h"
 
 namespace Ui {
 class supSeance;

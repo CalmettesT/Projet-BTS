@@ -3,6 +3,7 @@
 #include "ajouter.h"
 #include"editseance.h"
 #include"supseance.h"
+#include "gestionlog.h"
 #include"QDebug"
 #include <QDialog>
 
