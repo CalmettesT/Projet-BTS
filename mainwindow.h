@@ -23,6 +23,7 @@ public:
 
     explicit MainWindow(QWidget *parent = 0);
     QString recupModeParc(QString modeParc2);
+    void switchAuto(bool mode);
     ~MainWindow();
 
 private slots:
@@ -51,9 +52,8 @@ private slots:
 
     void on_ArreterTapis_clicked();
 
-    void on_checkModeAuto_clicked();
 
-    void on_checkModeManuel_clicked();
+    void on_boutonModeAutoManuel_clicked();
 
 private:
     Ui::MainWindow *ui;

@@ -1,201 +1,39 @@
 
-21/05/2021  09:28:22
+25/05/2021  10:49:39
+Ouverture des informations des pompes
+
+25/05/2021  10:49:54
 Fermeture Supervision 
 
-21/05/2021  09:28:23
-Fermeture de l'application 
-
-
-21/05/2021  09:32:40
-Lancement de l'application 
-
-21/05/2021  09:32:52
-00
-21/05/2021  09:33:11
-Fermeture de l'application 
-
-
-21/05/2021  09:37:24
-Lancement de l'application 
-
-21/05/2021  09:37:47
-Fermeture de l'application 
-
-
-21/05/2021  09:38:15
-Lancement de l'application 
-
-21/05/2021  09:38:18
-Fermeture de l'application 
-
-
-21/05/2021  09:39:12
-Lancement de l'application 
-
-21/05/2021  09:39:15
-Ouverture de la fenetre d'ajout dans agenda
-21/05/2021  09:39:22
-Ajout d'une nouvelle séance
-21/05/2021  09:43:29
-Lancement de l'application 
-
-21/05/2021  09:43:30
-Ouverture de l'agenda
-21/05/2021  09:43:33
-Ouverture de la fenetre Modification séance
-21/05/2021  09:43:35
-Ouverture de la fenetre d'ajout dans agenda
-21/05/2021  09:43:37
-Ouverture de la fenetre de suppression de seance
-21/05/2021  09:43:42
+25/05/2021  10:49:55
 ouverture de Supervision 
 
-21/05/2021  09:43:43
-ouverture fichier log 
+25/05/2021  10:51:24
+Ouverture des informations des vannes
 
-21/05/2021  09:44:02
+25/05/2021  10:54:32
+Lancement de l'application 
+
+25/05/2021  10:54:36
 Fermeture Supervision 
 
-21/05/2021  09:44:03
+25/05/2021  10:54:38
 Fermeture de l'application 
 
 
-21/05/2021  09:44:06
+25/05/2021  10:54:40
+ouverture de Supervision 
+
+25/05/2021  14:16:09
+Fermeture Supervision 
+
+25/05/2021  14:16:10
 Fermeture de l'application 
 
 
-21/05/2021  09:45:14
+25/05/2021  14:43:51
 Lancement de l'application 
 
-21/05/2021  09:45:16
-Ouverture de l'agenda
-21/05/2021  09:45:19
-Ouverture de la fenetre d'ajout dans agenda
-21/05/2021  09:45:26
-Ajout d'une nouvelle séance
-21/05/2021  09:48:14
-Fermeture de l'application 
-
-
-21/05/2021  09:49:47
-Lancement de l'application 
-
-21/05/2021  09:49:49
-Ouverture de l'agenda
-
-21/05/2021  09:49:49
-Ouverture de la fenetre d'ajout dans agenda
-
-21/05/2021  09:49:57
-Ajout d'une nouvelle séance
-
-21/05/2021  09:51:05
-Ajout d'une nouvelle séance
-
-21/05/2021  10:00:52
-Lancement de l'application 
-
-21/05/2021  10:00:58
-Ouverture de l'agenda
-
-21/05/2021  10:01:56
-Ouverture de la fenetre d'ajout dans agenda
-
-21/05/2021  10:02:00
-Fermeture de la fenetre d'ajout dans agenda
-
-21/05/2021  10:02:03
-Ouverture de la fenetre Modification séance
-
-21/05/2021  10:02:10
-Fermeture de la fenetre Modification séance
-
-21/05/2021  10:02:11
-Ouverture de la fenetre de suppression seance
-
-21/05/2021  10:02:18
-Fermeture de la fenetre de supression seance
-
-21/05/2021  10:02:19
-Fermeture de l'agenda
-
-21/05/2021  10:02:19
-Fermeture de l'application 
-
-
-21/05/2021  10:02:21
-Fermeture de la fenetre d'ajout dans agenda
-
-21/05/2021  10:02:22
-Fermeture de l'agenda
-
-21/05/2021  10:02:22
-Fermeture de l'application 
-
-
-21/05/2021  10:04:25
-Lancement de l'application 
-
-21/05/2021  10:04:27
-Ouverture de l'agenda
-
-21/05/2021  10:04:28
-Ouverture de la fenetre d'ajout dans agenda
-
-21/05/2021  10:04:35
-Ajout d'une nouvelle séance
-
-21/05/2021  10:04:49
-Ajout d'une nouvelle séance
-
-21/05/2021  14:00:22
-Fermeture de la fenetre d'ajout dans agenda
-
-21/05/2021  14:00:23
-Fermeture de l'agenda
-
-21/05/2021  14:00:24
-Fermeture de l'application 
-
-
-21/05/2021  14:03:05
-Lancement de l'application 
-
-21/05/2021  14:03:13
-Fermeture de l'application 
-
-
-21/05/2021  14:07:10
-Lancement de l'application 
-
-21/05/2021  14:07:17
-Fermeture de l'application 
-
-
-21/05/2021  14:08:12
-Lancement de l'application 
-
-21/05/2021  14:08:18
-Fermeture de l'application 
-
-
-21/05/2021  14:09:41
-Lancement de l'application 
-
-21/05/2021  14:09:46
-Fermeture de l'application 
-
-
-21/05/2021  14:10:54
-Lancement de l'application 
-
-21/05/2021  14:11:05
-Fermeture de l'application 
-
-
-21/05/2021  14:16:05
-Lancement de l'application 
-
-21/05/2021  14:16:25
+25/05/2021  14:43:54
 Fermeture de l'application 
 

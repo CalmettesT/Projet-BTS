@@ -42,7 +42,7 @@
        <number>0</number>
       </property>
       <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="0,2,0,0,0,0,0,0,0,2,0,0">
+       <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="0,2,0,0,0,0,0,2,0,0">
         <item>
          <widget class="QLabel" name="Debit">
           <property name="styleSheet">
@@ -136,49 +136,22 @@
          </spacer>
         </item>
         <item>
-         <widget class="QCheckBox" name="checkModeAuto">
-          <property name="styleSheet">
-           <string notr="true"> QCheckBox {
-     spacing: 5px;
-	 color: rgb(0, 0, 0);
-	border:black
- }
- 
- 
- 
-</string>
-          </property>
-          <property name="text">
-           <string>Auto</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <spacer name="horizontalSpacer_3">
-          <property name="orientation">
-           <enum>Qt::Horizontal</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
+         <widget class="QPushButton" name="boutonModeAutoManuel">
+          <property name="minimumSize">
            <size>
-            <width>40</width>
-            <height>20</height>
+            <width>0</width>
+            <height>25</height>
            </size>
           </property>
-         </spacer>
-        </item>
-        <item>
-         <widget class="QCheckBox" name="checkModeManuel">
           <property name="styleSheet">
-           <string notr="true"> QCheckBox {
-     spacing: 5px;
-	 color: rgb(0, 0, 0);
-	border:black
- }
- 
- </string>
+           <string notr="true">border: 2px solid #A52109;
+background-color: rgb(240, 0, 0);
+color: rgb(255, 255, 255);
+border-radius: 4px;
+font: 75 12pt &quot;Arial&quot;;</string>
           </property>
           <property name="text">
-           <string>Manuel</string>
+           <string>Activer mode Auto</string>
           </property>
          </widget>
         </item>

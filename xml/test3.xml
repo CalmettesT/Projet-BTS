@@ -21,4 +21,11 @@
   <heureDepart>10:04:28</heureDepart>
   <typeClient>debutant</typeClient>
  </seance>
+ <seance id="4">
+  <dateArrivee>ven. mai 21 2021</dateArrivee>
+  <heureArrivee>22:37:35</heureArrivee>
+  <dateDepart>ven. mai 21 2021</dateDepart>
+  <heureDepart>22:37:35</heureDepart>
+  <typeClient>debutant</typeClient>
+ </seance>
 </seances>

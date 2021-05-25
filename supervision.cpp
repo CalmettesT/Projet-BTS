@@ -2,16 +2,21 @@
 #include "ui_supervision.h"
 #include "capteur.h"
 #include "ui_capteur.h"
+#include "mainwindow.h"
+#include "ui_mainwindow.h"
 #include <QFileDialog>
 #include <QFile>
 
 
 GestionLog supervisionLog;
 
+//MainWindow supervision;
+
 Supervision::Supervision(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::Supervision)
 {
+
 
     supervisionLog.ajoutLog("ouverture de Supervision \n");
     ui->setupUi(this);

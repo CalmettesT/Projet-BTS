@@ -11,8 +11,6 @@ MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
-
-
     logMainWindow.ajoutLog("Lancement de l'application \n");
     ui->setupUi(this);
     ui->comboBox_ModeParc->addItem("Gravitaire");
@@ -132,13 +130,42 @@ void MainWindow::on_agenda_clicked()
     agenda.exec();
 }
 
+//***********************************************Mode auto parc************************************************
 
-void MainWindow::on_checkModeAuto_clicked()
+void MainWindow::switchAuto(bool mode)
 {
-    ui->checkModeManuel->stateChanged(0);
+    if(mode==true)
+    {
+
+    }
+    else
+    {
+
+    }
 }
 
-void MainWindow::on_checkModeManuel_clicked()
+void MainWindow::on_boutonModeAutoManuel_clicked()
 {
-    ui->checkModeAuto->stateChanged(0);
+    QString m = ui->boutonModeAutoManuel->text();
+    //Bouton change couleur et ecrit
+    if(m=="Enlever mode Auto")
+    {
+        ui->ValiderDebit->show();
+        ui->validerMode->show();
+        ui->comboBox_ModeParc->show();
+        ui->boutonModeAutoManuel->setText("Activer mode Auto");
+        ui->boutonModeAutoManuel->setStyleSheet("QPushButton { background-color: red; border: 2px solid #A52109; color: rgb(255, 255, 255);border-radius: 7px; font: 75 12pt 'Arial'; }");
+        //ajout dans log
+        logMainWindow.ajoutLog("Mode auto du parc enlevé\n");
+    }
+    else
+    {
+        ui->ValiderDebit->hide();
+        ui->validerMode->hide();
+        ui->comboBox_ModeParc->hide();
+        ui->boutonModeAutoManuel->setText("Enlever mode Auto");
+        ui->boutonModeAutoManuel->setStyleSheet("QPushButton { background-color: green; border: 2px solid #46BB1B; color: rgb(255, 255, 255);border-radius: 7px;font: 75 12pt 'Arial';}");
+        //ajout dans log
+        logMainWindow.ajoutLog("Mode auto du parc activé\n");
+    }
 }

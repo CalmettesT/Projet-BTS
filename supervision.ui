@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>973</width>
-    <height>771</height>
+    <width>988</width>
+    <height>893</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -53,7 +53,7 @@ font: 75 18pt &quot;Arial&quot;;</string>
       </spacer>
      </item>
      <item>
-      <layout class="QHBoxLayout" name="horizontalLayout" stretch="2,0,2,0,2,0,2">
+      <layout class="QHBoxLayout" name="horizontalLayout" stretch="2,0,2,0,2,0,2,0,2">
        <item>
         <widget class="QPushButton" name="BoutonVannes">
          <property name="sizePolicy">
@@ -174,7 +174,7 @@ font: 75 18pt &quot;Arial&quot;;</string>
          </property>
          <property name="sizeHint" stdset="0">
           <size>
-           <width>40</width>
+           <width>30</width>
            <height>20</height>
           </size>
          </property>
@@ -284,6 +284,63 @@ font: 75 18pt &quot;Arial&quot;;</string>
          </property>
          <property name="text">
           <string>Fichier Log</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_4">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>30</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="boutonConfig">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>150</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	font: 75 12pt &quot;Arial&quot;;
+	color: rgb(255, 255, 255);
+         border: 2px solid #8f8f91;
+         border-radius: 6px;
+         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                           stop: 0 #181716, stop: 1 #3D3C3A);
+         min-width: 80px;
+     }
+
+     QPushButton:pressed {
+         background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                           stop: 0 #3D3C3A, stop: 1 #181716);
+     }
+
+     QPushButton:flat {
+         border: none; /* no border for a flat push button */
+     }
+
+     QPushButton:default {
+         border-color: navy; /* make the default button prominent */
+     }
+</string>
+         </property>
+         <property name="text">
+          <string>Config</string>
          </property>
         </widget>
        </item>
@@ -2182,8 +2239,8 @@ font: 75 18pt &quot;Arial&quot;;</string>
    <slot>accept()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>278</x>
-     <y>772</y>
+     <x>288</x>
+     <y>761</y>
     </hint>
     <hint type="destinationlabel">
      <x>157</x>
@@ -2198,8 +2255,8 @@ font: 75 18pt &quot;Arial&quot;;</string>
    <slot>reject()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>346</x>
-     <y>772</y>
+     <x>356</x>
+     <y>761</y>
     </hint>
     <hint type="destinationlabel">
      <x>286</x>
@@ -2214,12 +2271,12 @@ font: 75 18pt &quot;Arial&quot;;</string>
    <slot>display(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>186</x>
-     <y>284</y>
+     <x>157</x>
+     <y>328</y>
     </hint>
     <hint type="destinationlabel">
-     <x>260</x>
-     <y>284</y>
+     <x>231</x>
+     <y>328</y>
     </hint>
    </hints>
   </connection>
@@ -2230,12 +2287,12 @@ font: 75 18pt &quot;Arial&quot;;</string>
    <slot>display(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>303</x>
-     <y>284</y>
+     <x>276</x>
+     <y>328</y>
     </hint>
     <hint type="destinationlabel">
-     <x>333</x>
-     <y>203</y>
+     <x>351</x>
+     <y>328</y>
     </hint>
    </hints>
   </connection>
@@ -2246,12 +2303,12 @@ font: 75 18pt &quot;Arial&quot;;</string>
    <slot>display(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>418</x>
-     <y>202</y>
+     <x>396</x>
+     <y>328</y>
     </hint>
     <hint type="destinationlabel">
-     <x>447</x>
-     <y>210</y>
+     <x>471</x>
+     <y>328</y>
     </hint>
    </hints>
   </connection>
@@ -2262,8 +2319,8 @@ font: 75 18pt &quot;Arial&quot;;</string>
    <slot>display(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>531</x>
-     <y>223</y>
+     <x>516</x>
+     <y>328</y>
     </hint>
     <hint type="destinationlabel">
      <x>563</x>
@@ -2278,8 +2335,8 @@ font: 75 18pt &quot;Arial&quot;;</string>
    <slot>display(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>650</x>
-     <y>222</y>
+     <x>635</x>
+     <y>328</y>
     </hint>
     <hint type="destinationlabel">
      <x>667</x>
@@ -2294,12 +2351,12 @@ font: 75 18pt &quot;Arial&quot;;</string>
    <slot>display(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>773</x>
-     <y>284</y>
+     <x>755</x>
+     <y>328</y>
     </hint>
     <hint type="destinationlabel">
-     <x>788</x>
-     <y>208</y>
+     <x>829</x>
+     <y>328</y>
     </hint>
    </hints>
   </connection>
@@ -2310,12 +2367,12 @@ font: 75 18pt &quot;Arial&quot;;</string>
    <slot>display(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>115</x>
-     <y>444</y>
+     <x>122</x>
+     <y>754</y>
     </hint>
     <hint type="destinationlabel">
-     <x>148</x>
-     <y>449</y>
+     <x>245</x>
+     <y>754</y>
     </hint>
    </hints>
   </connection>
@@ -2326,12 +2383,12 @@ font: 75 18pt &quot;Arial&quot;;</string>
    <slot>display(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>411</x>
-     <y>466</y>
+     <x>413</x>
+     <y>754</y>
     </hint>
     <hint type="destinationlabel">
-     <x>447</x>
-     <y>471</y>
+     <x>536</x>
+     <y>754</y>
     </hint>
    </hints>
   </connection>
@@ -2342,12 +2399,12 @@ font: 75 18pt &quot;Arial&quot;;</string>
    <slot>display(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>706</x>
-     <y>461</y>
+     <x>703</x>
+     <y>754</y>
     </hint>
     <hint type="destinationlabel">
-     <x>749</x>
-     <y>468</y>
+     <x>826</x>
+     <y>754</y>
     </hint>
    </hints>
   </connection>
