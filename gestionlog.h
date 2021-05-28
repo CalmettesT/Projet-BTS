@@ -15,8 +15,9 @@ class GestionLog
 public:
     GestionLog();
     void ajoutLog(string data);
-    void lectureLog();
     void clear();
+private:
+    string const chemin = "/Users/calmettesthomas/BTS/Projet-BTS/Fichier_Log.txt";
 };
 
 #endif // GESTIONLOG_H

@@ -29,30 +29,17 @@ public:
 private slots:
 
     void on_BoutonVanne1_clicked();
-
     void on_BoutonVanne2_clicked();
-
     void on_BoutonVanne3_clicked();
-
     void on_BoutonVanne4_clicked();
-
     void on_BoutonVanne5_clicked();
-
     void on_BoutonVanne6_clicked();
-
     void on_BoutonVanne7_clicked();
-
     void on_Supervision_clicked();
-
     void on_ValiderDebit_clicked();
-
     void on_validerMode_clicked();
-
     void on_agenda_clicked();
-
     void on_ArreterTapis_clicked();
-
-
     void on_boutonModeAutoManuel_clicked();
 
 private:

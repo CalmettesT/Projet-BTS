@@ -8,8 +8,7 @@ GestionLog::GestionLog()
 
 void GestionLog::ajoutLog(string data)
 {
-    string const nomDeFichier("/Users/calmettesthomas/BTS/Projet-BTS/Fichier_Log.txt");
-    ofstream monFlux(nomDeFichier.c_str(), fstream::app|fstream::out);
+    ofstream monFlux(chemin.c_str(), fstream::app|fstream::out);
 
     if(monFlux)
     {
@@ -25,18 +24,12 @@ void GestionLog::ajoutLog(string data)
 
 }
 
-void GestionLog::lectureLog()
-{
-    string ligne;
-    string const nomDeFichier("/Users/calmettesthomas/BTS/Projet-BTS/Fichier_Log.txt");
-    ifstream fichier("/Users/calmettesthomas/BTS/Projet-BTS/Fichier_Log.txt");
-}
 
 void GestionLog::clear()
 {
-    ofstream fichier("/Users/calmettesthomas/BTS/Projet-BTS/Fichier_Log.txt");
+    ofstream fichier(chemin.c_str());
     fichier.close();
-    if(remove("/Users/calmettesthomas/BTS/Projet-BTS/Fichier_Log.txt")==0)
+    if(remove(chemin.c_str())==0)
     {
         qDebug()<<"supression reussi";
     }

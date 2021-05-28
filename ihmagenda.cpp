@@ -36,5 +36,4 @@ void IHMagenda::on_pushButton_4_clicked()
     supSeance win4;
     win4.setModal(true);
     win4.exec();
-
 }

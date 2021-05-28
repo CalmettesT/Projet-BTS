@@ -29,7 +29,7 @@
    <set>QMainWindow::AllowTabbedDocks|QMainWindow::AnimatedDocks|QMainWindow::VerticalTabs</set>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <layout class="QHBoxLayout" name="horizontalLayout">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
     <item>
      <layout class="QVBoxLayout" name="verticalLayout" stretch="0,6,1">
       <property name="spacing">
@@ -749,28 +749,27 @@ font: 75 12pt &quot;Arial&quot;;</string>
           <property name="styleSheet">
            <string notr="true">QPushButton {
 	
-	font: 75 16pt &quot;Arial&quot;;
-	color: rgb(255, 255, 255);
-         border: 2px solid #8f8f91;
-         border-radius: 6px;
+	font: 75 16pt &quot;Arial&quot;; /* changement de la police d'ecriture */
+	color: rgb(255, 255, 255);/* coleur d'ecriture blanche */
+         border: 2px solid #8f8f91;/* bord de bouton gris */
+         border-radius: 6px;/* bord arrondie */
          background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
                                            stop: 0 #181716, stop: 1 #3D3C3A);
-         min-width: 80px;
+									/* degradé de couleur de noir à gris  */
+         
      }
 
      QPushButton:pressed {
          background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
                                            stop: 0 #3D3C3A, stop: 1 #181716);
+									/* degradé de couleur de gris à noir  */
      }
 
      QPushButton:flat {
-         border: none; /* no border for a flat push button */
+         border: none; /*pas de bord de bouton*/
      }
 
-     QPushButton:default {
-         border-color: navy; /* make the default button prominent */
-     }
-</string>
+     </string>
           </property>
           <property name="text">
            <string>Supervision</string>

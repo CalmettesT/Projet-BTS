@@ -1819,6 +1819,9 @@ font: 75 18pt &quot;Arial&quot;;</string>
      selection-background-color: black;
  }</string>
          </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
         </widget>
        </item>
        <item row="0" column="1">
@@ -1894,6 +1897,9 @@ font: 75 18pt &quot;Arial&quot;;</string>
 	background-color: rgb(100,100, 100);
      selection-background-color: black;
  }</string>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
          </property>
         </widget>
        </item>
@@ -2063,6 +2069,9 @@ font: 75 18pt &quot;Arial&quot;;</string>
 	background-color: rgb(100,100, 100);
      selection-background-color: black;
  }</string>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
          </property>
         </widget>
        </item>
@@ -2239,8 +2248,8 @@ font: 75 18pt &quot;Arial&quot;;</string>
    <slot>accept()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>288</x>
-     <y>761</y>
+     <x>298</x>
+     <y>882</y>
     </hint>
     <hint type="destinationlabel">
      <x>157</x>
@@ -2255,8 +2264,8 @@ font: 75 18pt &quot;Arial&quot;;</string>
    <slot>reject()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>356</x>
-     <y>761</y>
+     <x>366</x>
+     <y>882</y>
     </hint>
     <hint type="destinationlabel">
      <x>286</x>

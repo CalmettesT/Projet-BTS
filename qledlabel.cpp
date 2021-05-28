@@ -12,34 +12,9 @@ static const QString redSS = QString("color: white;border-radius: %1;background-
 
 
 
-void QLedLabel::setState(Etat state)
-{
-    qDebug() << "setEtat" << state;
-    switch(state)
-    {
-        case 1:
-            qDebug() << "green" << state;
-            setStyleSheet(greenSS);
-
-        break;
-        case 2:
-            qDebug() << "orange" << state;
-            setStyleSheet(orangeSS);
-
-        break;
-        case 3:
-            qDebug() << "red" << state;
-            setStyleSheet(redSS);
-        break;
-    default:
-        setStyleSheet(redSS);
-    }
-}
-
 void QLedLabel::setModeParc(QString modeParc3)
 {
     modeParc=modeParc3;
-
 }
 
 void QLedLabel::setDebit2(int debit3)
@@ -47,56 +22,25 @@ void QLedLabel::setDebit2(int debit3)
     debit=debit3;
 }
 
-int QLedLabel::getDebit()
-{
-    return debit;
-}
-
-QString QLedLabel::getModeParc()
-{
-    return modeParc;
-}
-
 QLedLabel::QLedLabel(QWidget *parent) :
     QLabel(parent)
 {
     setFixedSize(SIZE, SIZE);
 
-//    if (modeParc=="Gravitaire")
-//    {
-//        setState(Arret);
-//    }
-//    else if (modeParc=="Circuit Ferme")
-//    {
-//        setState(Marche);
-//    }
-//    else if(debit>=10)setState(Marche);
-//    else if (debit>=5 && debit<10) setState(EtatWarning);
-//    else  setState(Arret);
-
     if (modeParc=="Gravitaire"||debit<=5)
     {
-        setState(Arret);
+        setStyleSheet(redSS);
     }
     else if (modeParc=="Circuit Ferme"||debit>=10)
     {
-        setState(Marche);
+        setStyleSheet(greenSS);;
     }
     else
     {
-        setState(EtatWarning);
+        setStyleSheet(orangeSS);
     }
 }
 
-void QLedLabel::setState(bool state)
-{
-    setState(state ? Marche : Arret);
-}
-
-QString QLedLabel::getPompe1(QString stateP1)
-{
-    return stateP1;
-}
 
 void QLedLabel::couleurPompe(QLedLabel &c)
 {
@@ -104,20 +48,14 @@ void QLedLabel::couleurPompe(QLedLabel &c)
 
     if (modeParc=="Gravitaire" || debit<=5)
     {
-//        if(modeParc)
-        c.setState(Arret);
+        c.setStyleSheet(redSS);
     }
     else if (modeParc=="Circuit Ferme" || debit>=10)
     {
-        c.setState(Marche);
+        c.setStyleSheet(greenSS);
     }
     else
     {
-        c.setState(EtatWarning);
+        c.setStyleSheet(orangeSS);
     }
-
-
 }
-
-QLedLabel::~QLedLabel()
-{}

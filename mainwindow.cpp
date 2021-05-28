@@ -65,7 +65,6 @@ void MainWindow::on_BoutonVanne7_clicked()
 void MainWindow::on_Supervision_clicked()
 {
     Supervision supervision;
-    supervision.setModal(true);
     supervision.exec();
 }
 

@@ -10,7 +10,6 @@
 
 GestionLog supervisionLog;
 
-//MainWindow supervision;
 
 Supervision::Supervision(QWidget *parent) :
     QDialog(parent),
@@ -249,7 +248,6 @@ void Supervision::on_BoutonCapteur_clicked()
     ui->textEditLog->hide();
 
     Capteur cap;
-    cap.setModal(true);
     cap.exec();
 }
 
