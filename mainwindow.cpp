@@ -68,7 +68,7 @@ void MainWindow::on_Supervision_clicked()
     supervision.exec();
 }
 
-//***********************************************Gestion Tapis************************************************
+//***********************************************Gestion Tapis*****************************************************
 
 void MainWindow::on_ArreterTapis_clicked()
 {

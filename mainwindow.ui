@@ -332,56 +332,74 @@ font: 75 12pt &quot;Arial&quot;;</string>
         <property name="alignment">
          <set>Qt::AlignJustify|Qt::AlignTop</set>
         </property>
-        <layout class="QGridLayout" name="gridLayout">
-         <item row="3" column="2">
-          <widget class="QPushButton" name="ArreterTapis">
-           <property name="minimumSize">
-            <size>
-             <width>80</width>
-             <height>25</height>
-            </size>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">border: 2px solid #A52109;
+        <widget class="QPushButton" name="ArreterTapis">
+         <property name="geometry">
+          <rect>
+           <x>374</x>
+           <y>256</y>
+           <width>80</width>
+           <height>25</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>80</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 2px solid #A52109;
 background-color: rgb(240, 0, 0);
 color: rgb(255, 255, 255);
 border-radius: 7px;
 font: 75 12pt &quot;Arial&quot;;</string>
-           </property>
-           <property name="text">
-            <string>Lancer Tapis</string>
-           </property>
-          </widget>
-         </item>
-         <item row="4" column="1">
-          <widget class="QLedLabel" name="ledPompe1">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="text">
-            <string>  P1</string>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="2">
-          <widget class="QPushButton" name="BoutonVanne3">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="minimumSize">
-            <size>
-             <width>20</width>
-             <height>20</height>
-            </size>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">QPushButton {
+         </property>
+         <property name="text">
+          <string>Lancer Tapis</string>
+         </property>
+        </widget>
+        <widget class="QLedLabel" name="ledPompe1">
+         <property name="geometry">
+          <rect>
+           <x>243</x>
+           <y>327</y>
+           <width>22</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>  P1</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="BoutonVanne3">
+         <property name="geometry">
+          <rect>
+           <x>374</x>
+           <y>58</y>
+           <width>20</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>20</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
 	font: 75 10pt &quot;Arial&quot;;
 	color: rgb(255, 255, 255);
          border: 1px solid #8f8f91;
@@ -403,28 +421,34 @@ font: 75 12pt &quot;Arial&quot;;</string>
      QPushButton:default {
          border-color: navy; /* make the default button prominent */
      }</string>
-           </property>
-           <property name="text">
-            <string>V3</string>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="3">
-          <widget class="QPushButton" name="BoutonVanne5">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="minimumSize">
-            <size>
-             <width>20</width>
-             <height>20</height>
-            </size>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">QPushButton {
+         </property>
+         <property name="text">
+          <string>V3</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="BoutonVanne5">
+         <property name="geometry">
+          <rect>
+           <x>563</x>
+           <y>124</y>
+           <width>20</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>20</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
 	font: 75 10pt &quot;Arial&quot;;
 	color: rgb(255, 255, 255);
          border: 1px solid #8f8f91;
@@ -446,31 +470,37 @@ font: 75 12pt &quot;Arial&quot;;</string>
      QPushButton:default {
          border-color: navy; /* make the default button prominent */
      }</string>
-           </property>
-           <property name="text">
-            <string>V5</string>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="2">
-          <widget class="QPushButton" name="BoutonVanne4">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="minimumSize">
-            <size>
-             <width>20</width>
-             <height>20</height>
-            </size>
-           </property>
-           <property name="mouseTracking">
-            <bool>false</bool>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">QPushButton {
+         </property>
+         <property name="text">
+          <string>V5</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="BoutonVanne4">
+         <property name="geometry">
+          <rect>
+           <x>374</x>
+           <y>124</y>
+           <width>20</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>20</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="mouseTracking">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
 	font: 75 10pt &quot;Arial&quot;;
 	color: rgb(255, 255, 255);
          border: 1px solid #8f8f91;
@@ -492,28 +522,34 @@ font: 75 12pt &quot;Arial&quot;;</string>
      QPushButton:default {
          border-color: navy; /* make the default button prominent */
      }</string>
-           </property>
-           <property name="text">
-            <string>V4</string>
-           </property>
-          </widget>
-         </item>
-         <item row="2" column="2" colspan="2">
-          <widget class="QPushButton" name="BoutonVanne7">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="minimumSize">
-            <size>
-             <width>20</width>
-             <height>20</height>
-            </size>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">QPushButton {
+         </property>
+         <property name="text">
+          <string>V4</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="BoutonVanne7">
+         <property name="geometry">
+          <rect>
+           <x>374</x>
+           <y>190</y>
+           <width>20</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>20</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
 	font: 75 10pt &quot;Arial&quot;;
 	color: rgb(255, 255, 255);
          border: 1px solid #8f8f91;
@@ -535,34 +571,40 @@ font: 75 12pt &quot;Arial&quot;;</string>
      QPushButton:default {
          border-color: navy; /* make the default button prominent */
      }</string>
-           </property>
-           <property name="text">
-            <string>V7</string>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="3">
-          <widget class="QPushButton" name="BoutonVanne2">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="minimumSize">
-            <size>
-             <width>20</width>
-             <height>20</height>
-            </size>
-           </property>
-           <property name="sizeIncrement">
-            <size>
-             <width>16</width>
-             <height>16</height>
-            </size>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">QPushButton {
+         </property>
+         <property name="text">
+          <string>V7</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="BoutonVanne2">
+         <property name="geometry">
+          <rect>
+           <x>563</x>
+           <y>58</y>
+           <width>20</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>20</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="sizeIncrement">
+          <size>
+           <width>16</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
 	font: 75 10pt &quot;Arial&quot;;
 	color: rgb(255, 255, 255);
          border: 1px solid #8f8f91;
@@ -584,28 +626,34 @@ font: 75 12pt &quot;Arial&quot;;</string>
      QPushButton:default {
          border-color: navy; /* make the default button prominent */
      }</string>
-           </property>
-           <property name="text">
-            <string>V2</string>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="5">
-          <widget class="QPushButton" name="BoutonVanne1">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="minimumSize">
-            <size>
-             <width>20</width>
-             <height>20</height>
-            </size>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">QPushButton {
+         </property>
+         <property name="text">
+          <string>V2</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="BoutonVanne1">
+         <property name="geometry">
+          <rect>
+           <x>692</x>
+           <y>58</y>
+           <width>20</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>20</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
 	font: 75 10pt &quot;Arial&quot;;
 	color: rgb(255, 255, 255);
          border: 1px solid #8f8f91;
@@ -627,28 +675,34 @@ font: 75 12pt &quot;Arial&quot;;</string>
      QPushButton:default {
          border-color: navy; /* make the default button prominent */
      }</string>
-           </property>
-           <property name="text">
-            <string>V1</string>
-           </property>
-          </widget>
-         </item>
-         <item row="15" column="0">
-          <widget class="QPushButton" name="BoutonVanne6">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="minimumSize">
-            <size>
-             <width>20</width>
-             <height>20</height>
-            </size>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">QPushButton {
+         </property>
+         <property name="text">
+          <string>V1</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="BoutonVanne6">
+         <property name="geometry">
+          <rect>
+           <x>114</x>
+           <y>389</y>
+           <width>20</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>20</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
 	font: 75 10pt &quot;Arial&quot;;
 	color: rgb(255, 255, 255);
          border: 1px solid #8f8f91;
@@ -670,13 +724,11 @@ font: 75 12pt &quot;Arial&quot;;</string>
      QPushButton:default {
          border-color: navy; /* make the default button prominent */
      }</string>
-           </property>
-           <property name="text">
-            <string>V6</string>
-           </property>
-          </widget>
-         </item>
-        </layout>
+         </property>
+         <property name="text">
+          <string>V6</string>
+         </property>
+        </widget>
        </widget>
       </item>
       <item>
