@@ -4,7 +4,6 @@
 #include <QDialog>
 #include "gestionxml.h"
 #include "sockettest.h"
-#include "gestionlog.h"
 
 namespace Ui {
 class ajouter;
@@ -19,7 +18,7 @@ public:
     ~ajouter();
 
 private slots:
-    void on_pushButton_clicked();
+    void on_btnAjouter_clicked();
 
 private:
     Ui::ajouter *ui;

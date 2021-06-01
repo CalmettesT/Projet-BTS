@@ -3,7 +3,6 @@
 #include <QDebug>
 #include <QFile>
 
-GestionLog logAgendaEdit;
 editSeance::editSeance(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::editSeance)
@@ -19,46 +18,47 @@ editSeance::editSeance(QWidget *parent) :
     ui->type->addItem("debutant");
     ui->type->addItem("confirme");
 
-        //on donne l'image au label
 
-        ui->labelimg->setPixmap(QPixmap("C:/Users/Christian GROS/Desktop/agendaInterface-20210129T071652Z-001/agendaInterface/img/noir"));
+    //on donne l'image au label
 
-    logAgendaEdit.ajoutLog("Ouverture de la fenetre Modification séance\n");
+    ui->labelimg->setPixmap(QPixmap("C:/Users/Christian GROS/Desktop/agendaInterface-20210129T071652Z-001/agendaInterface/img/noir"));
+
 }
 
 editSeance::~editSeance()
 {
     delete ui;
-    logAgendaEdit.ajoutLog("Fermeture de la fenetre Modification séance\n");
 }
 
-void editSeance::on_pushButton_clicked()
+void editSeance::on_btnMod_clicked()
 {
-    QDate dateArrivee = ui->dateArrivee->date();
-    QDate dateDepart = ui->dateDepart->date();
-    QTime heureDepart = ui->heureDepart->time();
-    QTime heureArrivee = ui->heureArrivee->time();
+//    QDate dateArrivee = ui->dateArrivee->date();
+//    QDate dateDepart = ui->dateDepart->date();
+//    QTime heureDepart = ui->heureDepart->time();
+//    QTime heureArrivee = ui->heureArrivee->time();
     QString type = ui->type->currentText();
-
-//    qDebug()<<"dateArrivee:"<<dateArrivee.toString();
-//    qDebug()<<"dateDepart:"<<dateDepart.toString();
-//    qDebug()<<"heureArrivee:"<<heureArrivee.toString();
-//    qDebug()<<"heureDepart:"<<heureDepart.toString();
-
-//    xml.readElement("dateArrivee");
-
-//    xml.modElement(dateArrivee.toString(), dateDepart.toString(), heureDepart.toString(), heureArrivee.toString(), type);
-
-    logAgendaEdit.ajoutLog("Modification d'une séance\n");
 }
 
 void editSeance::on_calendarWidget_clicked(const QDate &date)
 {
     ui->lineEdit->setText(date.toString());
 
-    xml.openFile("/Users/calmettesthomas/BTS/Projet-Bts/xml/test3.xml");
-    xml.readElement(date.toString());
-//    xml.setId(date.toString());
-//    qDebug()<<xml.getId();
-}
+    xml.openFile("C:/Users/Christian GROS/Documents/Code/InterfaceAgenda/xml/test3.xml");
 
+    int t = 0;
+
+    for(int i = 0 ; i <= xml.getNumberId() ; i++)
+    {
+        QString str;
+
+        xml.setSenace(str.setNum(i));
+        for (int a = 0 ; a <= 4 ; a++)
+        {
+            if(xml.getTab(a) == date.toString())
+            {
+                t++;
+            }
+        }
+        ui->nombreSeances->setValue(t/2);
+    }
+}

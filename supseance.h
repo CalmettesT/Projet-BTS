@@ -1,9 +1,9 @@
+
 #ifndef SUPSEANCE_H
 #define SUPSEANCE_H
 
 #include <QDialog>
 #include "gestionxml.h"
-#include "gestionlog.h"
 
 namespace Ui {
 class supSeance;
@@ -18,7 +18,7 @@ public:
     ~supSeance();
 
 private slots:
-    void on_pushButton_clicked();
+    void on_btnSup_clicked();
 
     void on_calendarWidget_clicked(const QDate &date);
 
