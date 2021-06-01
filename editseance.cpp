@@ -3,6 +3,8 @@
 #include <QDebug>
 #include <QFile>
 
+GestionLog logAgendaEdit;
+
 editSeance::editSeance(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::editSeance)
@@ -23,11 +25,13 @@ editSeance::editSeance(QWidget *parent) :
 
     ui->labelimg->setPixmap(QPixmap("C:/Users/Christian GROS/Desktop/agendaInterface-20210129T071652Z-001/agendaInterface/img/noir"));
 
+    logAgendaEdit.ajoutLog("Ouverture de la fenetre Modification séance\n");
 }
 
 editSeance::~editSeance()
 {
     delete ui;
+    logAgendaEdit.ajoutLog("Ouverture de la fenetre Modification séance\n");
 }
 
 void editSeance::on_btnMod_clicked()
@@ -37,6 +41,7 @@ void editSeance::on_btnMod_clicked()
 //    QTime heureDepart = ui->heureDepart->time();
 //    QTime heureArrivee = ui->heureArrivee->time();
     QString type = ui->type->currentText();
+    logAgendaEdit.ajoutLog("Ouverture de la fenetre Modification séance\n");
 }
 
 void editSeance::on_calendarWidget_clicked(const QDate &date)
