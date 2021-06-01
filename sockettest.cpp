@@ -1,6 +1,7 @@
 #include "gestionxml.h"
 #include "sockettest.h"
 #include <QByteArray>
+#include <iostream>
 
 SocketTest::SocketTest(QObject *parent) :
     QObject(parent)
@@ -11,14 +12,13 @@ void SocketTest::Connect()
 {
     gestionXml xml;
     socket = new QTcpSocket(this);
-//    socket->connectToHost("127.0.0.1", 9000);
-    socket->connectToHost("10.0.250.122", 9000);
+    socket->connectToHost("127.0.0.1", 9000);
 
     if(socket->waitForConnected(3000))
     {
         qDebug() << "Connected!";
 
-        xml.openFile("/Users/calmettesthomas/BTS/Projet-Bts/xml/test3.xml");
+        xml.openFile(pathG);
 
         int id = xml.getNumberId();
         QString str;

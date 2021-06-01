@@ -28,6 +28,7 @@ private:
     QDomElement element;
     QDomElement dom_element;
     QString tab[5];
+    QString pathG = "C:/Users/Christian GROS/Documents/Code/InterfaceAgenda/xml/test3.xml";
 };
 
 #endif // GESTIONXML_H

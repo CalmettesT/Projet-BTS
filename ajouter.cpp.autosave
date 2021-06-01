@@ -41,6 +41,7 @@ void ajouter::on_btnAjouter_clicked()
 
     cTest.Connect();
 
+    logAgendaAjout.ajoutLog("Ajout d'une nouvelle séance\n");
 
 
 }

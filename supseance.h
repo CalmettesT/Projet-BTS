@@ -1,3 +1,4 @@
+
 #ifndef SUPSEANCE_H
 #define SUPSEANCE_H
 
@@ -18,7 +19,7 @@ public:
     ~supSeance();
 
 private slots:
-    void on_pushButton_clicked();
+    void on_btnSup_clicked();
 
     void on_calendarWidget_clicked(const QDate &date);
 

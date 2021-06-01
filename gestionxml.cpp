@@ -80,7 +80,7 @@ void gestionXml::structSenace(QString path)
 void gestionXml::newSeance(QString dateArrivee, QString dateDepart, QString heureDepart, QString heureArrivee, QString type)
 {
 
-    QFile file("/Users/calmettesthomas/BTS/Projet-Bts/xml/test3.xml");
+    QFile file(pathG);
     if (!file.open(QIODevice::ReadOnly | QIODevice::Text))
     {
         qDebug() << "Failed to open file";
@@ -158,7 +158,7 @@ void gestionXml::newSeance(QString dateArrivee, QString dateDepart, QString heur
 
     docEle.appendChild(seance);
 
-    QFile outFile( "/Users/calmettesthomas/BTS/Projet-Bts/xml/test3.xml" );
+    QFile outFile(pathG);
 
     if( !outFile.open( QIODevice::WriteOnly | QIODevice::Text ) )
         qDebug( "Failed to open file for writing." );
@@ -173,7 +173,7 @@ void gestionXml::newSeance(QString dateArrivee, QString dateDepart, QString heur
 void gestionXml::supElement(QString id)
 {
 
-    QFile file("/Users/calmettesthomas/BTS/Projet-Bts/xml/test3.xml");
+    QFile file(pathG);
 
     if (!file.open(QIODevice::ReadOnly | QIODevice::Text))
     {
@@ -215,7 +215,7 @@ void gestionXml::supElement(QString id)
     lastElem.parentNode().removeChild(lastElem);
     file.close();
 
-    QFile outFile( "/Users/calmettesthomas/BTS/Projet-Bts/xml/test3.xml" );
+    QFile outFile(pathG);
 
     if( !outFile.open( QIODevice::WriteOnly | QIODevice::Text ) )
         qDebug( "Failed to open file for writing." );
@@ -224,6 +224,7 @@ void gestionXml::supElement(QString id)
     stream << document.toString();
 
     outFile.close();
+
 }
 
 void gestionXml::modElement(gestionXml& xml)
@@ -272,7 +273,7 @@ QString gestionXml::getTab(int n)
 
 int gestionXml::getNumberId()
 {
-    QFile file("/Users/calmettesthomas/BTS/Projet-Bts/xml/test3.xml");
+    QFile file(pathG);
     if (!file.open(QIODevice::ReadOnly | QIODevice::Text))
     {
         qDebug() << "Failed to open file";
@@ -318,7 +319,7 @@ int gestionXml::getNumberId()
 
 QVector<int> gestionXml::idDay(QString data)
 {
-    QFile file("/Users/calmettesthomas/BTS/Projet-Bts/xml/test3.xml");
+    QFile file(pathG);
     if (!file.open(QIODevice::ReadOnly | QIODevice::Text))
     {
         qDebug() << "Failed to open file";
@@ -375,5 +376,3 @@ QVector<int> gestionXml::idDay(QString data)
 
     return mesIds;
 }
-
-
