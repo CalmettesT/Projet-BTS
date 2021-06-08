@@ -20,7 +20,7 @@ Supervision::Supervision(QWidget *parent) :
     supervisionLog.ajoutLog("ouverture de Supervision \n");
     ui->setupUi(this);
 
-    ui->pushButton->hide();
+    ui->boutonEffacerLog->hide();
     ui->textEditLog->hide();
     //**************************************POMPE**************************************************
     ui->ArretPompe1->hide();
@@ -88,7 +88,7 @@ Supervision::~Supervision()
 
 void Supervision::on_BoutonVannes_clicked()
 {
-    ui->pushButton->hide();
+    ui->boutonEffacerLog->hide();
     ui->textEditLog->hide();
     supervisionLog.ajoutLog("Ouverture des informations des vannes\n");
 
@@ -176,7 +176,7 @@ void Supervision::on_BoutonVannes_clicked()
 
 void Supervision::on_BoutonPompes_clicked()
 {
-    ui->pushButton->hide();
+    ui->boutonEffacerLog->hide();
     ui->textEditLog->hide();
     supervisionLog.ajoutLog("Ouverture des informations des pompes\n");
     etatP1 = "Pompe 1 en marche";
@@ -244,10 +244,11 @@ void Supervision::on_BoutonPompes_clicked()
 
 void Supervision::on_BoutonCapteur_clicked()
 {
-    ui->pushButton->hide();
+    ui->boutonEffacerLog->hide();
     ui->textEditLog->hide();
 
     Capteur cap;
+    cap.setModal(false);
     cap.exec();
 }
 
@@ -359,7 +360,7 @@ void Supervision::on_ArretPompe3_clicked()
 void Supervision::on_FichierLog_clicked()
 {
     //affichage des log
-    ui->pushButton->show();
+    ui->boutonEffacerLog->show();
     ui->textEditLog->show();
     QFile file("/Users/calmettesthomas/BTS/Projet-BTS/Fichier_Log.txt");
 
@@ -453,7 +454,7 @@ void Supervision::on_boutonValidePompe3_clicked()
     qDebug() << "modif P3 : " << puiP3;
 }
 
-void Supervision::on_pushButton_clicked()
+void Supervision::on_boutonEffacerLog_clicked()
 {
     ui->textEditLog->clear();
     supervisionLog.clear();

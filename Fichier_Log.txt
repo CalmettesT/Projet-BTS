@@ -1,393 +1,52 @@
 
-27/05/2021  14:46:20
+03/06/2021  10:40:23
 Fermeture Supervision 
 
-27/05/2021  14:46:21
+03/06/2021  10:40:40
 Fermeture de l'application 
 
 
-27/05/2021  15:22:48
+03/06/2021  10:41:34
 Lancement de l'application 
 
-27/05/2021  15:22:52
+03/06/2021  10:41:36
+ouverture de Supervision 
+
+03/06/2021  10:41:39
+Ouverture des informations des capteurs
+
+03/06/2021  10:41:57
+Fermeture des informations des capteurs
+
+03/06/2021  10:41:58
+Fermeture Supervision 
+
+03/06/2021  10:41:59
+Fermeture de l'application 
+
+
+08/06/2021  09:51:40
+Lancement de l'application 
+
+08/06/2021  09:51:42
+ouverture de Supervision 
+
+08/06/2021  09:51:43
+Fermeture Supervision 
+
+08/06/2021  09:51:44
 Ouverture de l'agenda
 
-27/05/2021  15:23:02
-Ouverture de la fenetre d'ajout dans agenda
-
-27/05/2021  15:23:05
-Fermeture de la fenetre d'ajout dans agenda
-
-27/05/2021  15:23:06
-Ouverture de la fenetre Modification séance
-
-27/05/2021  15:23:07
-Fermeture de la fenetre Modification séance
-
-27/05/2021  15:23:08
-Ouverture de la fenetre de suppression seance
-
-27/05/2021  15:23:09
-Fermeture de la fenetre de supression seance
-
-27/05/2021  15:23:10
-Ouverture de la fenetre Modification séance
-
-27/05/2021  15:23:15
-Fermeture de la fenetre Modification séance
-
-27/05/2021  15:23:39
-Ouverture de la fenetre d'ajout dans agenda
-
-27/05/2021  15:24:03
-Fermeture de la fenetre d'ajout dans agenda
-
-27/05/2021  15:24:06
-Ouverture de la fenetre d'ajout dans agenda
-
-27/05/2021  15:24:08
-Fermeture de la fenetre d'ajout dans agenda
-
-27/05/2021  15:24:08
-Ouverture de la fenetre de suppression seance
-
-27/05/2021  15:24:11
-Fermeture de la fenetre de supression seance
-
-27/05/2021  15:24:12
-Ouverture de la fenetre Modification séance
-
-27/05/2021  15:43:38
-Fermeture de la fenetre Modification séance
-
-27/05/2021  15:43:39
+08/06/2021  09:51:46
 Fermeture de l'agenda
 
-27/05/2021  15:43:41
+08/06/2021  09:51:51
 Fermeture de l'application 
 
 
-27/05/2021  15:48:14
+08/06/2021  09:52:08
 Lancement de l'application 
 
-27/05/2021  15:48:18
-changement de débit
-
-27/05/2021  15:48:22
-changement de débit
-
-27/05/2021  15:48:25
-changement de débit
-
-27/05/2021  15:48:30
-changement de mode du parc
-
-27/05/2021  15:48:32
-changement de débit
-
-27/05/2021  15:48:34
-Fermeture de l'application 
-
-
-27/05/2021  15:49:28
-Lancement de l'application 
-
-27/05/2021  15:49:32
-changement de débit
-
-27/05/2021  15:49:35
-changement de débit
-
-27/05/2021  15:49:39
-changement de débit
-
-27/05/2021  15:49:41
-changement de mode du parc
-
-27/05/2021  15:49:42
-Fermeture de l'application 
-
-
-27/05/2021  15:50:27
-Lancement de l'application 
-
-27/05/2021  15:50:30
-changement de débit
-
-27/05/2021  15:50:35
-changement de débit
-
-27/05/2021  15:50:37
-changement de débit
-
-27/05/2021  15:50:38
-changement de mode du parc
-
-27/05/2021  15:50:40
-Fermeture de l'application 
-
-
-27/05/2021  15:51:56
-Lancement de l'application 
-
-27/05/2021  15:51:59
-changement de débit
-
-27/05/2021  15:52:03
-changement de débit
-
-27/05/2021  15:52:05
-changement de mode du parc
-
-27/05/2021  15:52:06
-Fermeture de l'application 
-
-
-27/05/2021  15:52:11
-Lancement de l'application 
-
-27/05/2021  15:52:14
-changement de débit
-
-27/05/2021  15:52:15
-changement de mode du parc
-
-27/05/2021  15:52:16
-changement de mode du parc
-
-27/05/2021  15:52:18
-Fermeture de l'application 
-
-
-27/05/2021  15:52:48
-Lancement de l'application 
-
-27/05/2021  15:52:50
-Fermeture de l'application 
-
-
-27/05/2021  15:52:54
-Lancement de l'application 
-
-27/05/2021  15:52:58
-changement de débit
-
-27/05/2021  15:53:02
-changement de débit
-
-27/05/2021  15:53:03
-changement de mode du parc
-
-27/05/2021  15:53:04
-changement de mode du parc
-
-27/05/2021  15:53:05
-Fermeture de l'application 
-
-
-27/05/2021  15:54:12
-Lancement de l'application 
-
-27/05/2021  15:54:18
-changement de débit
-
-27/05/2021  15:54:19
-changement de mode du parc
-
-27/05/2021  15:54:20
-Fermeture de l'application 
-
-
-27/05/2021  15:55:00
-Lancement de l'application 
-
-27/05/2021  15:55:04
-changement de débit
-
-27/05/2021  15:55:05
-changement de mode du parc
-
-27/05/2021  15:55:06
-Fermeture de l'application 
-
-
-27/05/2021  16:31:50
-Lancement de l'application 
-
-27/05/2021  16:31:53
-Fermeture de l'application 
-
-
-27/05/2021  18:15:02
-Lancement de l'application 
-
-27/05/2021  18:15:04
-ouverture de Supervision 
-
-27/05/2021  18:15:06
-Fermeture Supervision 
-
-27/05/2021  18:15:07
-Fermeture de l'application 
-
-
-27/05/2021  18:15:28
-Lancement de l'application 
-
-27/05/2021  18:15:37
-ouverture de Supervision 
-
-27/05/2021  18:15:39
-Fermeture Supervision 
-
-27/05/2021  18:15:40
-Fermeture de l'application 
-
-
-27/05/2021  20:39:28
-Lancement de l'application 
-
-27/05/2021  20:39:32
-changement de débit
-
-27/05/2021  20:39:39
-changement de débit
-
-27/05/2021  20:39:40
-changement de mode du parc
-
-27/05/2021  20:39:41
-changement de mode du parc
-
-27/05/2021  20:39:43
-changement de mode du parc
-
-27/05/2021  20:39:43
-changement de mode du parc
-
-27/05/2021  20:39:44
-changement de mode du parc
-
-27/05/2021  20:39:44
-changement de mode du parc
-
-27/05/2021  20:39:44
-changement de mode du parc
-
-27/05/2021  20:39:48
-changement de débit
-
-27/05/2021  20:39:49
-changement de mode du parc
-
-27/05/2021  20:39:49
-changement de mode du parc
-
-27/05/2021  20:39:51
-Fermeture de l'application 
-
-
-27/05/2021  23:14:12
-Lancement de l'application 
-
-27/05/2021  23:14:15
-Mode auto du parc activé
-
-27/05/2021  23:15:30
-Mode auto du parc enlevé
-
-27/05/2021  23:15:37
-Mode auto du parc activé
-
-27/05/2021  23:17:22
-Mode auto du parc enlevé
-
-27/05/2021  23:21:59
-Fermeture de l'application 
-
-
-28/05/2021  10:31:11
-Lancement de l'application 
-
-28/05/2021  10:31:14
-Fermeture de l'application 
-
-
-28/05/2021  10:34:39
-Lancement de l'application 
-
-28/05/2021  10:35:31
-Fermeture de l'application 
-
-
-28/05/2021  10:36:15
-Lancement de l'application 
-
-28/05/2021  10:36:46
-Fermeture de l'application 
-
-
-31/05/2021  14:51:57
-Lancement de l'application 
-
-31/05/2021  15:00:00
-Fermeture de l'application 
-
-
-31/05/2021  15:10:06
-Lancement de l'application 
-
-31/05/2021  15:10:10
-ouverture de Supervision 
-
-31/05/2021  15:10:17
-Ouverture des informations des pompes
-
-31/05/2021  15:12:27
-Fermeture Supervision 
-
-31/05/2021  15:12:30
-Fermeture de l'application 
-
-
-31/05/2021  15:16:59
-Lancement de l'application 
-
-31/05/2021  15:17:08
-Ouverture de l'agenda
-
-31/05/2021  15:17:21
-Ouverture de la fenetre Modification séance
-
-31/05/2021  15:17:30
-Fermeture de la fenetre Modification séance
-
-31/05/2021  15:17:31
-Fermeture de l'agenda
-
-31/05/2021  15:17:34
-Fermeture de l'application 
-
-
-01/06/2021  09:58:41
-Lancement de l'application 
-
-01/06/2021  10:04:13
-Fermeture de l'application 
-
-
-01/06/2021  10:37:03
-Lancement de l'application 
-
-01/06/2021  10:37:08
-ouverture de Supervision 
-
-01/06/2021  10:37:10
-ouverture fichier log 
-
-01/06/2021  10:39:48
-Fermeture Supervision 
-
-01/06/2021  10:39:49
+08/06/2021  09:52:16
 Fermeture de l'application 
 

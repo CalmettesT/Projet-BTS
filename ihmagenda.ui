@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>590</width>
+    <width>735</width>
     <height>610</height>
    </rect>
   </property>
@@ -29,10 +29,10 @@
 	background-color:black;
 }
 
-
 QCalendarWidget QWidget{
 	alternate-background-color:rgb(128,128,128)
 }
+
 
 QCalendarWidget QAbstractItemView:enabled{
 	font-size:18px;

@@ -69,7 +69,7 @@ private slots:
 
     void on_boutonValidePompe3_clicked();
 
-    void on_pushButton_clicked();
+    void on_boutonEffacerLog_clicked();
 
 private:
     Ui::Supervision *ui;
