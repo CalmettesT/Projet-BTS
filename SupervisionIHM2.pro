@@ -16,6 +16,7 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
     ajouter.cpp \
+    camera.cpp \
     capteur.cpp \
     editseance.cpp \
     gestionlog.cpp \
@@ -29,6 +30,7 @@ SOURCES += main.cpp\
 
 HEADERS  += mainwindow.h \
     ajouter.h \
+    camera.h \
     capteur.h \
     editseance.h \
     gestionlog.h \
@@ -41,6 +43,7 @@ HEADERS  += mainwindow.h \
 
 FORMS    += mainwindow.ui \
     ajouter.ui \
+    camera.ui \
     capteur.ui \
     editseance.ui \
     ihmagenda.ui \
@@ -50,3 +53,7 @@ FORMS    += mainwindow.ui \
 RESOURCES += \
     img/image.qrc \
     rsc.qrc
+
+DISTFILES += \
+    ../../Desktop/img stade cam.jpeg \
+    img/img stade cam.jpeg

@@ -1,52 +1,5 @@
-
-03/06/2021  10:40:23
+09/06/2021  20:31:08
 Fermeture Supervision 
-
-03/06/2021  10:40:40
-Fermeture de l'application 
-
-
-03/06/2021  10:41:34
-Lancement de l'application 
-
-03/06/2021  10:41:36
-ouverture de Supervision 
-
-03/06/2021  10:41:39
-Ouverture des informations des capteurs
-
-03/06/2021  10:41:57
-Fermeture des informations des capteurs
-
-03/06/2021  10:41:58
-Fermeture Supervision 
-
-03/06/2021  10:41:59
-Fermeture de l'application 
-
-
-08/06/2021  09:51:40
-Lancement de l'application 
-
-08/06/2021  09:51:42
-ouverture de Supervision 
-
-08/06/2021  09:51:43
-Fermeture Supervision 
-
-08/06/2021  09:51:44
-Ouverture de l'agenda
-
-08/06/2021  09:51:46
-Fermeture de l'agenda
-
-08/06/2021  09:51:51
-Fermeture de l'application 
-
-
-08/06/2021  09:52:08
-Lancement de l'application 
-
-08/06/2021  09:52:16
+09/06/2021  20:31:11
 Fermeture de l'application 
 

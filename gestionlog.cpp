@@ -14,7 +14,7 @@ void GestionLog::ajoutLog(string data)
     {
         QString sDate = QDateTime::currentDateTime().toString("dd/MM/yyyy  hh:mm:ss");
         string date = sDate.toStdString();
-        monFlux<<endl << date <<endl << data;
+        monFlux << date <<endl << data;
         monFlux.close();
     }
     else

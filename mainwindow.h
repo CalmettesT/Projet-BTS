@@ -42,6 +42,8 @@ private slots:
     void on_ArreterTapis_clicked();
     void on_boutonModeAutoManuel_clicked();
 
+    void on_camera_clicked();
+
 private:
     Ui::MainWindow *ui;
     int debit2;

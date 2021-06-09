@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "qledlabel.h"
+#include "camera.h"
 #include "QMessageBox"
 #include "QString"
 
@@ -167,4 +168,10 @@ void MainWindow::on_boutonModeAutoManuel_clicked()
         //ajout dans log
         logMainWindow.ajoutLog("Mode auto du parc activé\n");
     }
+}
+
+void MainWindow::on_camera_clicked()
+{
+    camera cam;
+    cam.exec();
 }
