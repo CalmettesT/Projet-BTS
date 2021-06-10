@@ -4,7 +4,6 @@
 #include <QDialog>
 #include "gestionxml.h"
 #include "sockettest.h"
-#include "gestionlog.h"
 
 namespace Ui {
 class ajouter;

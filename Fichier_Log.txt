@@ -3,3 +3,46 @@ Fermeture Supervision
 09/06/2021  20:31:11
 Fermeture de l'application 
 
+09/06/2021  20:43:58
+Lancement de l'application 
+09/06/2021  20:44:06
+Fermeture de l'application 
+
+09/06/2021  20:46:16
+Lancement de l'application 
+09/06/2021  20:46:19
+Ouverture de la fenetre d'ajout dans agenda
+09/06/2021  20:46:21
+Fermeture de la fenetre d'ajout dans agenda
+09/06/2021  20:46:22
+Ouverture de la fenetre Modification séance
+09/06/2021  20:46:24
+Ouverture de la fenetre Modification séance
+09/06/2021  20:46:26
+Ouverture de la fenetre de suppression seance
+09/06/2021  20:46:28
+Fermeture de la fenetre de supression seance
+09/06/2021  20:46:30
+Ouverture de la fenetre Modification séance
+09/06/2021  20:46:45
+Ouverture de la fenetre Modification séance
+09/06/2021  20:46:48
+Fermeture de l'application 
+
+09/06/2021  20:50:27
+Lancement de l'application 
+09/06/2021  20:50:32
+Ouverture de la fenetre d'ajout dans agenda
+09/06/2021  20:50:36
+Fermeture de la fenetre d'ajout dans agenda
+09/06/2021  20:50:37
+Ouverture de la fenetre Modification séance
+09/06/2021  20:50:40
+Ouverture de la fenetre Modification séance
+09/06/2021  20:50:41
+Ouverture de la fenetre de suppression seance
+09/06/2021  20:50:43
+Fermeture de la fenetre de supression seance
+09/06/2021  20:50:45
+Fermeture de l'application 
+

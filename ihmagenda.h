@@ -1,23 +1,24 @@
 #ifndef IHMAGENDA_H
 #define IHMAGENDA_H
-#include "ajouter.h"
-#include"editseance.h"
-#include"supseance.h"
-#include "gestionlog.h"
-#include"QDebug"
+
 #include <QDialog>
+#include <QDebug>
+#include "ajouter.h"
+#include "editseance.h"
+#include "supseance.h"
+#include "gestionxml.h"
 
 namespace Ui {
-class IHMagenda;
+class ihmAgenda;
 }
 
-class IHMagenda : public QDialog
+class ihmAgenda : public QDialog
 {
     Q_OBJECT
 
 public:
-    explicit IHMagenda(QWidget *parent = nullptr);
-    ~IHMagenda();
+    explicit ihmAgenda(QWidget *parent = nullptr);
+    ~ihmAgenda();
 
 private slots:
     void on_pushButton_clicked();
@@ -27,7 +28,7 @@ private slots:
     void on_pushButton_4_clicked();
 
 private:
-    Ui::IHMagenda *ui;
+    Ui::ihmAgenda *ui;
 };
 
 #endif // IHMAGENDA_H

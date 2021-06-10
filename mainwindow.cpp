@@ -125,7 +125,7 @@ QString MainWindow::recupModeParc(QString modeParc2)
 
 void MainWindow::on_agenda_clicked()
 {
-    IHMagenda agenda;
+    ihmAgenda agenda;
     agenda.setModal(true);
     agenda.exec();
 }
