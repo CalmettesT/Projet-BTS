@@ -18,6 +18,7 @@ SOURCES += main.cpp\
     ajouter.cpp \
     camera.cpp \
     capteur.cpp \
+    config.cpp \
     editseance.cpp \
     gestionlog.cpp \
     gestionxml.cpp \
@@ -32,6 +33,7 @@ HEADERS  += mainwindow.h \
     ajouter.h \
     camera.h \
     capteur.h \
+    config.h \
     editseance.h \
     gestionlog.h \
     gestionxml.h \
@@ -45,6 +47,7 @@ FORMS    += mainwindow.ui \
     ajouter.ui \
     camera.ui \
     capteur.ui \
+    config.ui \
     editseance.ui \
     ihmagenda.ui \
     supervision.ui \

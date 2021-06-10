@@ -24,7 +24,7 @@ void supSeance::on_btnSup_clicked()
 
 void supSeance::on_calendarWidget_clicked(const QDate &date)
 {
-    xml.openFile("C:/Users/Christian GROS/Documents/xmlClass/test3.xml");
+    xml.openFile("/Users/calmettesthomas/BTS/Projet-Bts/xml/test3.xml");
     dateClicked = date.toString();
 
     qDebug()<<dateClicked;

@@ -52,12 +52,12 @@ void editSeance::on_calendarWidget_clicked(const QDate &date)
         ui->seancesJournne->removeItem(i);
     }
     QVector<int> mesIds;
-    xml.openFile("C:/Users/Christian GROS/Documents/xmlClass/test3.xml");
+    xml.openFile("/Users/calmettesthomas/BTS/Projet-Bts/xml/test3.xml");
     xml.readElement(date.toString());
 //    xml.setId(date.toString());
 //    qDebug()<<xml.getId();
     ui->lineEdit->setText(date.toString());
-    xml.openFile("C:/Users/Christian GROS/Documents/Code/InterfaceAgenda/xml/test3.xml");
+    xml.openFile("/Users/calmettesthomas/BTS/Projet-Bts/xml/test3.xml");
 
     mesIds = xml.idDay(date.toString());
     ui->nombreSeances->setValue(mesIds.length());

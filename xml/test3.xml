@@ -94,4 +94,46 @@
   <heureDepart>20:32:41</heureDepart>
   <typeClient>debutant</typeClient>
  </seance>
+ <seance id="12">
+  <dateArrivee>jeu. juin 10 2021</dateArrivee>
+  <heureArrivee>10:25:46</heureArrivee>
+  <dateDepart>jeu. juin 10 2021</dateDepart>
+  <heureDepart>10:25:46</heureDepart>
+  <typeClient>debutant</typeClient>
+ </seance>
+ <seance id="13">
+  <dateArrivee>jeu. juin 10 2021</dateArrivee>
+  <heureArrivee>10:28:01</heureArrivee>
+  <dateDepart>jeu. juin 10 2021</dateDepart>
+  <heureDepart>10:28:01</heureDepart>
+  <typeClient>debutant</typeClient>
+ </seance>
+ <seance id="14">
+  <dateArrivee>jeu. juin 10 2021</dateArrivee>
+  <heureArrivee>10:28:01</heureArrivee>
+  <dateDepart>jeu. juin 10 2021</dateDepart>
+  <heureDepart>10:28:01</heureDepart>
+  <typeClient>debutant</typeClient>
+ </seance>
+ <seance id="15">
+  <dateArrivee>jeu. juin 10 2021</dateArrivee>
+  <heureArrivee>10:28:01</heureArrivee>
+  <dateDepart>jeu. juin 10 2021</dateDepart>
+  <heureDepart>10:28:01</heureDepart>
+  <typeClient>debutant</typeClient>
+ </seance>
+ <seance id="16">
+  <dateArrivee>jeu. juin 10 2021</dateArrivee>
+  <heureArrivee>10:28:01</heureArrivee>
+  <dateDepart>jeu. juin 10 2021</dateDepart>
+  <heureDepart>10:28:01</heureDepart>
+  <typeClient>debutant</typeClient>
+ </seance>
+ <seance id="17">
+  <dateArrivee>jeu. juin 10 2021</dateArrivee>
+  <heureArrivee>10:28:01</heureArrivee>
+  <dateDepart>jeu. juin 10 2021</dateDepart>
+  <heureDepart>10:28:01</heureDepart>
+  <typeClient>debutant</typeClient>
+ </seance>
 </seances>

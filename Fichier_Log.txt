@@ -46,3 +46,57 @@ Fermeture de la fenetre de supression seance
 09/06/2021  20:50:45
 Fermeture de l'application 
 
+10/06/2021  10:18:39
+Lancement de l'application 
+10/06/2021  10:18:57
+Fermeture de l'application 
+
+10/06/2021  10:23:19
+Lancement de l'application 
+10/06/2021  10:23:27
+Lancement du tapis
+10/06/2021  10:23:28
+Arret du tapis
+10/06/2021  10:24:40
+Fermeture de l'application 
+
+10/06/2021  10:25:10
+Lancement de l'application 
+10/06/2021  10:27:31
+Lancement de l'application 
+10/06/2021  10:27:38
+Fermeture de l'application 
+
+10/06/2021  10:28:33
+Fermeture de l'application 
+
+10/06/2021  10:29:12
+Lancement de l'application 
+10/06/2021  10:29:40
+Fermeture de l'application 
+
+10/06/2021  10:33:23
+Lancement de l'application 
+10/06/2021  10:33:33
+Fermeture de l'application 
+
+10/06/2021  10:35:05
+Lancement de l'application 
+10/06/2021  10:35:21
+Fermeture de l'application 
+
+10/06/2021  10:36:17
+Lancement de l'application 
+10/06/2021  10:36:38
+Fermeture de l'application 
+
+10/06/2021  10:36:56
+Lancement de l'application 
+10/06/2021  10:37:00
+Fermeture de l'application 
+
+10/06/2021  10:39:02
+Lancement de l'application 
+10/06/2021  10:39:04
+Fermeture de l'application 
+
